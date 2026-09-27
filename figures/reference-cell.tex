@@ -1,0 +1,26 @@
+\documentclass[border=4pt]{standalone}
+\input{figure-style}
+\usepackage[american]{circuitikz}
+\begin{document}
+\begin{circuitikz}[font=\small,>=Latex]
+\draw (0,0) to[C,l_=$C$] (0,3);
+\draw[elemC] (2.5,0) to[I,l=$I_\tau$] (2.5,3);
+\draw[elemC] (5,0) to[I,l=$I_\Omega$] (5,3);
+\draw (0,3) -- (5,3);
+\draw (0,0) -- (8,0) to[R,l=$R_d$] (11,0);
+\draw[elemC] (11,0) to[V,l_=$u$] (11,-2.5);
+\draw[elemC] (8,-2.5) to[C,l_=$C_d$] (8,0);
+\draw (8,-2.5) -- (11,-2.5);
+\node[ground] at (9.5,-2.5) {};
+\node[anchor=south] at (1.2,3.15) {A: $V_A$};
+\node[anchor=north] at (3.2,-.15) {R: $V_R=\alpha\Omega$};
+\node[anchor=east,elemD] at (-1.05,1.5) {$w_e=V_A-V_R$};
+\draw[dashed,elemA] (-.9,.25) rectangle (.9,2.75);
+\node[align=center,elemA] at (.5,4) {Receiver store\\ $Cw_e^2/2$};
+\node[align=center,elemC] at (4.3,4) {Separate floating\\source supplies};
+\draw[dashed,frameline] (7.2,-2.95) rectangle (10.5,.8);
+\node[align=center,frameline] at (8.6,2.0) {Finite RC driver\\ store and heat};
+\draw[->,elemC,thick] (10.1,1.0) -- node[above] {$I_d$} (8.7,1.0);
+\foreach \x/\y in {0/0,0/3,2.5/0,2.5/3,5/0,5/3,8/0} \fill (\x,\y) circle (1.2pt);
+\end{circuitikz}
+\end{document}

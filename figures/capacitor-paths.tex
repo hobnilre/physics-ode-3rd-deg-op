@@ -1,0 +1,22 @@
+\documentclass[border=4pt]{standalone}
+\input{figure-style}
+\usepackage[american]{circuitikz}
+\begin{document}
+\begin{circuitikz}[font=\small,>=Latex]
+\draw[elemA,thick] (0,0) to[C,l_=$C_1$] (0,3);
+\draw[elemA,thick] (8,0) to[C,l=$C_2$] (8,3);
+\draw (0,0) -- (8,0);
+\draw (0,3) -- (2,3) -- (2,4.5) to[R,l=$g_A^{-1}(t)$,color=elemB] (6,4.5) -- (6,3) -- (8,3);
+\draw (2,3) to[R,l=$g_B^{-1}(t)$,color=elemB] (6,3);
+\draw[->,thick,elemB] (3,5.2) -- node[above] {$i_A$} (5,5.2);
+\draw[->,thick,elemB] (3,2.1) -- node[above] {$i_B$} (5,2.1);
+\node[elemD,anchor=east] at (-.15,3.2) {$v_1$};
+\node[elemD,anchor=west] at (8.15,3.2) {$v_2$};
+\node[anchor=north] at (4,-.15) {Common fixed return};
+\node[align=center] at (4,1) {$d=v_1-v_2$\\$P_A=-d i_A,\quad P_B=-d i_B$};
+\draw[dashed,elemA] (-1.1,.35) rectangle (1.1,2.65);
+\draw[dashed,elemA] (6.9,.35) rectangle (9.1,2.65);
+\node[anchor=south,elemA] at (4,5.7) {Storage boundary: both capacitors};
+\foreach \x/\y in {0/3,2/3,6/3,8/3,0/0,8/0} \fill (\x,\y) circle (1.2pt);
+\end{circuitikz}
+\end{document}
