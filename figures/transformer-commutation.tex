@@ -1,0 +1,37 @@
+\documentclass[border=4pt]{standalone}
+\input{figure-style}
+\usepackage[american]{circuitikz}
+\begin{document}
+\begin{circuitikz}[font=\small,>=Latex]
+\draw[elemC] (-3,-4) to[V,invert,l=$u$] (-3,0)
+  to[R,l=$R_s$,i=$i_s$] (1,0) -- (4,0);
+\draw[elemB] (1,0) to[R,l_=$G_k$] (1,-4);
+\draw[elemA] (4,0) to[R,l=$R_1$] (4,-1.4)
+  to[L,l=$L_1$,i=$i_1$] (4,-4);
+\draw[elemD] (4,5) to[R,l=$R_2$,i=$i_2$] (4,3.5)
+  to[L,l=$L_2$] (4,0);
+\draw[elemB] (4,0) to[R,l=$g_A$] (10,0)
+  to[R,l=$g_B$] (10,-4);
+\draw (4,5) -- (12.5,5);
+\draw[elemA] (10,5) to[C,l_=$C_o$,v^=$w$] (10,0);
+\draw[elemB] (12.5,5) to[R,l=$G_o$] (12.5,0) -- (10,0);
+\draw (-3,-4) -- (10,-4);
+\node[ground] at (1,-4) {};
+\draw[<->,dashed,frameline] (5.1,1.9) to[bend left=25]
+  node[right] {$M$} (5.1,-2.5);
+\fill (3.65,2.9) circle (1.5pt);
+\fill (3.65,-1.65) circle (1.5pt);
+\node[above left] at (4,0) {A};
+\node[above] at (4,5) {B};
+\node[below left] at (10,0) {R};
+\node[below] at (7,-4) {O: fixed ground};
+\foreach \x/\y in {1/0,1/-4,4/0,4/5,4/-4,10/0,10/5,10/-4}
+  \fill (\x,\y) circle (1.3pt);
+\node[align=left,anchor=north west] at (-3,5)
+  {Finite return phases\\[4pt]
+   old: $(g_A,g_B)=(2,0)$\\
+   overlap: $(2,2)$\\
+   new: $(0,2)$\\[4pt]
+   Conductances in S};
+\end{circuitikz}
+\end{document}
