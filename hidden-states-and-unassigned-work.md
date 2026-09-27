@@ -32,6 +32,10 @@ urlcolor: MidnightBlue
 citecolor: MidnightBlue
 ---
 
+Latest PDF on GitHub:
+
+<https://github.com/hobnilre/physics-ode-3rd-deg-op/blob/main/hidden-states-and-unassigned-work.pdf>
+
 # Questions left by state elimination
 \label{sec:introduction}
 
