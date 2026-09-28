@@ -28,8 +28,17 @@ Exact separation budgets and component-rating bounds distinguish finite physical
 
 All worked values follow from exact declared models. The article reports no hardware acquisition or numerical simulations. Identical terminal predictions can establish an identification limit; internal observations supply the discrimination. The bounded absorber result remains resolved, with its wider physical questions kept distinct.
 
-## Article
+## Article and build
 
-[Read the article (PDF)](hidden-states-and-unassigned-work.pdf) · [Manuscript source](hidden-states-and-unassigned-work.md) · [Coefficient-synthesis article](https://github.com/hobnilre/physics-ode-3rd-deg)
+[Read the article (PDF)](hidden-states-and-unassigned-work.pdf) · [Manuscript source](hidden-states-and-unassigned-work.md)
 
-`make pdf` records the UTC build time on the first page, followed by this repository’s GitHub link. The timestamp updates when the PDF is rebuilt; an up-to-date PDF keeps its existing value.
+Install GNU Make, Pandoc, XeLaTeX and the TeX Gyre fonts, including the LaTeX
+packages used by `preamble.tex` and the standalone TikZ/PGFPlots figures. Run `make pdf`
+from this repository. The build uses only files in this checkout; no sibling
+repository or private working files are needed.
+
+The first page gives the PDF creation time in UTC, followed by this repository's
+GitHub link. An up-to-date PDF keeps its timestamp; `make -B pdf` forces a rebuild.
+Intermediates go to ignored `build/` by default; `BUILD_DIR=/absolute/path`
+selects another location. `make clean` removes that build directory and keeps
+the published PDF and figure assets.
