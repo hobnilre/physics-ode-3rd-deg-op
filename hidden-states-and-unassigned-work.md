@@ -32,9 +32,7 @@ urlcolor: MidnightBlue
 citecolor: MidnightBlue
 ---
 
-Latest PDF on GitHub:
-
-<https://github.com/hobnilre/physics-ode-3rd-deg-op/blob/main/hidden-states-and-unassigned-work.pdf>
+\begingroup\scriptsize\noindent PDF created: \pdfbuildtimestamp\par\noindent Latest on GitHub: \url{https://github.com/hobnilre/physics-ode-3rd-deg-op}\par\endgroup
 
 # Open transfers and hidden states
 \label{sec:introduction}

@@ -27,3 +27,5 @@ Exact separation budgets and component-rating bounds distinguish finite physical
 ## Article
 
 [Read the article (PDF)](hidden-states-and-unassigned-work.pdf) · [Manuscript source](hidden-states-and-unassigned-work.md)
+
+`make pdf` records the UTC build time on the first page, followed by this repository’s GitHub link. The timestamp updates when the PDF is rebuilt; an up-to-date PDF keeps its existing value.
