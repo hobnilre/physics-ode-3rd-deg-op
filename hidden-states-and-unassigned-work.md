@@ -4,7 +4,7 @@ subtitle: "Physical questions and signed work behind higher-order coefficients"
 author: "Hob Nilre & Bo C. Herlin"
 date: "2026-09-28"
 abstract: |
-  Higher-order coefficient laws raise physical questions about what measurements identify and which states and transfers a scalar observation conceals. The rotary impact driver supplies the principal example: hammer, anvil and torque observations distinguish contact from joint dynamics, while torque-zero release can retain a positive contact store. We develop twelve questions from the companion coefficient-synthesis article through exact models and discriminating observations. A force-zero contact retains $e^{-\pi}\ \mathrm J$ in one declared configuration; prompt transfer and retained strain give distinct endpoint predictions. Hidden RC states can discharge behind a quiet terminal, with a finite energy ceiling only under declared coupling and preparation bounds. Added transformer attachments introduce actual current paths and prepared capacitive states; their separate works and endpoint stores require calibrated observations. Controlled transducers and moving references retain distinct actuator, bias, driver and supply accounts. Exact branch and parameter controls separate structural ambiguity from inadequate resolution, while independently integrated powers and bounded endpoint errors retain the sign of any unexplained residual. Singular preparations, switching paths and finite controller models supply the conditions needed for these comparisons. The resulting measurements use finite instrumentable realizations and distinguish established model results from unresolved constitutive laws and hardware correspondence.
+  Higher-order coefficient laws raise physical questions about what measurements identify and which states and transfers a scalar observation conceals. Local constitutive laws and whole-system observations are distinguished by their physical attachment, drive and measured port. The rotary impact driver supplies the principal example: hammer, anvil and torque observations distinguish contact from joint dynamics, while torque-zero release can retain a positive contact store. We develop twelve questions from the companion coefficient-synthesis article through exact models and discriminating observations. A force-zero contact retains $e^{-\pi}\ \mathrm J$ in one declared configuration; prompt transfer and retained strain give distinct endpoint predictions. Hidden RC states can discharge behind a quiet terminal, with a finite energy ceiling only under declared coupling and preparation bounds. Added transformer attachments introduce actual current paths and prepared capacitive states; their separate works and endpoint stores require calibrated observations. Controlled transducers and moving references retain distinct actuator, bias, driver and supply accounts. Exact branch and parameter controls separate structural ambiguity from inadequate resolution, while independently integrated powers and bounded endpoint errors retain the sign of any unexplained residual. Singular preparations, switching paths and finite controller models supply the conditions needed for these comparisons. The resulting measurements use finite instrumentable realizations and distinguish established model results from unresolved constitutive laws and hardware correspondence.
 keywords:
   - higher-order ordinary differential equations
   - hidden states
@@ -39,7 +39,7 @@ citecolor: MidnightBlue
 
 A rotary impact driver turns a coefficient law into a recognizable physical question. Its rotating hammer meets the anvil's engagement faces; the anvil, chosen bit or socket and tightened joint transmit and resist the blow. The contact and joint can contribute different dynamics even when one hammer trace fits a scalar equation. At release, the same model can leave elastic energy in the contact. The questions are which observations identify those dynamics and which retained states or measured transfers describe the event.
 
-[*Third- and Higher-Order ODEs*][main] constructs the coefficients, proves their support and higher-order recurrences, and establishes their identification and realization limits. This companion develops the physical comparisons and signed accounts for its twelve marked questions. Each model below specifies its own components, preparation, ports and assumptions. The impact driver is the principal example; electrical and other mechanical systems supply complementary controls.
+[*Third- and Higher-Order ODEs*][main] constructs the coefficients, proves their support and higher-order recurrences, and establishes their identification and realization limits. This companion develops the physical comparisons and signed accounts for its twelve marked questions. Each model below specifies its own components, preparation, ports and assumptions. The impact driver is the principal example; electrical and other mechanical systems supply complementary controls. For each comparison, choose the physical part whose law is being identified, its attachment and input, and the terminal or internal observation that can distinguish it. The main article composes local equations into coefficient laws; here the observations test whether those laws belong to the proposed contact, joint or electrical branch and predict the connected system.
 
 The damped correspondence question asks whether mechanical and electrical models transport preparation, relaxation and reset ports as well as their equations [OP-LR50-01]. The impact-driver identification question asks which hammer, anvil, contact-torque and support observations separate contact coefficients from a frequency-dependent joint [OP-LR08-01]. At torque-zero release, a spring--damper contact retains $U_c=d_c^2\dot\delta_-^2/(2k_c)>0$ for nonzero relative speed. Removing that store without an event transfer gives a negative residual; its retained-material, acoustic, thermal, fracture or fixture destination remains unidentified [OP-LR03-01]. The constitutive release criterion, flight work and memory carried into later engagements are parts of that physical comparison.
 
@@ -496,7 +496,7 @@ The finite clamp and connection laws settle their stated paths. Arc ignition, re
 ## Physical attachments add current paths and prepared states
 \label{sec:physical-attachments}
 
-A physical probe or return is an additional circuit branch. The following finite graph retains both common-mode capacitances and an interwinding capacitance, so that their currents and endpoint stores are explicit. Node O is the physical primary-source return and chassis reference; the other node voltages are $v_A,v_B,v_C$. The source $u$ drives A through $R_s>0$, with core conductance $G_c\geq0$ from A to O. Winding 1 runs A to O. Winding 2 runs B to C for an isolated secondary ($\mu=0$), or B to A for a tapped connection ($\mu=1$). Its load $G_\ell\geq0$ and capacitor $C_d\geq0$ run from B to the physical receiver-return node C.
+A physical probe or return is an additional circuit branch. Its attachment changes the graph and can change the coefficients and observable states. Exchanging impedance and admittance descriptions of a fixed port does neither. Shared winding and return connections below require their coupled state equations; scalar two-terminal series--parallel composition alone does not describe this graph. The following finite graph retains both common-mode capacitances and an interwinding capacitance, so that their currents and endpoint stores are explicit. Node O is the physical primary-source return and chassis reference; the other node voltages are $v_A,v_B,v_C$. The source $u$ drives A through $R_s>0$, with core conductance $G_c\geq0$ from A to O. Winding 1 runs A to O. Winding 2 runs B to C for an isolated secondary ($\mu=0$), or B to A for a tapped connection ($\mu=1$). Its load $G_\ell\geq0$ and capacitor $C_d\geq0$ run from B to the physical receiver-return node C.
 
 Capacitance $C_m>0$ connects A to B, while $C_B,C_C>0$ connect B and C to O. A finite return conductance $g_A$ connects A to C, another $g_O$ connects C to O, and a probe conductance $g_P$ connects B to O. All three are nonnegative. A change in one of them changes an actual effort--flow product. This model assumes constant linear capacitances and winding parameters on each interval; dielectric absorption, saturation and a moving chassis potential require their own laws.
 
@@ -1280,39 +1280,41 @@ For hammer and anvil angles $\theta_h,\theta_a$, positive inertias $J_h,J_a$, co
  J_a\ddot\theta_a=\tau_c-\tau_j.
  \label{eq:two-inertia}
 \end{equation}
-They give a generic fourth-order hammer equation. Rational frequency-domain relations below describe zero-state transfer, or steady sinusoidal response at $s=\ii\omega$; arbitrary preparations add initial-state terms. With $Z_c=k_c+d_cs$ and $Z_a=J_as^2+k_j+d_js$, elimination gives
+They give a generic fourth-order hammer equation. Rational frequency-domain relations below describe zero-state transfer, or steady sinusoidal response at $s=\ii\omega$; arbitrary preparations add initial-state terms. With local dynamic stiffnesses $\mathcal K_c=k_c+d_cs$, $\mathcal K_j=k_j+d_js$ and $\mathcal K_a=J_as^2+\mathcal K_j$, elimination gives
 \begin{equation}
- \frac{U}{\Theta_h}=J_hs^2+\frac{Z_cZ_a}{Z_c+Z_a},\qquad
- \frac{\Theta_a}{\Theta_h}=\frac{Z_c}{Z_c+Z_a}.
+ \frac{U}{\Theta_h}=J_hs^2+\frac{\mathcal K_c\mathcal K_a}{\mathcal K_c+\mathcal K_a},\qquad
+ \frac{\Theta_a}{\Theta_h}=\frac{\mathcal K_c}{\mathcal K_c+\mathcal K_a}.
  \label{eq:contact-inference}
 \end{equation}
-The terminal observes a composite dynamic stiffness. If a broader rational support is allowed, different admissible decompositions of that composite must be distinguished before assigning internal coefficients. Positivity, a known inertial model and a sufficiently rich frequency domain can impose additional constraints; static ambiguity alone is not a theorem of ambiguity on every frequency domain.
+These are torque/angle dynamic stiffnesses. The corresponding torque/angular-velocity impedance is $\mathcal K/s$ where defined, and the hammer mobility is $s/(J_hs^2+\mathcal K_e)$ with $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$. The terminal observes a composite dynamic stiffness. If a broader rational support is allowed, different admissible decompositions of that composite must be distinguished before assigning internal coefficients. Positivity, a known inertial model and a sufficiently rich frequency domain can impose additional constraints; static ambiguity alone is not a theorem of ambiguity on every frequency domain.
 
-With known $J_h$ and measured $Z_e=U/\Theta_h-J_hs^2$ and $H_a=\Theta_a/\Theta_h$, the same equations give a constructive inverse:
+With known $J_h$ and measured $\mathcal K_e=U/\Theta_h-J_hs^2$ and $H_a=\Theta_a/\Theta_h$, the same equations give a constructive inverse:
 \begin{equation}
- Z_c=\frac{Z_e}{1-H_a},\qquad Z_a=\frac{Z_e}{H_a}.
+ \mathcal K_c=\frac{\mathcal K_e}{1-H_a},\qquad
+ \mathcal K_a=\frac{\mathcal K_e}{H_a},\qquad
+ \mathcal K_j=\frac{\mathcal K_e}{H_a}-J_as^2.
  \label{eq:contact-inverse}
 \end{equation}
-Indeed $1-H_a=Z_a/(Z_c+Z_a)$, so substitution proves both expressions. They require defined responses and nonzero denominators; errors are amplified near $H_a=0$ or $1$. In the stated spring--damper family, a nonzero real frequency determines $k_c=\operatorname{Re}Z_c$, $d_c=\operatorname{Im}Z_c/\omega$, $k_j=\operatorname{Re}Z_a+J_a\omega^2$ and $d_j=\operatorname{Im}Z_a/\omega$ when $J_a$ is known. Additional frequencies check that family. Recovering the composite $Z_a$ does not identify an arbitrary internal support realization. The distinction between a realization and its observable input--output part is the one formalized by [Kalman (1963)][kalman].
+Indeed $1-H_a=\mathcal K_a/(\mathcal K_c+\mathcal K_a)$, so substitution proves the first two expressions; subtracting the known anvil inertia gives the joint law. They require defined responses and nonzero denominators; errors are amplified near $H_a=0$ or $1$. In the stated spring--damper family, a nonzero real frequency determines $k_c=\operatorname{Re}\mathcal K_c$, $d_c=\operatorname{Im}\mathcal K_c/\omega$, $k_j=\operatorname{Re}\mathcal K_a+J_a\omega^2$ and $d_j=\operatorname{Im}\mathcal K_a/\omega$ when $J_a$ is known. Additional frequencies check that family. Recovering the composite $\mathcal K_a$ does not identify an arbitrary internal support realization. The distinction between a realization and its observable input--output part is the one formalized by [Kalman (1963)][kalman].
 
-The inverse has an exact uncertainty bound. Write $Z=Z_e$, $H=H_a$, with absolute errors at most $\epsilon_Z,\epsilon_H$. When $|H|>\epsilon_H$ and $|1-H|>\epsilon_H$, subtraction of the two rational inverses and the triangle inequality give
+The inverse has an exact uncertainty bound. Write $K=\mathcal K_e$, $H=H_a$, with absolute errors at most $\epsilon_K,\epsilon_H$. When $|H|>\epsilon_H$ and $|1-H|>\epsilon_H$, subtraction of the two rational inverses and the triangle inequality give
 \begin{align}
- |\widehat Z_c-Z_c|&\leq
- \frac{\epsilon_Z|1-H|+|Z|\epsilon_H}
+ |\widehat{\mathcal K}_c-\mathcal K_c|&\leq
+ \frac{\epsilon_K|1-H|+|K|\epsilon_H}
  {|1-H|(|1-H|-\epsilon_H)},\nonumber\\
- |\widehat Z_a-Z_a|&\leq
- \frac{\epsilon_Z|H|+|Z|\epsilon_H}
+ |\widehat{\mathcal K}_a-\mathcal K_a|&\leq
+ \frac{\epsilon_K|H|+|K|\epsilon_H}
  {|H|(|H|-\epsilon_H)}.
  \label{eq:contact-inverse-error}
 \end{align}
-Indeed the two error numerators are $\delta Z(1-H)+Z\delta H$ and $\delta ZH-Z\delta H$. Lower bounds on the denominator magnitudes yield \eqref{eq:contact-inverse-error} without linearizing the errors. Calibrated magnitude envelopes replace unknown true values in an experiment. These bounds apply to the composite support; its internal realization still requires a specified family or further sensors.
+Indeed the two error numerators are $\delta K(1-H)+K\delta H$ and $\delta KH-K\delta H$. Lower bounds on the denominator magnitudes yield \eqref{eq:contact-inverse-error} without linearizing the errors. Calibrated magnitude envelopes replace unknown true values in an experiment. At known $J_a$, the same absolute bound as for $\mathcal K_a$ applies to $\mathcal K_j$; uncertainty in $J_a$ adds $\omega^2\epsilon_{J_a}$ at $s=\ii\omega$. These bounds apply to the composite support; its internal realization still requires a specified family or further sensors.
 
-The local ambiguity at one complex frequency is also explicit. Writing $Z_e=Z_cZ_a/(Z_c+Z_a)$ and $H_a=\Theta_a/\Theta_h$, differentiation gives
+The local ambiguity at one complex frequency is also explicit. Writing $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$ and $H_a=\Theta_a/\Theta_h$, differentiation gives
 \begin{equation}
- \delta Z_e=\frac{Z_a^2\delta Z_c+Z_c^2\delta Z_a}{(Z_c+Z_a)^2}.
+ \delta \mathcal K_e=\frac{\mathcal K_a^2\delta \mathcal K_c+\mathcal K_c^2\delta \mathcal K_a}{(\mathcal K_c+\mathcal K_a)^2}.
  \label{eq:contact-null}
 \end{equation}
-For nonzero $Z_c,Z_a,Z_c+Z_a$, the perturbation $\delta Z_a=-(Z_a/Z_c)^2\delta Z_c$ leaves that terminal observable unchanged to first order, while $\delta H_a=Z_a\delta Z_c/[Z_c(Z_c+Z_a)]$ is generally nonzero. A parameterized passive model constrains which such perturbations extend over the full frequency interval. Consequently the combined observation Jacobian, its covariance-weighted sensitivity and independent-frequency prediction must be checked for the declared family, rather than inferred from this local null alone.
+For nonzero $\mathcal K_c,\mathcal K_a,\mathcal K_c+\mathcal K_a$, the perturbation $\delta \mathcal K_a=-(\mathcal K_a/\mathcal K_c)^2\delta \mathcal K_c$ leaves that terminal observable unchanged to first order, while $\delta H_a=\mathcal K_a\delta \mathcal K_c/[\mathcal K_c(\mathcal K_c+\mathcal K_a)]$ is generally nonzero. A parameterized passive model constrains which such perturbations extend over the full frequency interval. Consequently the combined observation Jacobian, its covariance-weighted sensitivity and independent-frequency prediction must be checked for the declared family, rather than inferred from this local null alone.
 
 The prepared-motion obstruction is exact as well. Let $k_c,d_c>0$ and
 $\Delta=k_c^2-k_cd_cd_j/J_a+d_c^2k_j/J_a=0$.
@@ -1329,12 +1331,16 @@ Configuration II makes the simplest ambiguity exact. At static torque $u=1\ \mat
 
 The physical two-body boundary contains both kinetic stores and both springs. Its independently signed external powers are $u\dot\theta_h$, $-d_c(\dot\theta_h-\dot\theta_a)^2$ and $-d_j\dot\theta_a^2$. A movable support at angle $z$ replaces the second deformation by $\theta_a-z$ and adds inward support power $-\tau_j\dot z$. A support inertia and another spring give their own second-order state equation and can raise the full order to six. Measuring the anvil alone then does not guarantee identification of $z$ or of an arbitrary rational support.
 
+For phase-resolved identification, maintain engagement under a declared preload and use a small imposed sinusoidal torque with synchronized hammer and anvil angles. Verify the linear amplitude and frequency domain, including calibrated channel phase. Use peak phasors with $e^{\ii\omega t}$; transient preparation must have decayed or be independently separated before applying the steady-response inverse. A blow instead includes engagement, prepared states and release. Transferring the identified contact or joint law to that transient requires an independent domain check. One informative nonzero frequency can identify the four spring--damper constants under the assumptions above; it cannot identify an unrestricted rational law or its internal realization.
+
 The finite closure question is a rank and uncertainty statement for specified contact and support families, followed by prediction under independently changed support and contact conditions. The bounded normalized-map results do not imply universal raw-unit identifiability. Calibrated contact torque, anvil motion and, where required, support motion distinguish the alternatives in \eqref{eq:contact-inference}. The mechanism-level need to represent changing contacts is consistent with [Wettstein, Grauberger and Matthiesen (2021)][wettstein]; that study supplies neither a universal release law nor the destination considered here.
 
 Which measurements separate contact dynamics from the frequency-dependent joint against which the impact driver strikes? This is the principal application-specific identification question. A practical discriminating setup is a low-energy torsional impact between two instrumented disks and an interchangeable compliant support. Two encoders provide synchronized hammer and anvil angles, with rates reconstructed within their calibrated response band; a calibrated transducer observes contact torque at the declared interface. A support-torque channel adds a direct observation of joint loading. Choose the slow contact so its discrimination frequencies lie inside the common calibrated amplitude and phase band, and include rate-reconstruction error in the uncertainty. Hold inertia and contact geometry fixed while changing support stiffness, then change contact compliance independently. Agreement of hammer motion with disagreement in anvil motion rejects a claimed internal reconstruction. Trigger offset, probe loading, anti-alias response, colored uncertainty and fixture variation must enter the comparison. For a selected commercial driver, record the bit or socket allocation, sensor location, contact-duration range and usable calibrated bandwidth anew; the slow rig does not establish these. A fully synchronized industrial impact measurement is a stronger, separately unfulfilled requirement.
 
 ## Independent coordinates and correlated uncertainty
 \label{sec:coefficient-identification}
+
+The target coefficient must first be assigned to a declared local contact or joint law, or to a specified eliminated observation equation. State its derivative convention, normalization, physical input and measured response. Independently changing the selected component while keeping the surrounding model fixed tests that assignment; refitting every block after each change does not.
 
 Let $a,b,c>0$ be inertial, damping and stiffness references. The dimensionally admissible coefficients
 \begin{equation}
@@ -1373,6 +1379,14 @@ A motional series branch $(R_m,L_m,C_m)$ in parallel with $C_0$ obeys, at comple
 \end{equation}
 This follows from Kirchhoff's current law with common voltage $v$, motional current $i_m$, charge $q_m$, and state laws $\dot q_m=i_m$, $L_m\dot i_m=v-R_mi_m-q_m/C_m$, $i=C_0\dot v+i_m$. It is the conventional motional-plus-shunt description discussed by [Bible (2002)][bible]. A voltage-driven experiment prescribes the shunt voltage; a finite source impedance restores that capacitor as an independent state of the connected system.
 
+The input-current channel observes total $i$, not motional $i_m$, and the voltage channel observes the common voltage at the two parallel terminals. Identifying the motional branch therefore needs its own current observation or subtraction of the independently calibrated shunt current. With that attachment fixed, choosing admittance exposes the local change exactly:
+\begin{equation}
+ Y_b-Y_a=s\Delta C_0,\qquad
+ Z_b-Z_a=-s\Delta C_0 Z_aZ_b.
+ \label{eq:shunt-identification}
+\end{equation}
+The second identity follows from $Z=1/Y$ where both ratios are defined. Reciprocation creates no independent data: transport the complex gain/phase uncertainty and common calibration errors through it. Near a zero, use the undivided voltage/current relation or the other defined ratio.
+
 At $\omega_s=1/\sqrt{L_mC_m}$ the motional admittance is $1/R_m$, hence a changed shunt capacitance predicts $\Delta\operatorname{Im}Y=\omega_s\Delta C_0$. Configuration IV uses illustrative low-frequency values $R_m=1\ \Omega$, $L_m=1\ \mathrm H$, $C_m=1\ \mathrm F$, with $C_0=1$ or $2\ \mathrm F$. At $\omega_s=1\ \mathrm{rad/s}$, the two impedances are $(1-\ii)/2$ and $(1-2\ii)/5\ \Omega$. A series-only reading gives $1\ \Omega$ in both cases. These are exact component controls, not quartz parameter values.
 
 For peak voltage $V$ at resonance over one period $T=2\pi/\omega_s$, separately integrating $vi$, $-R_mi_m^2$ and the shunt product $vC_0\dot v$ gives
@@ -1387,6 +1401,25 @@ Each component returns to its initial periodic state, but its instantaneous stor
 The open acquisition requires calibrated multi-device complex impedance and independent shunt variation, with synchronized internal/terminal traces where an internal claim is made. Twelve resonators and three fixture/component variants define an illustrative finite scope, not a statistically derived sample size. Shunt subtraction identifies $Y-sC_0$ for each device. Transferability requires a separately specified law predicting its $L_m,R_m,C_m$ from independently controlled device properties, calibrated on one set and evaluated on other declared devices and frequencies. No such law follows from the shunt control alone. Fixture compensation and RF current/voltage definitions follow [Keysight Technologies (2026)][keysight]; temperature, aging and nonlinear behavior require their own domain.
 
 One device at fixed $\rho$ identifies only the combined coefficient at each $k$. Independent devices or controlled components are required to infer exponent dependence. The practical unresolved question is whether calibrated multi-device impedance measurements support a transferable coefficient law. A low-power VNA measurement of several resonators with independently varied shunt capacitance supplies an accessible complex observable and a controllable second coordinate. Fixture calibration and compensation are essential, as described by [Keysight (2026)][keysight]. The predicted alternatives are a common rational state model versus coefficients that change with fixture or amplitude. Such a measurement does not establish nonlinear, temperature or aging behavior, and no acquisition is asserted here.
+
+### Moving a shunt changes the synthesized system
+\label{sec:shunt-location}
+
+Use the same bare coil $Z_w=R+sL$, $R,L>0$, another linear series block $Z_e$ and capacitor $C_p>0$ in two connections. Hold the external drive and voltage/current measurement terminals fixed. A capacitor across the coil alone has local admittance $Z_w^{-1}+sC_p$; add $Z_e$ in series after taking its reciprocal. A capacitor across both blocks instead adds $sC_p$ to $(Z_e+Z_w)^{-1}$. Thus
+\begin{equation}
+ Z_{\rm local}=Z_e+\frac{Z_w}{1+sC_pZ_w},\qquad
+ Z_{\rm whole}=\frac{Z_e+Z_w}{1+sC_p(Z_e+Z_w)}.
+ \label{eq:shunt-location}
+\end{equation}
+This is a physical attachment change, independent of whether the final response is expressed as impedance or admittance. Voltage and current amplitudes and relative phase give its complex observable. Use an ordinary low-frequency RLC realization whose responses and fixture lie inside the calibrated band; any RF device needs its own bandwidth and loading assessment.
+
+At $s=\ii\omega$ with finite, defined responses, exact components and absolute complex-response error bounds $\epsilon_{\rm local},\epsilon_{\rm whole}$, the prediction disks are disjoint if
+\begin{equation}
+ |Z_{\rm local}-Z_{\rm whole}|>
+       \epsilon_{\rm local}+\epsilon_{\rm whole}.
+ \label{eq:shunt-location-separation}
+\end{equation}
+This is the triangle-inequality separation condition, not a claim that the two placements separate at every frequency. Component and fixture uncertainty enlarge the prediction sets; shared calibration errors require the joint comparison of Section \ref{sec:coefficient-identification}. If they overlap, another frequency, an independent component change or a local voltage/current channel can supply information. Conditions used to estimate the law remain separate from those used to test its prediction. Period work is still the separately integrated physical product; it does not choose a placement or a coefficient.
 
 ## Hidden prepared energy under finite coupling
 \label{sec:hidden-coupling}
@@ -1480,6 +1513,8 @@ A coil feeding a polarization emulator has states $i,v_1,\ldots,v_N$ and equatio
  \label{eq:polarization}
 \end{equation}
 Positive $i$ enters the emulator. With a diode this law ends at the first downward current zero; each polarization branch then relaxes with $i=0$. For distinct active time constants $\tau_j=R_jC_j$, eliminating the branches gives generic order $N+1$ for $i$, while equal time constants combine at that observation. The storage boundary includes the coil and branch capacitors. Its external powers are $-V_{\rm oc}i$, $-R_\Sigma i^2$ and the separately retained $-v_j^2/R_j$; the DC source and all heat reservoirs are outside.
+
+Each local branch law $C_j\dot v_j+v_j/R_j=i$ identifies a parallel RC block; the loop adds its voltage to those of the other series-connected blocks. Independently calibrated $R_j,C_j$ and branch-voltage observations specify the local information before composition. The recurrence in [*Third- and Higher-Order ODEs*][main] then predicts the complete current and forcing operators without refitting unaffected branches. A terminal fit alone need not assign a pole to an individual branch, and compatible prepared states remain necessary even after the terminal transfer is reduced.
 
 For two equal branches define $z_+=(v_1+v_2)/2$ and $z_-=(v_1-v_2)/2$. Direct addition and subtraction give
 \begin{equation}
@@ -1648,12 +1683,14 @@ The transducer's force must be observed independently of its command, and actuat
 
 ## Identification and correspondence
 
+For each row, identify the local law or whole-system equation being tested, the actual attachment and the driven and measured ports. Retain that choice through independent component changes, the calibrated time/frequency domain and prediction. A local coefficient assignment requires local information or a proved inverse from the declared channels.
+
 | Question and comparison type | Measured comparison | Exact prediction or alternative |
 |:-------------------------------------|:----------------------------------------|:------------------------------------------|
 | Damped analogy; identity | I's independent mechanical and electrical preparation, free and reset works, with both body ports | Source works $(23/30,0,23e^{-\pi}/30)\ \mathrm J$ in both devices; compare through the mapped scale |
-| Contact/support; structural ambiguity and inverse | Hold II's torque/hammer angle; add anvil response and use \eqref{eq:contact-inverse} dynamically | Anvil $1/2$ versus $2/3\ \mathrm{rad}$ at the same hammer angle |
+| Contact/support; structural ambiguity and inverse | Hold II's torque/hammer angle; add anvil response to separate contact and joint using \eqref{eq:contact-inverse} dynamically | Anvil $1/2$ versus $2/3\ \mathrm{rad}$ at the same hammer angle |
 | Weak coefficient; model alternatives | Change III to $(\rho,\eta)=(1,2)$ with calibrated coordinates and covariance | $151/50$ versus $301/100$; separation $1/100$ |
-| Resonator; shunt identity and device acquisition | Change the known shunt; independently predict motional parameters on other devices | IV gives $1+\ii$ versus $1+2\ii\ \mathrm S$; the transferable motional law needs separate specification |
+| Resonator; shunt identity and device acquisition | Change the known parallel shunt; measure total current and common voltage, then predict other devices | IV gives $1+\ii$ versus $1+2\ii\ \mathrm S$; the transferable motional law needs separate specification |
 | Hidden energy; finite-coupling bound | Internal capacitor voltage and resistor current alongside the terminal channel | $E_0\leq CR^2\epsilon_i^2/(2\nu^2)$ for known $\nu>0$; no uniform ceiling without coupling/preparation bounds |
 | Polarization; structural null and bounded discrimination | Observe V's branch voltages at $\log2$; then split time constants | $(1/2,-1/2)\ \mathrm V$ versus $(0,0)$; split terminal contrast $1/2-1/\sqrt2\ \mathrm V$ |
 | Absorber; resolved structural result, calibration open | Hold VI's force/frequency; measure coupling strain and section area | Reaction zero in both; stress amplitude $1$ versus $1/2\ \mathrm{MPa}$ |
@@ -1675,6 +1712,8 @@ The resonator task remains an acquisition across physical devices, calibrated fi
 # Conclusions
 
 The rotary impact driver connects coefficient identification to a concrete release question. Hammer motion and contact torque can agree while anvil motion differs; an internal angle observation and independent joint/contact changes discriminate within the declared family. At torque-zero release, positive contact storage remains. Deleting it without an event port gives a negative residual. Retained material relaxation, prompt export and a changed release law predict different observations. The finite-window comparison must carry both event sides, independent receiver works and any preparation passed into the next engagement.
+
+Choosing which physical law to identify, and at which attachment, makes these measurements a test of local coefficient synthesis. Held-engaged hammer/anvil phasors give an exact contact/joint inverse within the declared family and uncertainty bounds; impact events retain their separate preparation and validity conditions. Electrical admittance isolates a known parallel shunt, while moving it across a different boundary changes the predicted terminal response. Independent component changes test whether the same local laws predict the assembly.
 
 The same distinction between observable response and complete physical state recurs in the other questions. Independent coordinates separate coefficient contributions; multi-device resonator acquisition tests transferability. Equal polarization time constants and a quiet RC terminal hide prepared stores. The finite-coupling bound requires a coupling lower bound or an independent preparation bound; multiple cancelling and nonideal modes retain a wider unresolved scope. The absorber's bounded structural result is resolved, while calibrated stress inference and wider physical models require their own observations.
 
@@ -2188,6 +2227,8 @@ Every figure is either a schematic or the exact closed form given in the text. A
 
 # References {-}
 
+\begingroup\small
+
 1. Nilre, H., and Herlin, B. C. (2026). [*Third- and Higher-Order ODEs: Coefficient synthesis, identification, and physical realization*][main]. Companion manuscript on GitHub.
 2. Wettstein, A., Grauberger, P., and Matthiesen, S. (2021). [Modeling dynamic mechanical system behavior using sequence modeling of embodiment function relations: case study on a hammer mechanism][wettstein]. *SN Applied Sciences* **3**, article 128. DOI: 10.1007/s42452-021-04149-8.
 3. Bible, S. (2002). [Crystal Oscillator Basics and Crystal Selection for rfPIC and PICmicro Devices][bible]. Microchip Technology, Application Note AN826, DS00826A, pp. 1--14.
@@ -2195,8 +2236,9 @@ Every figure is either a schematic or the exact closed form given in the text. A
 5. Kalman, R. E. (1963). [Mathematical Description of Linear Dynamical Systems][kalman]. *Journal of the Society for Industrial and Applied Mathematics, Series A: Control* **1**(2), 152--192. DOI: 10.1137/0301010.
 6. Willems, J. C. (1972). [Dissipative Dynamical Systems Part I: General Theory][willems]. *Archive for Rational Mechanics and Analysis* **45**, 321--351. DOI: 10.1007/BF00276493.
 7. Schwager, T., and Pöschel, T. (2007). [Coefficient of restitution and linear--dashpot model revisited][schwager]. *Granular Matter* **9**, 465--469. DOI: 10.1007/s10035-007-0065-z.
-
 8. Basu, S., Pollack, R., and Roy, M.-F. (2006). [*Algorithms in Real Algebraic Geometry*][basu]. 2nd edition, Algorithms and Computation in Mathematics **10**. Springer, Berlin, Heidelberg. DOI: 10.1007/3-540-33099-2.
+
+\endgroup
 
 [main]: https://github.com/hobnilre/physics-ode-3rd-deg
 [wettstein]: https://doi.org/10.1007/s42452-021-04149-8
