@@ -30,6 +30,8 @@ Exact separation budgets and component-rating bounds distinguish finite physical
 
 All worked values follow from exact declared models. The article reports no hardware acquisition or numerical simulations. Identical terminal predictions can establish an identification limit; internal observations supply the discrimination. The bounded absorber result remains resolved, with its wider physical questions kept distinct.
 
+The article now carries the slow torsional comparison from calibration to independently changed contact/joint settings and release. A configuration index provides direct navigation. Additional appendices specify finite bank reconnection, loaded four-terminal correspondence and a shared-core circuit. Their conclusions are separate: finite receiver service, no full-state cycle in an insulated timing-drive model, and an exact limit on finite-error energy identification. None supplies hardware validation.
+
 ## Article and build
 
 [Read the article (PDF)](hidden-states-and-unassigned-work.pdf) · [Manuscript source](hidden-states-and-unassigned-work.md)

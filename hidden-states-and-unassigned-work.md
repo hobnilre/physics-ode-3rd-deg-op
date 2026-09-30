@@ -2,9 +2,9 @@
 title: "Hidden States and Unassigned Work"
 subtitle: "Physical questions and signed work behind higher-order coefficients"
 author: "Hob Nilre & Bo C. Herlin"
-date: "2026-09-28"
+date: "2026-09-30"
 abstract: |
-  Higher-order coefficient laws raise physical questions about what measurements identify and which states and transfers a scalar observation conceals. Local constitutive laws and whole-system observations are distinguished by their physical attachment, drive and measured port. The rotary impact driver supplies the principal example: hammer, anvil and torque observations distinguish contact from joint dynamics, while torque-zero release can retain a positive contact store. We develop twelve questions from the companion coefficient-synthesis article through exact models and discriminating observations. A force-zero contact retains $e^{-\pi}\ \mathrm J$ in one declared configuration; prompt transfer and retained strain give distinct endpoint predictions. Hidden RC states can discharge behind a quiet terminal, with a finite energy ceiling only under declared coupling and preparation bounds. Added transformer attachments introduce actual current paths and prepared capacitive states; their separate works and endpoint stores require calibrated observations. Controlled transducers and moving references retain distinct actuator, bias, driver and supply accounts. Exact branch and parameter controls separate structural ambiguity from inadequate resolution, while independently integrated powers and bounded endpoint errors retain the sign of any unexplained residual. Singular preparations, switching paths and finite controller models supply the conditions needed for these comparisons. The resulting measurements use finite instrumentable realizations and distinguish established model results from unresolved constitutive laws and hardware correspondence.
+  Higher-order coefficient laws raise physical questions about what measurements identify and which states and transfers a scalar observation conceals. Local constitutive laws and whole-system observations are distinguished by their physical attachment, drive and measured port. The rotary impact driver supplies the principal example: hammer, anvil and torque observations distinguish contact from joint dynamics, while torque-zero release can retain a positive contact store. We develop twelve questions from the companion coefficient-synthesis article through exact models and discriminating observations. A force-zero contact retains $e^{-\pi}\ \mathrm J$ in one declared configuration; prompt transfer and retained strain give distinct endpoint predictions. Hidden RC states can discharge behind a quiet terminal, with a finite energy ceiling only under declared coupling and preparation bounds. Added transformer attachments introduce actual current paths and prepared capacitive states; their separate works and endpoint stores require calibrated observations. Controlled transducers and moving references retain distinct actuator, bias, driver and supply accounts. Exact branch and parameter controls separate structural ambiguity from inadequate resolution, while independently integrated powers and bounded endpoint errors retain the sign of any unexplained residual. Singular preparations, switching paths and finite controller models supply the conditions needed for these comparisons. Further exact controls distinguish a loaded four-terminal correspondence, finite shared-core service, an insulated full-state cycle obstruction and overlapping finite-error energy observations. The resulting measurements use finite instrumentable realizations and distinguish established model results from unresolved constitutive laws and hardware correspondence.
 keywords:
   - higher-order ordinary differential equations
   - hidden states
@@ -53,6 +53,30 @@ An accelerating-reference counterpart requires physical compensation and a drive
 
 Contact laws, prepared singular reductions and switching controls develop the states and boundaries needed by these questions. Equal capacitor endpoints can accompany unequal individual switch works; a vanishing terminal coordinate can conceal finite prepared storage. The measurements in Section \ref{sec:measurements} retain these distinct alternatives, finite apparatus domains and calibrated uncertainty. Identical terminal predictions are an identification result; an additional internal channel can make them distinguishable.
 
+The reading order follows identification, release, other hidden-state observations, then implementation and signed measurement. The following lookup keeps the numbered configurations accessible after that reorganization.
+
+| Configuration | Boundary | Distinguishing observation | Location |
+|---|---|---|---|
+| I | Damped oscillator / contact | Mapped force–velocity work; release store | Sections \ref{sec:analogy}, \ref{sec:contact} |
+| II | Hammer–contact–joint | Anvil angle at equal hammer torque | Section \ref{sec:contact-identification} |
+| III | Coefficient observation | Independent damping and weak-term response | Section \ref{sec:coefficient-identification} |
+| IV | Resonator and shunt | Calibrated complex terminal admittance | Section \ref{sec:resonator-identification} |
+| V | Coil and polarization | Internal branch voltages and diode guard | Section \ref{sec:polarization} |
+| VI | Primary and absorber | Internal strain at equal terminal reaction | Section \ref{sec:absorber-identification} |
+| VII | Prepared passive circuit | Hidden energy as capacitance vanishes | Section \ref{sec:singular} |
+| VIII | Two-cell connection | Separate switch works at equal endpoints | Section \ref{sec:connection} |
+| IX | Winding and clamp | Clamp work and opening-side states | Section \ref{sec:transformer} |
+| X | Transducer and supply | Plant, coil, bias and receiving works | Section \ref{sec:transducer} |
+| XI | Moving reference | Physical driver work | Section \ref{sec:reference} |
+| XII | Return commutation | Old-return work and capacitor endpoints | Section \ref{sec:commutation} |
+| XIII | Compound receiver | Supplied reference and receiver response | Section \ref{sec:physical-reference} |
+| XIV | Rigid limiting family | Hidden prepared flux and release work | Section \ref{sec:compound-limits} |
+| XV | Attached physical probe | Probe work and calibrated prediction gap | Section \ref{sec:physical-attachments} |
+
+: Configuration lookup. The later charge, four-port and shared-core appendices are additional constructions, not renumberings of these cases.
+
+Identification asks which states or coefficients are determined. Acquisition asks which additional observations can determine them. A signed account asks which independently evaluated stores and transfers explain an interval. Implementation asks whether measured components realize the declared laws. These are different question dispositions: a resolved ambiguity or bounded no-return theorem does not resolve its wider hardware or constitutive parent. In particular, the bounded absorber result remains resolved; the insulated thermal obstruction and the two-preparation finite-error obstruction below are likewise resolved only within their declared contracts.
+
 # Boundaries, ports and exact work
 \label{sec:ledger}
 
@@ -68,7 +92,7 @@ At a connection event, $x(t_e^-)$ and $x(t_e^+)$ belong to different vector fiel
 
 For a finite mass, $m\dot v=F$ gives $\int Fv\,\dd t=m[(v^+)^2-(v^-)^2]/2$ by integrating the product. This equals $J(v^-+v^+)/2$ when $J=m(v^+-v^-)$; it does not define a product of an unspecified delta force with a discontinuous velocity. A fixed support can exchange momentum while its work is zero. A moving support needs its own force--velocity integral.
 
-All integrations below are exact, so the numerical integration residual is exactly zero. A closed ideal ledger has $r_E=0$ by direct substitution after the separate integrals. The physical model residual $r_{\rm model}$ includes omitted material memory, switch-control supply, heat storage, exterior fields or release destinations, as named for each construction. Its sign and magnitude remain unevaluated unless a declared additional law determines them. This use of storage and supplied work is consistent with [Willems (1972)][willems]; the physical ports and stores still have to be identified for each realization.
+Closed-form integrations evaluated below are exact within their declared models. Unevaluated matrix-function and time-ordered work expressions remain exact definitions; their numerical evaluation and physical uncertainty are not assigned zero error. A closed ideal ledger has $r_E=0$ by direct substitution after the separate integrals. The physical model residual $r_{\rm model}$ includes omitted material memory, switch-control supply, heat storage, exterior fields or release destinations, as named for each construction. Its sign and magnitude remain unevaluated unless a declared additional law determines them. This use of storage and supplied work is consistent with [Willems (1972)][willems]; the physical ports and stores still have to be identified for each realization.
 
 Figure \ref{fig:boundaries} separates the observed port from hidden states and event transfers.
 
@@ -76,60 +100,96 @@ Figure \ref{fig:boundaries} separates the observed port from hidden states and e
 
 \FloatBarrier
 
-# Damped correspondence through preparation and reset
-\label{sec:analogy}
+# Identifying contact and joint dynamics
+\label{sec:contact-identification}
 
-## A damped correspondence with a complete finite path
+A rotary impact driver repeatedly accelerates a hammer, engages its faces with an anvil, loads the output, and releases for the next blow. The chosen bit or socket and tightened joint belong to the declared output boundary. Assign rigidly co-moving output mass to $J_a$; assign attachment twist and dissipation to the support law only when those deformations are resolved there. A separate attachment inertia instead adds its own state. No component is counted twice. The impact-wrench mechanism supplies the hammer–anvil correspondence used here [Wettstein, Grauberger and Matthiesen (2021)][wettstein].
 
-Let $x$ be the relative compression of two free masses during a linear contact, with reduced mass $m=m_1m_2/(m_1+m_2)$, or the displacement of a mass against a fixed spring and damper. Relative force balance is $m\ddot x+d\dot x+kx=f$. In the free-pair interpretation the center-of-mass mode is separately retained and the relative applied effort $f$ is the one conjugate to $\dot x$; it equals $m(F_1/m_1-F_2/m_2)$. The fixed-support interpretation has zero support velocity. A series electrical circuit has charge $q$, current $i=\dot q$ and applied voltage $V$.
-
-\begin{theorem}
-For positive constants $\alpha,\beta$, the map
+For hammer and anvil angles $\theta_h,\theta_a$, positive inertias $J_h,J_a$, contact torque $\tau_c=k_c(\theta_h-\theta_a)+d_c(\dot\theta_h-\dot\theta_a)$ and support torque $\tau_j=k_j\theta_a+d_j\dot\theta_a$, the equations are
 \begin{equation}
- q=\alpha x,\quad i=\alpha\dot x,\quad V=\beta f,
- \quad L=\frac{\beta m}{\alpha},\quad
- R=\frac{\beta d}{\alpha},\quad C=\frac{\alpha}{\beta k}
- \label{eq:analogy}
+ J_h\ddot\theta_h=u-\tau_c,\qquad
+ J_a\ddot\theta_a=\tau_c-\tau_j.
+ \label{eq:two-inertia}
 \end{equation}
-maps force balance to Kirchhoff's voltage law, including prescribed preparation and reset efforts. Each electrical source, loss and spring/inertial transfer work equals $\alpha\beta$ times its corresponding mechanical work on every smooth interval. Compatible finite event paths have the same property.
-\end{theorem}
-
-Substitution gives $L\dot i+Ri+q/C=\beta(m\ddot x+d\dot x+kx)=V$. Independently, $Vi=\alpha\beta f\dot x$, $-Ri^2=-\alpha\beta d\dot x^2$, $Li\dot i=\alpha\beta m\dot x\ddot x$, and $(q/C)\dot q=\alpha\beta kx\dot x$. Integrating each equality proves the assertion, and direct state evaluation gives $E_e=\alpha\beta E_m$. A finite event equality passes to a limit only if its individual integrals converge. $\square$
-
-Configuration I uses $m=1\ \mathrm{kg}$, $d=2\ \mathrm{N\,s/m}$, $k=2\ \mathrm{N/m}$, $\alpha=1\ \mathrm{C/m}$ and $\beta=1\ \mathrm{V/N}$. Thus $L=1\ \mathrm H$, $R=2\ \Omega$, $C=1/2\ \mathrm F$, the work scale is one, and $\rho=d^2/(mk)=2>0$. In the following formulas time is expressed in seconds and displacement in metres. Starting at rest, prescribe $x=t(t+1)^2$ on $[-1,0]$. The required force, derived from the equation of motion, is $f=2t^3+10t^2+16t+6$. The source and damper integrals give $23/30\ \mathrm J$ and $-4/15\ \mathrm J$; the final independently evaluated kinetic store is $1/2\ \mathrm J$ and the spring store is zero.
-
-With the source off, the exact response is
+They give a generic fourth-order hammer equation. Rational frequency-domain relations below describe zero-state transfer, or steady sinusoidal response at $s=\ii\omega$; arbitrary preparations add initial-state terms. With local dynamic stiffnesses $\mathcal K_c=k_c+d_cs$, $\mathcal K_j=k_j+d_js$ and $\mathcal K_a=J_as^2+\mathcal K_j$, elimination gives
 \begin{equation}
- x=e^{-t}\sin t,\quad \dot x=e^{-t}(\cos t-\sin t),\quad
- E_m=\tfrac12e^{-2t}(\cos t-\sin t)^2+e^{-2t}\sin^2t.
- \label{eq:oscillator}
+ \frac{U}{\Theta_h}=J_hs^2+\frac{\mathcal K_c\mathcal K_a}{\mathcal K_c+\mathcal K_a},\qquad
+ \frac{\Theta_a}{\Theta_h}=\frac{\mathcal K_c}{\mathcal K_c+\mathcal K_a}.
+ \label{eq:contact-inference}
 \end{equation}
-Keep this bilateral oscillator connected until $T=\pi/2$. Then $X=x(T)=e^{-\pi/2}$, $V_T=\dot x(T)=-X$, and $E_T=3e^{-\pi}/2\ \mathrm J$. On a further one-second interval put $s=t-T$ and prescribe the finite reset
+These are torque/angle dynamic stiffnesses. The corresponding torque/angular-velocity impedance is $\mathcal K/s$ where defined, and the hammer mobility is $s/(J_hs^2+\mathcal K_e)$ with $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$. The terminal observes a composite dynamic stiffness. If a broader rational support is allowed, different admissible decompositions of that composite must be distinguished before assigning internal coefficients. Positivity, a known inertial model and a sufficiently rich frequency domain can impose additional constraints; static ambiguity alone is not a theorem of ambiguity on every frequency domain.
+
+With known $J_h$ and measured $\mathcal K_e=U/\Theta_h-J_hs^2$ and $H_a=\Theta_a/\Theta_h$, the same equations give a constructive inverse:
 \begin{equation}
- x=X(1-3s^2+2s^3)+V_T(s-2s^2+s^3),\qquad 0\leq s\leq1.
- \label{eq:reset-polynomial}
+ \mathcal K_c=\frac{\mathcal K_e}{1-H_a},\qquad
+ \mathcal K_a=\frac{\mathcal K_e}{H_a},\qquad
+ \mathcal K_j=\frac{\mathcal K_e}{H_a}-J_as^2.
+ \label{eq:contact-inverse}
 \end{equation}
-The reset force again follows from $f=\ddot x+2\dot x+2x$. Direct integration uses
-$\int_0^1\dot x^2\dd s=6X^2/5+XV_T/5+2V_T^2/15$ and yields the ledger below. No impulsive reset is imposed.
+Indeed $1-H_a=\mathcal K_a/(\mathcal K_c+\mathcal K_a)$, so substitution proves the first two expressions; subtracting the known anvil inertia gives the joint law. They require defined responses and nonzero denominators; errors are amplified near $H_a=0$ or $1$. In the stated spring--damper family, a nonzero real frequency determines $k_c=\operatorname{Re}\mathcal K_c$, $d_c=\operatorname{Im}\mathcal K_c/\omega$, $k_j=\operatorname{Re}\mathcal K_a+J_a\omega^2$ and $d_j=\operatorname{Im}\mathcal K_a/\omega$ when $J_a$ is known. Additional frequencies check that family. Recovering the composite $\mathcal K_a$ does not identify an arbitrary internal support realization. The distinction between a realization and its observable input--output part is the one formalized by [Kalman (1963)][kalman].
 
-| Interval | Source work, J | Damper work, J | Stores before and after, J |
-|:------------------|:-------------------------|:---------------------------|:------------------------------|
-| Preparation | $23/30$ | $-4/15$ | $0\ \to\ 1/2$ |
-| Source off | $0$ | $-1/2+3e^{-\pi}/2$ | $1/2\ \to\ 3e^{-\pi}/2$ |
-| Finite reset | $23e^{-\pi}/30$ | $-34e^{-\pi}/15$ | $3e^{-\pi}/2\ \to\ 0$ |
+The inverse has an exact uncertainty bound. Write $K=\mathcal K_e$, $H=H_a$, with absolute errors at most $\epsilon_K,\epsilon_H$. When $|H|>\epsilon_H$ and $|1-H|>\epsilon_H$, subtraction of the two rational inverses and the triangle inequality give
+\begin{align}
+ |\widehat{\mathcal K}_c-\mathcal K_c|&\leq
+ \frac{\epsilon_K|1-H|+|K|\epsilon_H}
+ {|1-H|(|1-H|-\epsilon_H)},\nonumber\\
+ |\widehat{\mathcal K}_a-\mathcal K_a|&\leq
+ \frac{\epsilon_K|H|+|K|\epsilon_H}
+ {|H|(|H|-\epsilon_H)}.
+ \label{eq:contact-inverse-error}
+\end{align}
+Indeed the two error numerators are $\delta K(1-H)+K\delta H$ and $\delta KH-K\delta H$. Lower bounds on the denominator magnitudes yield \eqref{eq:contact-inverse-error} without linearizing the errors. Calibrated magnitude envelopes replace unknown true values in an experiment. At known $J_a$, the same absolute bound as for $\mathcal K_a$ applies to $\mathcal K_j$; uncertainty in $J_a$ adds $\omega^2\epsilon_{J_a}$ at $s=\ii\omega$. These bounds apply to the composite support; its internal realization still requires a specified family or further sensors.
 
-: Independently integrated works in configuration I. The electrical counterpart has the same entries. Each interval has zero residual.
-
-A homogeneous trajectory comparison alone predicts none of the preparation or reset source readings. A complete correspondence predicts all three source works in the table. Transporting a unilateral release additionally requires the same constitutive gate and a mapped destination port; Section \ref{sec:contact} supplies the missing distinction. Lossless coordinates with $d=0$ cannot certify a construction expressed through $m/d$ or $d^2/(mk)$ away from that boundary.
-
-The center-of-mass state can also be retained in an explicit collision circuit. Choose a voltage/velocity scale $\alpha_v>0$ and let $V_j=\alpha_v v_j$, $I_j=F_j/\alpha_v$, $C_j=m_j/\alpha_v^2$, $L_c=\alpha_v^2/k$ and $G_c=d/\alpha_v^2$. Connect the two grounded capacitors by an inductor and conductance in parallel, with $i_c=k\delta/\alpha_v$ flowing from node 1 to node 2. Kirchhoff's laws are
+The local ambiguity at one complex frequency is also explicit. Writing $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$ and $H_a=\Theta_a/\Theta_h$, differentiation gives
 \begin{equation}
- C_1\dot V_1=I_1-i_c-G_c(V_1-V_2),\quad
- C_2\dot V_2=I_2+i_c+G_c(V_1-V_2),\quad
- L_c\dot i_c=V_1-V_2.
- \label{eq:full-collision-map}
+ \delta \mathcal K_e=\frac{\mathcal K_a^2\delta \mathcal K_c+\mathcal K_c^2\delta \mathcal K_a}{(\mathcal K_c+\mathcal K_a)^2}.
+ \label{eq:contact-null}
 \end{equation}
-They map both body force balances and $\dot\delta=v_1-v_2$ exactly. Each body input satisfies $V_jI_j=F_jv_j$, the resistor exports $G_c(V_1-V_2)^2=d(v_1-v_2)^2$, and the three component stores map individually. Taking $m_1=m_2=2\ \mathrm{kg}$ and $\alpha_v=1\ \mathrm{V/(m/s)}$ gives $C_1=C_2=2\ \mathrm F$, $L_c=1/2\ \mathrm H$ and $G_c=2\ \mathrm S$. Initial velocities $(1/2,-1/2)\ \mathrm{m/s}$ give configuration I's relative state and zero center-of-mass velocity. Opposite finite drives $(f,-f)$ transport its preparation and reset table without dropping either body port. This three-state collision circuit therefore extends the damped correspondence beyond the relative coordinate alone.
+For nonzero $\mathcal K_c,\mathcal K_a,\mathcal K_c+\mathcal K_a$, the perturbation $\delta \mathcal K_a=-(\mathcal K_a/\mathcal K_c)^2\delta \mathcal K_c$ leaves that terminal observable unchanged to first order, while $\delta H_a=\mathcal K_a\delta \mathcal K_c/[\mathcal K_c(\mathcal K_c+\mathcal K_a)]$ is generally nonzero. A parameterized passive model constrains which such perturbations extend over the full frequency interval. Consequently the combined observation Jacobian, its covariance-weighted sensitivity and independent-frequency prediction must be checked for the declared family, rather than inferred from this local null alone.
+
+The prepared-motion obstruction is exact as well. Let $k_c,d_c>0$ and
+$\Delta=k_c^2-k_cd_cd_j/J_a+d_c^2k_j/J_a=0$.
+Two solutions with the same drive can differ by
+\begin{equation}
+ \delta\theta_h=0,\qquad
+ \delta\theta_a=Ae^{-k_ct/d_c},\qquad
+ \delta\tau_c=0.
+ \label{eq:hidden-anvil-observation}
+\end{equation}
+Indeed $k_c\delta\theta_a+d_c\delta\dot\theta_a=0$, and substitution into the anvil equation leaves $J_ak_c^2-d_jk_cd_c+k_jd_c^2=J_a\Delta=0$. Both hammer motion and contact torque are identical, while anvil motion differs. For example, normalized $J_h=J_a=k_c=d_c=k_j=1$, $d_j=2$ satisfy these conditions with positive components. An anvil-angle separation $|A|e^{-k_ct/d_c}$ greater than the combined angle-error bound distinguishes the preparations at that time; a hammer-only comparison cannot. The extra observation is therefore part of identification, rather than an energy outcome used to select coefficients.
+
+Configuration II makes the simplest ambiguity exact. At static torque $u=1\ \mathrm{N\,m}$, both $(k_c,k_j)=(2,2)$ and $(3,3/2)\ \mathrm{N\,m/rad}$ give $\theta_h=1\ \mathrm{rad}$. The corresponding $\theta_a$ values are $1/2$ and $2/3\ \mathrm{rad}$, and contact deformations are $1/2$ and $1/3\ \mathrm{rad}$. Contact and support stores are respectively $(1/4,1/4)$ and $(1/6,1/3)\ \mathrm J$. Static power is zero; these endpoint stores do not assign the earlier preparation work.
+
+The physical two-body boundary contains both kinetic stores and both springs. Its independently signed external powers are $u\dot\theta_h$, $-d_c(\dot\theta_h-\dot\theta_a)^2$ and $-d_j\dot\theta_a^2$. A movable support at angle $z$ replaces the second deformation by $\theta_a-z$ and adds inward support power $-\tau_j\dot z$. A support inertia and another spring give their own second-order state equation and can raise the full order to six. Measuring the anvil alone then does not guarantee identification of $z$ or of an arbitrary rational support.
+
+For phase-resolved identification, maintain engagement under a declared preload and use a small imposed sinusoidal torque with synchronized hammer and anvil angles. Verify the linear amplitude and frequency domain, including calibrated channel phase. Use peak phasors with $e^{\ii\omega t}$; transient preparation must have decayed or be independently separated before applying the steady-response inverse. A blow instead includes engagement, prepared states and release. Transferring the identified contact or joint law to that transient requires an independent domain check. One informative nonzero frequency can identify the four spring--damper constants under the assumptions above; it cannot identify an unrestricted rational law or its internal realization.
+
+The finite closure question is a rank and uncertainty statement for specified contact and support families, followed by prediction under independently changed support and contact conditions. The bounded normalized-map results do not imply universal raw-unit identifiability. Calibrated contact torque, anvil motion and, where required, support motion distinguish the alternatives in \eqref{eq:contact-inference}. The mechanism-level need to represent changing contacts is consistent with [Wettstein, Grauberger and Matthiesen (2021)][wettstein]; that study supplies neither a universal release law nor the destination considered here.
+
+Which measurements separate contact dynamics from the frequency-dependent joint against which the impact driver strikes? This is the principal application-specific identification question. A practical discriminating setup is a low-energy torsional impact between two instrumented disks and an interchangeable compliant support. Two encoders provide synchronized hammer and anvil angles, with rates reconstructed within their calibrated response band; a calibrated transducer observes contact torque at the declared interface. A support-torque channel adds a direct observation of joint loading. Choose the slow contact so its discrimination frequencies lie inside the common calibrated amplitude and phase band, and include rate-reconstruction error in the uncertainty. Hold inertia and contact geometry fixed while changing support stiffness, then change contact compliance independently. Agreement of hammer motion with disagreement in anvil motion rejects a claimed internal reconstruction. Trigger offset, probe loading, anti-alias response, colored uncertainty and fixture variation must enter the comparison. For a selected commercial driver, record the bit or socket allocation, sensor location, contact-duration range and usable calibrated bandwidth anew; the slow rig does not establish these. A fully synchronized industrial impact measurement is a stronger, separately unfulfilled requirement.
+
+## One continuous coefficient-prediction comparison
+\label{sec:impact-protocol}
+
+Use the same two-disk boundary through calibration, prediction and release. Allocate the hammer disk to $J_h$ and all rigidly co-moving anvil/attachment parts to $J_a$; place measured attachment deformation in the joint law. Fix the support reference or record its motion explicitly. Measure applied torque $u$, both angles and contact torque, and independently calibrate inertia and channel loading. Maintain contact under a stated preload and determine the spring--damper constants from \eqref{eq:contact-inverse}, using several frequencies to test the family and \eqref{eq:contact-inverse-error} to propagate the calibrated complex-response errors. A separate support-torque channel checks the inferred joint law. Preparation transients must be retained or separated within that same domain.
+
+Freeze the law and choose three independent physical settings before the final observations: a reference setting, a changed joint stiffness with the same contact, and a changed contact damping with the reference joint. The coefficient prediction is the complete forced equation
+\begin{equation}
+ \begin{aligned}
+ P(D)\theta_h&=(J_aD^2+(d_c+d_j)D+k_c+k_j)u,\\
+ P(s)&=J_hJ_as^4+[J_h(d_c+d_j)+J_ad_c]s^3\\
+ &\quad+[J_h(k_c+k_j)+J_ak_c+d_cd_j]s^2\\
+ &\quad+(d_ck_j+k_cd_j)s+k_ck_j.
+ \end{aligned}
+ \label{eq:impact-protocol-polynomial}
+\end{equation}
+In descending order, an independent change $\Delta k_j$ predicts $(0,0,J_h\Delta k_j,d_c\Delta k_j,k_c\Delta k_j)$ and forcing changes by $\Delta k_j u$. For $\Delta d_c$ they are $(0,(J_h+J_a)\Delta d_c,d_j\Delta d_c,k_j\Delta d_c,0)$ and forcing changes by $\Delta d_c\dot u$. Hold all other physical quantities and the normalization rule fixed. If reference scales themselves change, rescale both sides anew. These formulas predict changes without fitting the final setting.
+
+For each setting propagate the measured physical preparation through \eqref{eq:two-inertia}; its output and contact-torque predictions use the same state. Generate a joint prediction set from component calibration, correlated channel errors, support motion, sensor loading, phase/bandwidth, differentiated-rate errors and trigger timing. Distinguish laws only when their prediction sets are disjoint on the chosen observation. A nominal full-rank matrix is insufficient. The coordinate experiment in Section \ref{sec:coefficient-identification} supplies an explicit correlated-path failure and independent-coordinate recovery; its hypothetical weak coefficient is not asserted to equal every coefficient in \eqref{eq:impact-protocol-polynomial}. Unknown exponents require their own support and recovery assumptions.
+
+Carry the held-engaged law to a slow impact only after its deformation, rate, preload and temperature domain has been checked. Engagement and release change topology, so transport physical states and recompute one-sided jets. A hammer-only comparison cannot separate the exact pair in \eqref{eq:hidden-anvil-observation}; the predicted anvil separation and its error bound can. Finally evaluate the contact store at release and compare candidate recipients as the separate question in Section \ref{sec:contact}. An energy result does not revise the coefficient selection.
+
+The admissible outcomes are prediction on the independent setting, separation of another declared law, insufficient observational separation, or failure of the model/uncertainty specification. This is a complete conditional protocol; no apparatus success is asserted. Applying it to a selected commercial driver requires its own attachment allocation, calibrated contact regime and bandwidth.
 
 # Contact release and repeated engagement
 \label{sec:contact}
@@ -288,6 +348,315 @@ where $s_t=v_tT_s$. The equality of endpoint stores is evaluated from the prescr
 : Separate finite dependencies for the wider repeated-contact question. The sliding law and retained-strain law provide explicit controls; the other relations must be identified before their work predictions are assigned.
 
 The open release question is which constitutive gate and continuation reproduce the measured restitution, retained strain and receiver works at each engagement. A measured release residual from \eqref{eq:release-residual} remains signed and unresolved when those channels and their uncertainty do not account for it.
+
+# What terminal observations identify
+\label{sec:identification}
+
+The physical comparisons require identified states, component laws and uncertainty. The following constructions distinguish recovery within a declared family from hidden preparation, insufficient resolution and acquisition of a missing physical law.
+
+## Independent coordinates and correlated uncertainty
+\label{sec:coefficient-identification}
+
+The target coefficient must first be assigned to a declared local contact or joint law, or to a specified eliminated observation equation. State its derivative convention, normalization, physical input and measured response. Independently changing the selected component while keeping the surrounding model fixed tests that assignment; refitting every block after each change does not.
+
+Let $a,b,c>0$ be inertial, damping and stiffness references. The dimensionally admissible coefficients
+\begin{equation}
+ A_{r,k}=a^{k-1+r}b^{2-k-2r}c^r
+ =S\tau^k\rho^{-r},\quad S=b^2/a,\quad\tau=a/b,\quad\rho=b^2/(ac)
+ \label{eq:coefficients}
+\end{equation}
+have the dimensions required to multiply the $k$th derivative. At fixed $\rho$, changing $r$ only rescales a column in coefficient identification. In a two-coordinate contact model a normalized coefficient can take the form
+\begin{equation}
+ B(\rho,\nu)=w_0+w_1\nu+w_2\nu^2/\rho.
+ \label{eq:weak-coefficient}
+\end{equation}
+Here $B$ is the coefficient divided by its dimensional reference; $\nu>0$ is an independently varied damping ratio. Here $\nu=d_c/d_j=\eta^{-1}$, where the coefficient-synthesis article uses $\eta=d_j/d_c$; the reciprocal coordinate is explicit to prevent transferring powers with the wrong sign. Configuration III has $w=(1,1/100,1/2)$. The alternative $\widetilde w=(101/100,0,1/2)$ agrees at every point with $\nu=1$. At $(\rho,\nu)=(1,1),(4,1),(1,2)$, the design determinant is $3/4$ and the first model predicts $151/100,227/200,151/50$. The alternative predicts $301/100$ at the last point. Independent variation therefore creates an exact separation of $1/100$ there.
+
+For two observations with variance $\sigma^2$ and correlation $\gamma$, the uncertainty variance of their difference is exactly $2\sigma^2(1-\gamma)$. More generally, a linear contrast $c^Ty$ has variance $c^T\Sigma c$, with the full spatial and temporal covariance $\Sigma$. These expressions follow by expanding the covariance of the sum; positive-definiteness requires $|\gamma|<1$ in the nonsingular two-channel case. With bounded contrast error $\epsilon$, predictions separated by $1/100$ have disjoint error intervals when $2\epsilon<1/100$. A covariance alone does not supply a deterministic bound without a distributional assumption.
+
+This is a finite discrimination result for a declared support. A device may require another support or another observation operator. Calibration, coefficient estimation, model choice and the final independent condition must use separate information. The remaining question concerns realistic covariance and weak contributions on independently varied physical coordinates, not a change in energy when a coefficient becomes difficult to estimate.
+
+The coordinates can be varied physically: choose $a=J_a$, $b=d_j$, $c=k_j$ and $\nu=d_c/d_j$. Holding $J_a=1\ \mathrm{kg\,m^2}$ and $d_j=1\ \mathrm{N\,m\,s/rad}$, configuration III's three settings require $(k_j,d_c)=(1,1),(1/4,1),(1,2)$ in their corresponding SI units. These knobs set the coordinates; the law \eqref{eq:weak-coefficient} remains a hypothesis about the inferred coefficient. For coefficient observations $b_1,b_2,b_3$ at the exact settings, matrix inversion yields
+\begin{equation}
+ w_1=-5b_1+4b_2+b_3,\qquad
+ |\delta w_1|\leq5\epsilon_1+4\epsilon_2+\epsilon_3.
+ \label{eq:coefficient-bound}
+\end{equation}
+Here $|\delta b_j|\leq\epsilon_j$. Equal candidate uncertainty intervals for $w_1=1/100$ and $0$ separate if the right-hand side is below $1/200$. With uncertain positive coordinates and positive candidate weights, the exact prediction interval has endpoints $w_0+w_1\nu_-+w_2\nu_-^2/\rho_+$ and $w_0+w_1\nu_++w_2\nu_+^2/\rho_-$. These component-calibration bounds enter before comparing coefficients; invertibility alone supplies no practical error bound.
+
+The unresolved question is whether independent coordinates and realistic correlated uncertainty make the weak coefficient contributions identifiable. Interchangeable resistors and capacitors on an ordinary low-frequency circuit provide inexpensive independent parameter changes, while simultaneous voltage and current channels provide an empirical covariance estimate. Holding $\rho$ fixed supplies a deliberate null control; changing it independently of a second ratio can remove that particular proportionality. The chosen support and voltage/current observation map still require a full rank and uncertainty check. The first attainable result is separation of specified competing laws on independently chosen conditions. Recovering every weak contribution requires the stronger support-wide sensitivity condition; a complete physical account additionally needs the internal states and ports. Failure despite adequate sensitivity indicates an inadequate model or an incorrect uncertainty specification. Terminal measurements alone do not identify internal stresses.
+
+## A shunt state and a transferable resonator law
+\label{sec:resonator-identification}
+
+A motional series branch $(R_m,L_m,C_m)$ in parallel with $C_0$ obeys, at complex frequency $s$,
+\begin{equation}
+ Y(s)=sC_0+\frac{sC_m}{L_mC_ms^2+R_mC_ms+1}.
+ \label{eq:resonator}
+\end{equation}
+This follows from Kirchhoff's current law with common voltage $v$, motional current $i_m$, charge $q_m$, and state laws $\dot q_m=i_m$, $L_m\dot i_m=v-R_mi_m-q_m/C_m$, $i=C_0\dot v+i_m$. It is the conventional motional-plus-shunt description discussed by [Bible (2002)][bible]. A voltage-driven experiment prescribes the shunt voltage; a finite source impedance restores that capacitor as an independent state of the connected system.
+
+The input-current channel observes total $i$, not motional $i_m$, and the voltage channel observes the common voltage at the two parallel terminals. Identifying the motional branch therefore needs its own current observation or subtraction of the independently calibrated shunt current. With that attachment fixed, choosing admittance exposes the local change exactly:
+\begin{equation}
+ Y_b-Y_a=s\Delta C_0,\qquad
+ Z_b-Z_a=-s\Delta C_0 Z_aZ_b.
+ \label{eq:shunt-identification}
+\end{equation}
+The second identity follows from $Z=1/Y$ where both ratios are defined. Reciprocation creates no independent data: transport the complex gain/phase uncertainty and common calibration errors through it. Near a zero, use the undivided voltage/current relation or the other defined ratio.
+
+At $\omega_s=1/\sqrt{L_mC_m}$ the motional admittance is $1/R_m$, hence a changed shunt capacitance predicts $\Delta\operatorname{Im}Y=\omega_s\Delta C_0$. Configuration IV uses illustrative low-frequency values $R_m=1\ \Omega$, $L_m=1\ \mathrm H$, $C_m=1\ \mathrm F$, with $C_0=1$ or $2\ \mathrm F$. At $\omega_s=1\ \mathrm{rad/s}$, the two impedances are $(1-\ii)/2$ and $(1-2\ii)/5\ \Omega$. A series-only reading gives $1\ \Omega$ in both cases. These are exact component controls, not quartz parameter values.
+
+For peak voltage $V$ at resonance over one period $T=2\pi/\omega_s$, separately integrating $vi$, $-R_mi_m^2$ and the shunt product $vC_0\dot v$ gives
+\begin{equation}
+ W_{\rm source}=\frac{TV^2}{2R_m},\qquad
+ W_{R_m}=-\frac{TV^2}{2R_m},\qquad
+ \int_0^T vC_0\dot v\,\dd t=0.
+ \label{eq:rf-work}
+\end{equation}
+Each component returns to its initial periodic state, but its instantaneous store varies. At $V=1\ \mathrm V$ in configuration IV the source and loss works are $\pi$ and $-\pi\ \mathrm J$. The imaginary admittance, rather than the equal period work, distinguishes the shunts.
+
+The open acquisition requires calibrated multi-device complex impedance and independent shunt variation, with synchronized internal/terminal traces where an internal claim is made. Twelve resonators and three fixture/component variants define an illustrative finite scope, not a statistically derived sample size. Shunt subtraction identifies $Y-sC_0$ for each device. Transferability requires a separately specified law predicting its $L_m,R_m,C_m$ from independently controlled device properties, calibrated on one set and evaluated on other declared devices and frequencies. No such law follows from the shunt control alone. Fixture compensation and RF current/voltage definitions follow [Keysight Technologies (n.d.)][keysight]; temperature, aging and nonlinear behavior require their own domain.
+
+One device at fixed $\rho$ identifies only the combined coefficient at each $k$. Independent devices or controlled components are required to infer exponent dependence. The practical unresolved question is whether calibrated multi-device impedance measurements support a transferable coefficient law. A low-power VNA measurement of several resonators with independently varied shunt capacitance supplies an accessible complex observable and a controllable second coordinate. Fixture calibration and compensation are essential, as described by [Keysight (n.d.)][keysight]. The predicted alternatives are a common rational state model versus coefficients that change with fixture or amplitude. Such a measurement does not establish nonlinear, temperature or aging behavior, and no acquisition is asserted here.
+
+### Moving a shunt changes the synthesized system
+\label{sec:shunt-location}
+
+Use the same bare coil $Z_w=R+sL$, $R,L>0$, another linear series block $Z_e$ and capacitor $C_p>0$ in two connections. Hold the external drive and voltage/current measurement terminals fixed. A capacitor across the coil alone has local admittance $Z_w^{-1}+sC_p$; add $Z_e$ in series after taking its reciprocal. A capacitor across both blocks instead adds $sC_p$ to $(Z_e+Z_w)^{-1}$. Thus
+\begin{equation}
+ Z_{\rm local}=Z_e+\frac{Z_w}{1+sC_pZ_w},\qquad
+ Z_{\rm whole}=\frac{Z_e+Z_w}{1+sC_p(Z_e+Z_w)}.
+ \label{eq:shunt-location}
+\end{equation}
+This is a physical attachment change, independent of whether the final response is expressed as impedance or admittance. Voltage and current amplitudes and relative phase give its complex observable. Use an ordinary low-frequency RLC realization whose responses and fixture lie inside the calibrated band; any RF device needs its own bandwidth and loading assessment.
+
+At $s=\ii\omega$ with finite, defined responses, exact components and absolute complex-response error bounds $\epsilon_{\rm local},\epsilon_{\rm whole}$, the prediction disks are disjoint if
+\begin{equation}
+ |Z_{\rm local}-Z_{\rm whole}|>
+       \epsilon_{\rm local}+\epsilon_{\rm whole}.
+ \label{eq:shunt-location-separation}
+\end{equation}
+This is the triangle-inequality separation condition, not a claim that the two placements separate at every frequency. Component and fixture uncertainty enlarge the prediction sets; shared calibration errors require the joint comparison of Section \ref{sec:coefficient-identification}. If they overlap, another frequency, an independent component change or a local voltage/current channel can supply information. Conditions used to estimate the law remain separate from those used to test its prediction. Period work is still the separately integrated physical product; it does not choose a placement or a coefficient.
+
+## Hidden prepared energy under finite coupling
+\label{sec:hidden-coupling}
+
+Place a series RC branch behind an ideal transformer with secondary-to-primary voltage ratio $\nu>0$, and add a terminal conductance $G_{0}>0$. Orient primary branch current into the transformer and secondary current $j$ toward the RC load, so that $v_s=\nu v_p$ and $i_{p,\mathrm{branch}}=\nu j$. For capacitor voltage $x$, the initialized realization is
+\begin{equation}
+ j=\frac{\nu v_p-x}{R},\qquad C\dot x=j,\qquad
+ i_p=G_0v_p+\nu j,\qquad R,C>0.
+ \label{eq:hidden-rc-state}
+\end{equation}
+Eliminating $x$ with zero initial state gives the admittance
+\begin{equation}
+ Y(s)=G_{0}+\frac{\nu^2sC}{1+sRC},\qquad
+ h=\frac{\nu^2}{R},\qquad \delta_{h}=\frac h{G_{0}+h}.
+ \label{eq:hidden-rc}
+\end{equation}
+For $x(0)=V_0$, the terminal current additionally contains $-\nu V_0e^{-t/(RC)}/R$. The poles and initialized response therefore follow from the same orientation. With primary-to-secondary ratio $n=1/\nu$, reflecting a fixed secondary admittance divides it by $n^2$.
+
+As $\nu\to0$, both the driven branch contribution and its terminal initial-state signal vanish. The endpoint of \eqref{eq:hidden-rc-state} is a decoupled terminal with a closed internal RC discharge loop, not an ordinary finite-turns transformer. An open series RC branch would not have the same discharge. Enclose the capacitor and exclude the two heat reservoirs: the inward powers are $v_pi_p$, $-G_0v_p^2$, and $-Rj^2$. Integrating them separately gives their sum $\int_0^T xj\,\dd t=C[x(T)^2-x(0)^2]/2$, agreeing with the independently evaluated store $Cx^2/2$. In the decoupled endpoint with $v_p=0$, the sole nonzero transfer and endpoint store are
+\begin{equation}
+ W_{R}(0,T)=-\int_{0}^T\frac{V_{0}^2e^{-2t/(RC)}}R\,\dd t
+ =-\frac{CV_{0}^2}{2}(1-e^{-2T/(RC)}),\quad
+ E(T)=\frac{CV_{0}^2}{2}e^{-2T/(RC)}.
+ \label{eq:hidden-discharge}
+\end{equation}
+Exact terminal cancellation therefore does not imply absence of an internal prepared mode. The changing store in \eqref{eq:hidden-discharge} is accounted for by the independently integrated resistor work, even though the terminal work is zero. Its relevance to a higher-order realization is that eliminated internal coordinates can carry the same hidden change.
+
+### Measuring a changing store behind a quiet terminal
+\label{sec:hidden-measurement}
+
+How tightly can terminal uncertainty bound hidden prepared energy when coupling and preparation are only partly known? With $v_p=0$, known finite $\nu>0$ and the state law \eqref{eq:hidden-rc-state},
+\begin{equation}
+ |i_p(0)|=\frac{\nu|V_0|}{R},\qquad E(0)=\frac{CV_0^2}{2},\qquad
+ |i_p(0)|\leq\epsilon_i\quad\Longrightarrow\quad
+ E(0)\leq\frac{CR^2\epsilon_i^2}{2\nu^2}.
+ \label{eq:hidden-energy-bound}
+\end{equation}
+Here $\epsilon_i$ bounds the true initial current after calibration and timing uncertainty, not merely the displayed reading. The bound follows by eliminating $|V_0|$. If $C\leq C_{\max}$, $R\leq R_{\max}$ and $\nu\geq\nu_{\min}>0$, the corresponding bound is $C_{\max}R_{\max}^2\epsilon_i^2/(2\nu_{\min}^2)$. Without a positive coupling lower bound or an independent preparation bound, there is no uniform finite ceiling: choosing $|V_0|=R\epsilon_i/\nu$ preserves the terminal limit while the store grows as $\nu^{-2}$. Those arbitrarily large states belong to the ideal parameter family; finite voltage and preparation limits must be supplied for an actual device.
+
+A low-voltage RC branch with an independently calibrated finite coupling permits ordinary capacitor-voltage, resistor-voltage/current and terminal-current measurements. Prepare a specified $V_0$, establish the operation-side state after switching, and observe a finite interval $[0,T]$ with $v_p=0$. For the boundary enclosing the capacitor and ideal coupling, source work is zero and the resistor power is $-v_Rj=-Rj^2$. Integrating it gives \eqref{eq:hidden-discharge}; evaluate $CV_0^2/2$ and $Cx(T)^2/2$ independently from the endpoint voltages. The exact residual is zero for this declared discharge. A measured residual exceeding its independently bounded uncertainty remains open, while a resolved capacitor change with an unresolved terminal signal establishes the narrower hidden-state result. Probe loading supplies an additional port if it is appreciable in the declared model.
+
+The equal-and-opposite polarization preparation in Section \ref{sec:polarization} offers a low-frequency emulator of terminal cancellation with separately accessible stores. Multiple nearly cancelling modes, nonideal transformers, preparation limits, sensor loading and finite observation bandwidth still need bounds. A resolved single-branch account does not close those broader questions.
+
+### A three-state loop with a directly measurable hidden store
+\label{sec:hidden-loop}
+
+A closed loop containing an inductor, a series resistance $R_\Sigma\geq0$ and two series-connected parallel RC sections gives a direct control for that observation question. With identical $R,C>0$, no applied voltage and consistently oriented section voltages,
+\begin{equation}
+ L\dot i=-R_\Sigma i-v_1-v_2,\qquad
+ C\dot v_j=i-v_j/R,\quad j=1,2.
+ \label{eq:hidden-loop-state}
+\end{equation}
+The compatible preparation and exact response are
+\begin{equation}
+ (i(0),v_1(0),v_2(0))=(0,V_0,-V_0),\qquad
+ i=0,\quad v_1=V_0e^{-t/(RC)},\quad v_2=-V_0e^{-t/(RC)}.
+ \label{eq:hidden-loop-motion}
+\end{equation}
+There are three independent physical states. The driven pair $(i,v_1+v_2)$ has two states; $v_1-v_2$ relaxes independently and is absent from the loop-current transfer. A branch-voltage observation generally retains all three initialized modes. Unequal time constants couple the difference back to the terminal observation. Thus a quiet terminal does not remove the third state.
+
+Enclose the inductor and both capacitors, excluding heat reservoirs, on the smooth operating interval $[0,T]$. The separate inward resistor powers are $-R_\Sigma i^2$ and $-v_jj_{R,j}$, where $j_{R,j}=v_j/R$. Direct integration and independent endpoint evaluation give
+\begin{align}
+ W_\Sigma&=0,&
+ W_{R,j}&=-\int_0^T\frac{v_j^2}{R}\,\dd t
+ =-\frac{CV_0^2}{2}(1-e^{-2T/(RC)}),\nonumber\\
+ E_0&=CV_0^2,& E_1&=CV_0^2e^{-2T/(RC)},\nonumber\\
+ r_E&=E_1-E_0-W_\Sigma-W_{R,1}-W_{R,2}=0.
+ \label{eq:hidden-loop-work}
+\end{align}
+The two nonzero works and decreasing stores are invisible to a terminal-only account. This exact model resolves their destination; it does not report an unexplained gain. Preparation is a separate interval. Closing the loop at zero inductor current with continuous capacitor voltages has no impulse under these laws; actual switch and probe transfers need their own account.
+
+For the illustrative component choices $R=1\ \mathrm{k}\Omega$, $C=1\ \mathrm{mF}$, $V_0=1\ \mathrm V$, and $T=1\ \mathrm s$, the initial store is $1/1000\ \mathrm J$ and each resistor work is $-(1-e^{-2})/2000\ \mathrm J$. Ordinary voltage channels and shunt-current measurements resolve the internal volt and milliampere scales over seconds. The open experimental alternatives are a resolved internal change with unresolved terminal signal, an independently closed resistor account, or a signed residual beyond the declared resolution. Only the last leaves the energy account unresolved.
+
+An assumed calibration budget makes that distinction quantitative. Take capacitance estimates $\widehat C=1/1000\ \mathrm F$ with bounds $\epsilon_C=1/100000\ \mathrm F$, voltage error $\epsilon_v=1/1000\ \mathrm V$, resistor-current error $\epsilon_j=1/10^6\ \mathrm A$, and observed bounds $|\widehat v_j|\leq11/10\ \mathrm V$, $|\widehat j_{R,j}|\leq11/10000\ \mathrm A$ throughout the one-second interval. The channel and endpoint formulas in Section \ref{sec:instrument-bounds} give
+\begin{equation}
+ \epsilon_{\mathrm{cap}+R}
+ =\frac{1652401}{50000000000}\ \mathrm J
+ <\frac1{25000}\ \mathrm J,\qquad
+ \epsilon_r\leq\epsilon_{\mathrm{cap}+R}+\epsilon_{\mathrm{rest}}.
+ \label{eq:hidden-loop-resolution}
+\end{equation}
+This is the sum of four capacitor endpoint bounds and two resistor-work bounds, not an achieved apparatus specification. The independently determined $\epsilon_{\mathrm{rest}}$ must cover inductor endpoints, series-resistance work, timing, acquisition integration, probe loading and any event account. Terminal quietness does not set it to zero. Compare the predicted capacitor decrease $(1-e^{-2})/1000\ \mathrm J$ with its endpoint error, and compare the measured full residual with its separate total error. Deliberately unequal relaxation times provide the contrasting observation derived in \eqref{eq:polarization-separation}.
+
+## Polarization preparations invisible at the terminal
+\label{sec:polarization}
+
+A coil feeding a polarization emulator has states $i,v_1,\ldots,v_N$ and equations
+\begin{equation}
+ L\dot i+R_\Sigma i+V_{\rm oc}+\sum_jv_j=0,
+ \qquad C_j\dot v_j=i-v_j/R_j.
+ \label{eq:polarization}
+\end{equation}
+Positive $i$ enters the emulator. A conducting interval ends at a downward current zero. For distinct active time constants $\tau_j=R_jC_j$, eliminating the branches gives generic order $N+1$ for $i$, while equal time constants combine at that observation. The storage boundary includes the coil and branch capacitors. Its external powers are $-V_{\rm oc}i$, $-R_\Sigma i^2$ and the separately retained $-v_j^2/R_j$; the DC source and all heat reservoirs are outside.
+
+A permanently opened connection after the cutoff $t_c$ gives independent branch relaxation. A retained diode permits that same continuation only while its blocking condition holds:
+\begin{equation}
+ i=0,\qquad v_j(t)=v_j(t_c)e^{-(t-t_c)/\tau_j},\qquad
+ V_{\rm off}(t)=V_{\rm oc}+\sum_jv_j(t_c)e^{-(t-t_c)/\tau_j}\geq0.
+ \label{eq:polarization-blocking}
+\end{equation}
+Nonnegative branch voltages at cutoff suffice for continued blocking when $V_{\rm oc}\geq0$. Signed preparations can instead restart conduction. Let $V_{\rm oc}=V_b>0$, $(v_1(t_c),v_2(t_c))=(8V_b,-8V_b)$ and $(\tau_1,\tau_2)=(T_b,2T_b)$, with $T_b>0$. For $\vartheta=(t-t_c)/T_b$, the candidate blocked voltage is $V_b(1+8e^{-\vartheta}-8e^{-\vartheta/2})$. Setting $z=e^{-\vartheta/2}$ gives $1+8z^2-8z=0$ and the first crossing
+\begin{equation}
+ t_r-t_c=-2T_b\log\!\left(\frac{2+\sqrt2}{4}\right).
+ \label{eq:polarization-restart}
+\end{equation}
+The derivative at this root is negative; continuation to $\vartheta=2\log2$ would give $V_{\rm off}=-V_b$. The cutoff itself is locally attainable from positive current because the conducting derivative there is $-V_b/L<0$. At the later guard failure the conducting equations resume from continuous branch voltages and $i=0$; once $V_{\rm off}<0$, $L\dot i=-V_{\rm off}>0$. A tangency that leaves the guard nonnegative does not restart conduction.
+
+On an opened interval, or a blocked interval ending before guard failure, branch $j$ has signed resistor work $-C_jv_j(t_c)^2[1-e^{-2(T-t_c)/\tau_j}]/2$ and independently evaluated final store $C_jv_j(t_c)^2e^{-2(T-t_c)/\tau_j}/2$. A resumed conducting interval requires its own source, coil and branch integrals. The isolated comparison below deliberately opens the external path, so its observation interval is independent of the diode guard.
+
+Each local branch law $C_j\dot v_j+v_j/R_j=i$ identifies a parallel RC block; the loop adds its voltage to those of the other series-connected blocks. Independently calibrated $R_j,C_j$ and branch-voltage observations specify the local information before composition. The recurrence in [*Third- and Higher-Order ODEs*][main] then predicts the complete current and forcing operators without refitting unaffected branches. A terminal fit alone need not assign a pole to an individual branch, and compatible prepared states remain necessary even after the terminal transfer is reduced.
+
+For two equal branches define $z_+=(v_1+v_2)/2$ and $z_-=(v_1-v_2)/2$. Direct addition and subtraction give
+\begin{equation}
+ C\dot z_+=i-z_+/R,\qquad C\dot z_-=-z_-/R,
+ \qquad E_C=Cz_+^2+Cz_-^2.
+ \label{eq:hidden-battery}
+\end{equation}
+The terminal loop sees $2z_+$ and is independent of $z_-$. Two states with identical $i,z_+$ and arbitrary different $z_-$ therefore have identical terminal current for as long as the same graph applies. This is an exact unobservable direction, rather than a small nonzero sensitivity.
+
+Configuration V has $C=1\ \mathrm{mF}$, $R=1\ \mathrm{k}\Omega$, $v_1(0)=1\ \mathrm V$, $v_2(0)=-1\ \mathrm V$ and terminal current zero. It can be isolated during observation, or compared with another preparation on the same driven terminal trajectory using superposition. On $[0,\log2]\ \mathrm s$, its hidden store falls from $1$ to $1/4\ \mathrm{mJ}$. The two independently integrated resistor works are each
+\begin{equation}
+ -\int_0^{\log2}\frac{e^{-2t}}{1000}\,\dd t
+ =-\frac38\ \mathrm{mJ}.
+ \label{eq:battery-loss}
+\end{equation}
+An unprepared pair gives zero branch voltages and zero hidden heat under the same zero terminal current.
+
+These states have a finite preparation. With accessible branch current sources, prescribe $v_j=\pm(t+1)\ \mathrm V$ on $[-1,0]\ \mathrm s$ while the terminal connection is open. The required source current is $i_{pj}=C\dot v_j+v_j/R$. Its work $\int v_ji_{pj}\dd t=5/6\ \mathrm{mJ}$ per branch and the resistor work $-1/3\ \mathrm{mJ}$ leave $1/2\ \mathrm{mJ}$ in each capacitor. The source efforts and flows, including the negative-voltage branch, have their specified signs.
+
+After a deliberate split into time constants $\tau_1\ne\tau_2$, the same isolated opposite preparation yields terminal voltage $a(e^{-t/\tau_1}-e^{-t/\tau_2})$. At $a=1\ \mathrm V$, $\tau_1=1\ \mathrm s$, $\tau_2=2\ \mathrm s$ and $t=\log2\ \mathrm s$, this is $1/2-1/\sqrt2\ \mathrm V$, versus zero for equal constants. Branch probes distinguish exact hidden freedom from a transient lying below terminal resolution. No finite noise bound can certify arbitrary order when time constants and amplitudes can approach coincident or vanishing values without a separation restriction.
+
+A bounded positive statement follows directly: the split and equal-time predictions at a declared $t$ have disjoint voltage intervals of half-width $\epsilon_V$ if
+\begin{equation}
+ |a(e^{-t/\tau_1}-e^{-t/\tau_2})|>2\epsilon_V.
+ \label{eq:polarization-separation}
+\end{equation}
+For the stated example, $\epsilon_V<(1/\sqrt2-1/2)/2\ \mathrm V$ suffices when parameters and preparation are exact. Their uncertainties widen the prediction intervals. Recovery of an unknown order requires, in addition, a maximum candidate order, a lower bound on visible amplitudes, separated active time constants and a specified observation/noise domain; the two-alternative result asserts none of these globally.
+
+Recovering order from noisy data with arbitrary branch preparations remains a practical open question. A low-voltage battery emulator made from a DC source and independently accessible RC branches allows ordinary shunt-current and capacitor-voltage measurements without uncertain electrochemistry. Prepare equal and opposite voltages on equal-time-constant branches: the terminal transient is unchanged while branch probes reveal relaxation. Split their time constants controllably and compare the uncertainty-scaled sensitivity with the covariance-weighted observation sensitivity. This distinguishes exact hidden freedom from inadequate resolution. It does not validate an actual battery's temperature- and age-dependent spectrum.
+
+## Terminal reaction and internal absorber stress
+\label{sec:absorber-identification}
+
+Take primary mass $M$, absorber mass $m$, fixed-base spring/damper $k_0,c_0$ and coupling $k_2,c_2$. With fixed base and primary force $F(t)$,
+\begin{align}
+ M\ddot x_1+c_0\dot x_1+k_0x_1+c_2(\dot x_1-\dot x_2)+k_2(x_1-x_2)&=F,\nonumber\\
+ m\ddot x_2+c_2(\dot x_2-\dot x_1)+k_2(x_2-x_1)&=0.
+ \label{eq:absorber}
+\end{align}
+The terminal reaction is $R_b=k_0x_1+c_0\dot x_1$ and the coupling force is $F_2=k_2(x_1-x_2)+c_2(\dot x_1-\dot x_2)$. At $c_2=0$ and $\omega^2=k_2/m$, a prepared exact periodic solution is
+\begin{equation}
+ F=F_0\cos\omega t,\qquad x_1=0,
+ \qquad x_2=-\frac{F_0}{k_2}\cos\omega t,
+ \qquad R_b=0,\quad F_2=F_0\cos\omega t.
+ \label{eq:antiresonance}
+\end{equation}
+Substitution proves the result without inferring force from the zero reaction. In a calibrated known model with known drive, the force can of course be inferred from that additional information; the unresolved inference is from the reaction alone and uncertain internal realization.
+
+Configuration VI compares $(m,k_2)=(1/10\ \mathrm{kg},100\ \mathrm{N/m})$ and $(1/5\ \mathrm{kg},200\ \mathrm{N/m})$, with the same $\omega=10\sqrt{10}\ \mathrm{rad/s}$, $F_0=1\ \mathrm N$, $M=1\ \mathrm{kg}$, $k_0=100\ \mathrm{N/m}$ and $c_0=1\ \mathrm{N\,s/m}$. Coupling cross sections of $1$ and $2\ \mathrm{mm^2}$ with the same modulus and length give these stiffness ratios. The two zero terminal reactions coexist with extension amplitudes $1/100$ and $1/200\ \mathrm m$, and stress amplitudes $1$ and $1/2\ \mathrm{MPa}$.
+
+The boundary contains both masses and both springs. Its source power $F\dot x_1$ and support-damper power $-c_0\dot x_1^2$ vanish separately on this solution; $c_2=0$. Nevertheless its independently evaluated coupling-plus-absorber store is $F_0^2/(2k_2)$, respectively $1/200$ and $1/400\ \mathrm J$, at both ends of every period. The initial state is prepared, not assumed to arise from rest with these zero works. Internal strain and motion separate the configurations; a bounded structural-negative result needs no reopening. Practical stress conversion, material calibration, additional modes and loading remain physical questions.
+
+# Damped correspondence through preparation and reset
+\label{sec:analogy}
+
+## A damped correspondence with a complete finite path
+
+Let $x$ be the relative compression of two free masses during a linear contact, with reduced mass $m=m_1m_2/(m_1+m_2)$, or the displacement of a mass against a fixed spring and damper. Relative force balance is $m\ddot x+d\dot x+kx=f$. In the free-pair interpretation the center-of-mass mode is separately retained and the relative applied effort $f$ is the one conjugate to $\dot x$; it equals $m(F_1/m_1-F_2/m_2)$. The fixed-support interpretation has zero support velocity. A series electrical circuit has charge $q$, current $i=\dot q$ and applied voltage $V$.
+
+\begin{theorem}
+For positive constants $\alpha,\beta$, the map
+\begin{equation}
+ q=\alpha x,\quad i=\alpha\dot x,\quad V=\beta f,
+ \quad L=\frac{\beta m}{\alpha},\quad
+ R=\frac{\beta d}{\alpha},\quad C=\frac{\alpha}{\beta k}
+ \label{eq:analogy}
+\end{equation}
+maps force balance to Kirchhoff's voltage law, including prescribed preparation and reset efforts. Each electrical source, loss and spring/inertial transfer work equals $\alpha\beta$ times its corresponding mechanical work on every smooth interval. Compatible finite event paths have the same property.
+\end{theorem}
+
+Substitution gives $L\dot i+Ri+q/C=\beta(m\ddot x+d\dot x+kx)=V$. Independently, $Vi=\alpha\beta f\dot x$, $-Ri^2=-\alpha\beta d\dot x^2$, $Li\dot i=\alpha\beta m\dot x\ddot x$, and $(q/C)\dot q=\alpha\beta kx\dot x$. Integrating each equality proves the assertion, and direct state evaluation gives $E_e=\alpha\beta E_m$. A finite event equality passes to a limit only if its individual integrals converge. $\square$
+
+Configuration I uses $m=1\ \mathrm{kg}$, $d=2\ \mathrm{N\,s/m}$, $k=2\ \mathrm{N/m}$, $\alpha=1\ \mathrm{C/m}$ and $\beta=1\ \mathrm{V/N}$. Thus $L=1\ \mathrm H$, $R=2\ \Omega$, $C=1/2\ \mathrm F$, the work scale is one, and $\rho=d^2/(mk)=2>0$. In the following formulas time is expressed in seconds and displacement in metres. Starting at rest, prescribe $x=t(t+1)^2$ on $[-1,0]$. The required force, derived from the equation of motion, is $f=2t^3+10t^2+16t+6$. The source and damper integrals give $23/30\ \mathrm J$ and $-4/15\ \mathrm J$; the final independently evaluated kinetic store is $1/2\ \mathrm J$ and the spring store is zero.
+
+With the source off, the exact response is
+\begin{equation}
+ x=e^{-t}\sin t,\quad \dot x=e^{-t}(\cos t-\sin t),\quad
+ E_m=\tfrac12e^{-2t}(\cos t-\sin t)^2+e^{-2t}\sin^2t.
+ \label{eq:oscillator}
+\end{equation}
+Keep this bilateral oscillator connected until $T=\pi/2$. Then $X=x(T)=e^{-\pi/2}$, $V_T=\dot x(T)=-X$, and $E_T=3e^{-\pi}/2\ \mathrm J$. On a further one-second interval put $s=t-T$ and prescribe the finite reset
+\begin{equation}
+ x=X(1-3s^2+2s^3)+V_T(s-2s^2+s^3),\qquad 0\leq s\leq1.
+ \label{eq:reset-polynomial}
+\end{equation}
+The reset force again follows from $f=\ddot x+2\dot x+2x$. Direct integration uses
+$\int_0^1\dot x^2\dd s=6X^2/5+XV_T/5+2V_T^2/15$ and yields the ledger below. No impulsive reset is imposed.
+
+| Interval | Source work, J | Damper work, J | Stores before and after, J |
+|:------------------|:-------------------------|:---------------------------|:------------------------------|
+| Preparation | $23/30$ | $-4/15$ | $0\ \to\ 1/2$ |
+| Source off | $0$ | $-1/2+3e^{-\pi}/2$ | $1/2\ \to\ 3e^{-\pi}/2$ |
+| Finite reset | $23e^{-\pi}/30$ | $-34e^{-\pi}/15$ | $3e^{-\pi}/2\ \to\ 0$ |
+
+: Independently integrated works in configuration I. The electrical counterpart has the same entries. Each interval has zero residual.
+
+A homogeneous trajectory comparison alone predicts none of the preparation or reset source readings. A complete correspondence predicts all three source works in the table. Transporting a unilateral release additionally requires the same constitutive gate and a mapped destination port; Section \ref{sec:contact} supplies the missing distinction. Lossless coordinates with $d=0$ cannot certify a construction expressed through $m/d$ or $d^2/(mk)$ away from that boundary.
+
+The center-of-mass state can also be retained in an explicit collision circuit. Choose a voltage/velocity scale $\alpha_v>0$ and let $V_j=\alpha_v v_j$, $I_j=F_j/\alpha_v$, $C_j=m_j/\alpha_v^2$, $L_c=\alpha_v^2/k$ and $G_c=d/\alpha_v^2$. Connect the two grounded capacitors by an inductor and conductance in parallel, with $i_c=k\delta/\alpha_v$ flowing from node 1 to node 2. Kirchhoff's laws are
+\begin{equation}
+ C_1\dot V_1=I_1-i_c-G_c(V_1-V_2),\quad
+ C_2\dot V_2=I_2+i_c+G_c(V_1-V_2),\quad
+ L_c\dot i_c=V_1-V_2.
+ \label{eq:full-collision-map}
+\end{equation}
+They map both body force balances and $\dot\delta=v_1-v_2$ exactly. Each body input satisfies $V_jI_j=F_jv_j$, the resistor exports $G_c(V_1-V_2)^2=d(v_1-v_2)^2$, and the three component stores map individually. Taking $m_1=m_2=2\ \mathrm{kg}$ and $\alpha_v=1\ \mathrm{V/(m/s)}$ gives $C_1=C_2=2\ \mathrm F$, $L_c=1/2\ \mathrm H$ and $G_c=2\ \mathrm S$. Initial velocities $(1/2,-1/2)\ \mathrm{m/s}$ give configuration I's relative state and zero center-of-mass velocity. Opposite finite drives $(f,-f)$ transport its preparation and reset table without dropping either body port. This three-state collision circuit therefore extends the damped correspondence beyond the relative coordinate alone.
+
+A distinct low-damping control sets $m=k=L=C=1$ in their SI units and $d=R=1/5$. The constant efforts $+1,0,-1$ on consecutive one-second intervals from zero preparation give exact states by composing $e^{Ft}$ and $\int e^{F(t-s)}b u\,\mathrm ds$, where $F=\left(\begin{smallmatrix}0&1\\-1&-1/5\end{smallmatrix}\right)$ and $b=(0,1)^T$. Each interval separately integrates $u\dot x$ and $-\dot x^2/5$, and evaluates $(x^2+\dot x^2)/2$ at both endpoints. The final state is retained; this finite opposite drive is not an exact reset. The electrical map with unit work scale carries the same three intervals and every individual port.
+
+On a separate preparation interval $[-1,0]\ \mathrm s$, put $r=t+1$ and prescribe $x=3(r^3-r^2)/10\ \mathrm m$. The required force is $\ddot x+\dot x/5+x$. Independent polynomial integration gives source work $237/5000\ \mathrm J$, dashpot export $-3/1250\ \mathrm J$ and final kinetic store $9/200\ \mathrm J$, with $x(0)=0$, $\dot x(0)=3/10\ \mathrm{m/s}$. A change of observer coordinates supplies none of this work. This is a forced preparation of the declared oscillator, not a measured contact or a universal common-motion law.
 
 # Prepared states and singular passive reductions
 \label{sec:singular}
@@ -579,6 +948,15 @@ The strict sign follows from continuity and $v_B(0)=1\ \mathrm V$. No work compa
 
 Separate voltage and shunt-current observations on the added branches distinguish a physical attachment from a coordinate relabeling. Work half-widths below $\delta_P/2$ suffice for the nominal probe-work comparison; parameter, preparation, bandwidth and event-timing uncertainty must be included in those widths. The initial-current contrast additionally requires the calibrated transient response, rather than an assumed instantaneous readout. Finite voltage/current scales provide an ordinary low-voltage comparison, without an asserted achieved uncertainty.
 
+A conservative uniform requirement can be made explicit for XV. Keep the isolated graph and zero drive; allow $L_1,L_2\in[9/100,11/100]\ \mathrm H$, $M\in[9/200,11/200]\ \mathrm H$, $R_1,R_2\in[9/100,11/100]\ \Omega$, $R_s\in[90,110]\ \Omega$, and each of the four capacitances, the load conductance and the attached probe conductance within $[9/10000,11/10000]$ in their SI units. Keep $G_c=g_A=g_O=0$, zero initial currents and all three initial voltages in $[9/10,11/10]\ \mathrm V$. With currents scaled by $1\ \mathrm A$ and voltages by $1\ \mathrm V$, $\lambda_{\min}(\mathsf L)\geq7/200\ \mathrm H$ and $\lambda_{\min}(\mathsf C_p)\geq3/10000\ \mathrm F$. The latter follows from $C_m(e_A-e_B)(e_A-e_B)^T+C_Be_Be_B^T+C_Ce_Ce_C^T$, whose unit-coefficient smallest eigenvalue exceeds $1/3$; the load capacitor adds a positive term. These bounds in \eqref{eq:attachment-generator} give the deliberately loose $\|A\|_\infty\leq20000\ \mathrm{s^{-1}}$ for the five homogeneous physical coordinates. Therefore $\|x(t)-x(0)\|_\infty\leq(11/10)(e^{20000t}-1)$, and
+\begin{equation}
+ T_* =\frac{\log(31/22)}{20000}\ \mathrm s,\qquad
+ \delta_P\geq\frac{9}{10000}\left(\frac9{20}\right)^2 T_*\ \mathrm W
+ =\frac{729\log(31/22)}{80000000000}\ \mathrm J>0.
+ \label{eq:attachment-uniform-bound}
+\end{equation}
+Indeed $v_B\geq9/20\ \mathrm V$ on this initial subinterval, which lies inside the one-second comparison. The absent-probe work is exactly zero. The sum of both prediction/measurement half-widths must be below this lower bound to guarantee uniform separation. It is a conservative sufficient requirement, not a claim of achieved instrument accuracy; a sharper enclosure could substantially relax it. Unmodeled probe dynamics must first be included in the graph.
+
 For the independent hardware question, identify $\mathsf L$, capacitances, resistances, probe paths and the prepared states before the final comparison. Use those same parameter sets to predict both connections through \eqref{eq:attachment-generator}; allow their calibrated joint uncertainty, including the mutual sign, to generate prediction sets. Simultaneously measure each of \eqref{eq:attachment-powers} and both stores, including the interwinding voltage difference. A graph can disagree with observed waveforms while its measured full account closes, or leave a signed account residual beyond the enclosure in Section \ref{sec:uncertainty}. These are different outcomes. Saturation, dielectric memory, common-mode sensor loading, a moving chassis voltage and unmeasured initial flux require separately specified states or observations. Exact model identities provide no apparatus record and do not settle those physical questions.
 
 How does the separately integrated source, winding and receiver work change when a physical return or probe is connected, and what residual survives the complete finite-state account? A low-voltage pair of coupled coils with a finite source resistor, load and output capacitor provides accessible winding voltages, shunt currents and capacitor endpoints. Hold the winding orientation, component values, initial currents and capacitor voltage fixed while changing a declared load or return. Integrate each of the seven powers accompanying \eqref{eq:loaded-transformer} over the same finite interval; evaluate both magnetic and electric endpoint stores independently. Current preparation or initial linkage must be measured, not inferred from the final work balance. Simultaneous low-frequency acquisition makes polarity, phase and resistor heating accessible with ordinary instruments.
@@ -677,6 +1055,8 @@ The old-return work provides a strictly nonzero energy discriminant. In the over
  \label{eq:overlap-separation}
 \end{equation}
 For a direct proof of the strict sign, the matrix obtained by stacking the covectors $l^T,l^TG_1,l^TG_1^2,l^TG_1^3$ has determinant $-4691046/25$. If the analytic integrand vanished throughout an interval, these four observations would give $z_1=0$, contradicting its constant coordinate one. The new-return comparison has $g_A=0$ after $h$, so no other old-return work can cancel this separation. Equal combined half-widths $B_A<\delta_A/2$ distinguish the two predictions. This budget uses the exact matrix-function value rather than a trajectory approximation.
+
+For XII, the determinant argument establishes nominal positivity only. No positive lower bound over a calibrated component/preparation box is established here. Consequently $B_A<\delta_A/2$ is a nominal mathematical criterion, not a uniform instrument specification. Before claiming a practical comparison, bound the work functional over the same joint uncertainty set for both paths and require its minimum separation to exceed the sum of their half-widths. A box containing vanishing overlap duration or conductance has no positive uniform lower bound. The finite-component enclosure and the measured switch law remain explicit unresolved tasks; the exact nominal account remains valid.
 
 The overlap conductance $g_e=1\ \mathrm S$, versus zero without overlap, supplies a separate topology check from synchronized $i_s,i_1,i_2,v_a$. The open physical question is which measured switch law reproduces these individual works, endpoint stores and any additional control-supply transfer. Both-returns-open operation requires another capacitive, clamp or arc path for nonzero $i_2$. Actual gate work and edge storage remain explicit additional ports and states in that experiment.
 
@@ -814,7 +1194,7 @@ The derived observation ranges are within $\pm6\ \mathrm V$ including the DC lin
 
 Physical efficiency, sensor/logic power, saturation and switching bandwidth remain unmeasured. Thermal observations require identified heat capacities or calorimetric boundaries; repeated preparations add their own work if repetition increases the signal. If $g_e,g_m$ depend on changing $i_b$, their dynamics must be retained and \eqref{eq:plant-path} must be checked in that enlarged model.
 
-For the wider finite bias-dependent supply models, four accuracy questions remain unresolved: thermal endpoint convergence, agreement of independently evaluated signed-power quadratures, interval energy residuals, and integrated DC-link subledgers. These limitations include stable finite paths as well as growing finite windows. A complete-interval combined balance or an exact coil identity does not settle the separate interval and link checks. The present closed forms have zero numerical integration residual; their exactness supplies no convergence result for those different models.
+For the wider finite bias-dependent supply models, four accuracy questions remain unresolved: thermal endpoint convergence, agreement of independently evaluated signed-power quadratures, interval energy residuals, and integrated DC-link subledgers. These limitations include stable finite paths as well as growing finite windows. A complete-interval combined balance or an exact coil identity does not settle the separate interval and link checks. The present closed forms supply no numerical convergence result for those different models.
 
 The physical question is whether independently measured reaction, actuator electrical export, bias power and finite-supply changes reproduce the positive coil change with all subboundaries resolved. A signed remainder beyond calibrated uncertainty remains an open result alongside the observed coil increase.
 
@@ -909,7 +1289,7 @@ Independent state evaluation yields the following account.
 
 : Increasing declared storage with both listed drives zero. The coupling transfer remains unassigned for this model's listed ports.
 
-The trajectory, individual integrals, polynomial and endpoint stores have exact checks; numerical integration residual is zero. The missing physical coupling account remains open. A proposed implementation must identify how the unequal couplings arise and determine its additional work, stores and losses. This example fixes the magnitude and sign of that question without reporting a physical observation.
+The trajectory, individual integrals, polynomial and endpoint stores have exact checks. The missing physical coupling account remains open. A proposed implementation must identify how the unequal couplings arise and determine its additional work, stores and losses. This example fixes the magnitude and sign of that question without reporting a physical observation.
 
 For a candidate realization, synchronized winding voltage/current and mechanical force/velocity provide the listed-port works; bias and DC-link channels provide separate candidate transfers. Independently calibrated $L,m,k$ and state measurements determine both endpoint stores. Retain \eqref{eq:coupling-residual} beside the expanded-boundary result, and apply the uncertainty criterion in Section \ref{sec:residual-outcomes}. Neither defining the controller work by subtraction nor choosing its parameters to cancel the residual identifies a physical account.
 
@@ -1264,309 +1644,6 @@ For any absolutely continuous transition with the same endpoints, Cauchy--Schwar
 
 The remaining compound questions concern measured converter and sensor costs, wider connection laws and state/port correspondence outside the declared preparation and drive families. The dissipative certificate above is complete for its receiver; event completeness for another nonlinear driver or constitutive family is a separate mathematical task. Reference-driver and receiver supplies must be instrumented separately, with mechanical shaft torque and rate where correspondence is asserted. A measured work mismatch must retain its sign and boundary even when each device has a closed individual ledger; an unexplained energy remainder is additionally retained through \eqref{eq:measured-residual}.
 
-# What terminal observations identify
-\label{sec:identification}
-
-The physical comparisons require identified states, component laws and uncertainty. The following constructions distinguish recovery within a declared family from hidden preparation, insufficient resolution and acquisition of a missing physical law.
-
-## Contact versus a compliant support
-\label{sec:contact-identification}
-
-A rotary impact driver repeatedly accelerates a hammer, engages its faces with an anvil, loads the output, and releases for the next blow. The chosen bit or socket and tightened joint belong to the declared output boundary. Assign rigidly co-moving output mass to $J_a$; assign attachment twist and dissipation to the support law only when those deformations are resolved there. A separate attachment inertia instead adds its own state. No component is counted twice. The impact-wrench mechanism supplies the hammer–anvil correspondence used here [Wettstein, Grauberger and Matthiesen (2021)][wettstein].
-
-For hammer and anvil angles $\theta_h,\theta_a$, positive inertias $J_h,J_a$, contact torque $\tau_c=k_c(\theta_h-\theta_a)+d_c(\dot\theta_h-\dot\theta_a)$ and support torque $\tau_j=k_j\theta_a+d_j\dot\theta_a$, the equations are
-\begin{equation}
- J_h\ddot\theta_h=u-\tau_c,\qquad
- J_a\ddot\theta_a=\tau_c-\tau_j.
- \label{eq:two-inertia}
-\end{equation}
-They give a generic fourth-order hammer equation. Rational frequency-domain relations below describe zero-state transfer, or steady sinusoidal response at $s=\ii\omega$; arbitrary preparations add initial-state terms. With local dynamic stiffnesses $\mathcal K_c=k_c+d_cs$, $\mathcal K_j=k_j+d_js$ and $\mathcal K_a=J_as^2+\mathcal K_j$, elimination gives
-\begin{equation}
- \frac{U}{\Theta_h}=J_hs^2+\frac{\mathcal K_c\mathcal K_a}{\mathcal K_c+\mathcal K_a},\qquad
- \frac{\Theta_a}{\Theta_h}=\frac{\mathcal K_c}{\mathcal K_c+\mathcal K_a}.
- \label{eq:contact-inference}
-\end{equation}
-These are torque/angle dynamic stiffnesses. The corresponding torque/angular-velocity impedance is $\mathcal K/s$ where defined, and the hammer mobility is $s/(J_hs^2+\mathcal K_e)$ with $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$. The terminal observes a composite dynamic stiffness. If a broader rational support is allowed, different admissible decompositions of that composite must be distinguished before assigning internal coefficients. Positivity, a known inertial model and a sufficiently rich frequency domain can impose additional constraints; static ambiguity alone is not a theorem of ambiguity on every frequency domain.
-
-With known $J_h$ and measured $\mathcal K_e=U/\Theta_h-J_hs^2$ and $H_a=\Theta_a/\Theta_h$, the same equations give a constructive inverse:
-\begin{equation}
- \mathcal K_c=\frac{\mathcal K_e}{1-H_a},\qquad
- \mathcal K_a=\frac{\mathcal K_e}{H_a},\qquad
- \mathcal K_j=\frac{\mathcal K_e}{H_a}-J_as^2.
- \label{eq:contact-inverse}
-\end{equation}
-Indeed $1-H_a=\mathcal K_a/(\mathcal K_c+\mathcal K_a)$, so substitution proves the first two expressions; subtracting the known anvil inertia gives the joint law. They require defined responses and nonzero denominators; errors are amplified near $H_a=0$ or $1$. In the stated spring--damper family, a nonzero real frequency determines $k_c=\operatorname{Re}\mathcal K_c$, $d_c=\operatorname{Im}\mathcal K_c/\omega$, $k_j=\operatorname{Re}\mathcal K_a+J_a\omega^2$ and $d_j=\operatorname{Im}\mathcal K_a/\omega$ when $J_a$ is known. Additional frequencies check that family. Recovering the composite $\mathcal K_a$ does not identify an arbitrary internal support realization. The distinction between a realization and its observable input--output part is the one formalized by [Kalman (1963)][kalman].
-
-The inverse has an exact uncertainty bound. Write $K=\mathcal K_e$, $H=H_a$, with absolute errors at most $\epsilon_K,\epsilon_H$. When $|H|>\epsilon_H$ and $|1-H|>\epsilon_H$, subtraction of the two rational inverses and the triangle inequality give
-\begin{align}
- |\widehat{\mathcal K}_c-\mathcal K_c|&\leq
- \frac{\epsilon_K|1-H|+|K|\epsilon_H}
- {|1-H|(|1-H|-\epsilon_H)},\nonumber\\
- |\widehat{\mathcal K}_a-\mathcal K_a|&\leq
- \frac{\epsilon_K|H|+|K|\epsilon_H}
- {|H|(|H|-\epsilon_H)}.
- \label{eq:contact-inverse-error}
-\end{align}
-Indeed the two error numerators are $\delta K(1-H)+K\delta H$ and $\delta KH-K\delta H$. Lower bounds on the denominator magnitudes yield \eqref{eq:contact-inverse-error} without linearizing the errors. Calibrated magnitude envelopes replace unknown true values in an experiment. At known $J_a$, the same absolute bound as for $\mathcal K_a$ applies to $\mathcal K_j$; uncertainty in $J_a$ adds $\omega^2\epsilon_{J_a}$ at $s=\ii\omega$. These bounds apply to the composite support; its internal realization still requires a specified family or further sensors.
-
-The local ambiguity at one complex frequency is also explicit. Writing $\mathcal K_e=\mathcal K_c\mathcal K_a/(\mathcal K_c+\mathcal K_a)$ and $H_a=\Theta_a/\Theta_h$, differentiation gives
-\begin{equation}
- \delta \mathcal K_e=\frac{\mathcal K_a^2\delta \mathcal K_c+\mathcal K_c^2\delta \mathcal K_a}{(\mathcal K_c+\mathcal K_a)^2}.
- \label{eq:contact-null}
-\end{equation}
-For nonzero $\mathcal K_c,\mathcal K_a,\mathcal K_c+\mathcal K_a$, the perturbation $\delta \mathcal K_a=-(\mathcal K_a/\mathcal K_c)^2\delta \mathcal K_c$ leaves that terminal observable unchanged to first order, while $\delta H_a=\mathcal K_a\delta \mathcal K_c/[\mathcal K_c(\mathcal K_c+\mathcal K_a)]$ is generally nonzero. A parameterized passive model constrains which such perturbations extend over the full frequency interval. Consequently the combined observation Jacobian, its covariance-weighted sensitivity and independent-frequency prediction must be checked for the declared family, rather than inferred from this local null alone.
-
-The prepared-motion obstruction is exact as well. Let $k_c,d_c>0$ and
-$\Delta=k_c^2-k_cd_cd_j/J_a+d_c^2k_j/J_a=0$.
-Two solutions with the same drive can differ by
-\begin{equation}
- \delta\theta_h=0,\qquad
- \delta\theta_a=Ae^{-k_ct/d_c},\qquad
- \delta\tau_c=0.
- \label{eq:hidden-anvil-observation}
-\end{equation}
-Indeed $k_c\delta\theta_a+d_c\delta\dot\theta_a=0$, and substitution into the anvil equation leaves $J_ak_c^2-d_jk_cd_c+k_jd_c^2=J_a\Delta=0$. Both hammer motion and contact torque are identical, while anvil motion differs. For example, normalized $J_h=J_a=k_c=d_c=k_j=1$, $d_j=2$ satisfy these conditions with positive components. An anvil-angle separation $|A|e^{-k_ct/d_c}$ greater than the combined angle-error bound distinguishes the preparations at that time; a hammer-only comparison cannot. The extra observation is therefore part of identification, rather than an energy outcome used to select coefficients.
-
-Configuration II makes the simplest ambiguity exact. At static torque $u=1\ \mathrm{N\,m}$, both $(k_c,k_j)=(2,2)$ and $(3,3/2)\ \mathrm{N\,m/rad}$ give $\theta_h=1\ \mathrm{rad}$. The corresponding $\theta_a$ values are $1/2$ and $2/3\ \mathrm{rad}$, and contact deformations are $1/2$ and $1/3\ \mathrm{rad}$. Contact and support stores are respectively $(1/4,1/4)$ and $(1/6,1/3)\ \mathrm J$. Static power is zero; these endpoint stores do not assign the earlier preparation work.
-
-The physical two-body boundary contains both kinetic stores and both springs. Its independently signed external powers are $u\dot\theta_h$, $-d_c(\dot\theta_h-\dot\theta_a)^2$ and $-d_j\dot\theta_a^2$. A movable support at angle $z$ replaces the second deformation by $\theta_a-z$ and adds inward support power $-\tau_j\dot z$. A support inertia and another spring give their own second-order state equation and can raise the full order to six. Measuring the anvil alone then does not guarantee identification of $z$ or of an arbitrary rational support.
-
-For phase-resolved identification, maintain engagement under a declared preload and use a small imposed sinusoidal torque with synchronized hammer and anvil angles. Verify the linear amplitude and frequency domain, including calibrated channel phase. Use peak phasors with $e^{\ii\omega t}$; transient preparation must have decayed or be independently separated before applying the steady-response inverse. A blow instead includes engagement, prepared states and release. Transferring the identified contact or joint law to that transient requires an independent domain check. One informative nonzero frequency can identify the four spring--damper constants under the assumptions above; it cannot identify an unrestricted rational law or its internal realization.
-
-The finite closure question is a rank and uncertainty statement for specified contact and support families, followed by prediction under independently changed support and contact conditions. The bounded normalized-map results do not imply universal raw-unit identifiability. Calibrated contact torque, anvil motion and, where required, support motion distinguish the alternatives in \eqref{eq:contact-inference}. The mechanism-level need to represent changing contacts is consistent with [Wettstein, Grauberger and Matthiesen (2021)][wettstein]; that study supplies neither a universal release law nor the destination considered here.
-
-Which measurements separate contact dynamics from the frequency-dependent joint against which the impact driver strikes? This is the principal application-specific identification question. A practical discriminating setup is a low-energy torsional impact between two instrumented disks and an interchangeable compliant support. Two encoders provide synchronized hammer and anvil angles, with rates reconstructed within their calibrated response band; a calibrated transducer observes contact torque at the declared interface. A support-torque channel adds a direct observation of joint loading. Choose the slow contact so its discrimination frequencies lie inside the common calibrated amplitude and phase band, and include rate-reconstruction error in the uncertainty. Hold inertia and contact geometry fixed while changing support stiffness, then change contact compliance independently. Agreement of hammer motion with disagreement in anvil motion rejects a claimed internal reconstruction. Trigger offset, probe loading, anti-alias response, colored uncertainty and fixture variation must enter the comparison. For a selected commercial driver, record the bit or socket allocation, sensor location, contact-duration range and usable calibrated bandwidth anew; the slow rig does not establish these. A fully synchronized industrial impact measurement is a stronger, separately unfulfilled requirement.
-
-## Independent coordinates and correlated uncertainty
-\label{sec:coefficient-identification}
-
-The target coefficient must first be assigned to a declared local contact or joint law, or to a specified eliminated observation equation. State its derivative convention, normalization, physical input and measured response. Independently changing the selected component while keeping the surrounding model fixed tests that assignment; refitting every block after each change does not.
-
-Let $a,b,c>0$ be inertial, damping and stiffness references. The dimensionally admissible coefficients
-\begin{equation}
- A_{r,k}=a^{k-1+r}b^{2-k-2r}c^r
- =S\tau^k\rho^{-r},\quad S=b^2/a,\quad\tau=a/b,\quad\rho=b^2/(ac)
- \label{eq:coefficients}
-\end{equation}
-have the dimensions required to multiply the $k$th derivative. At fixed $\rho$, changing $r$ only rescales a column in coefficient identification. In a two-coordinate contact model a normalized coefficient can take the form
-\begin{equation}
- B(\rho,\eta)=w_0+w_1\eta+w_2\eta^2/\rho.
- \label{eq:weak-coefficient}
-\end{equation}
-Here $B$ is the coefficient divided by its dimensional reference; $\eta>0$ is an independently varied damping ratio. Configuration III has $w=(1,1/100,1/2)$. The alternative $\widetilde w=(101/100,0,1/2)$ agrees at every point with $\eta=1$. At $(\rho,\eta)=(1,1),(4,1),(1,2)$, the design determinant is $3/4$ and the first model predicts $151/100,227/200,151/50$. The alternative predicts $301/100$ at the last point. Independent variation therefore creates an exact separation of $1/100$ there.
-
-For two observations with variance $\sigma^2$ and correlation $\gamma$, the uncertainty variance of their difference is exactly $2\sigma^2(1-\gamma)$. More generally, a linear contrast $c^Ty$ has variance $c^T\Sigma c$, with the full spatial and temporal covariance $\Sigma$. These expressions follow by expanding the covariance of the sum; positive-definiteness requires $|\gamma|<1$ in the nonsingular two-channel case. With bounded contrast error $\epsilon$, predictions separated by $1/100$ have disjoint error intervals when $2\epsilon<1/100$. A covariance alone does not supply a deterministic bound without a distributional assumption.
-
-This is a finite discrimination result for a declared support. A device may require another support or another observation operator. Calibration, coefficient estimation, model choice and the final independent condition must use separate information. The remaining question concerns realistic covariance and weak contributions on independently varied physical coordinates, not a change in energy when a coefficient becomes difficult to estimate.
-
-The coordinates can be varied physically: choose $a=J_a$, $b=d_j$, $c=k_j$ and $\eta=d_c/d_j$. Holding $J_a=1\ \mathrm{kg\,m^2}$ and $d_j=1\ \mathrm{N\,m\,s/rad}$, configuration III's three settings require $(k_j,d_c)=(1,1),(1/4,1),(1,2)$ in their corresponding SI units. These knobs set the coordinates; the law \eqref{eq:weak-coefficient} remains a hypothesis about the inferred coefficient. For coefficient observations $b_1,b_2,b_3$ at the exact settings, matrix inversion yields
-\begin{equation}
- w_1=-5b_1+4b_2+b_3,\qquad
- |\delta w_1|\leq5\epsilon_1+4\epsilon_2+\epsilon_3.
- \label{eq:coefficient-bound}
-\end{equation}
-Here $|\delta b_j|\leq\epsilon_j$. Equal candidate uncertainty intervals for $w_1=1/100$ and $0$ separate if the right-hand side is below $1/200$. With uncertain positive coordinates and positive candidate weights, the exact prediction interval has endpoints $w_0+w_1\eta_-+w_2\eta_-^2/\rho_+$ and $w_0+w_1\eta_++w_2\eta_+^2/\rho_-$. These component-calibration bounds enter before comparing coefficients; invertibility alone supplies no practical error bound.
-
-The unresolved question is whether independent coordinates and realistic correlated uncertainty make the weak coefficient contributions identifiable. Interchangeable resistors and capacitors on an ordinary low-frequency circuit provide inexpensive independent parameter changes, while simultaneous voltage and current channels provide an empirical covariance estimate. Holding $\rho$ fixed supplies a deliberate null control; changing it independently of a second ratio can remove that particular proportionality. The chosen support and voltage/current observation map still require a full rank and uncertainty check. The first attainable result is separation of specified competing laws on independently chosen conditions. Recovering every weak contribution requires the stronger support-wide sensitivity condition; a complete physical account additionally needs the internal states and ports. Failure despite adequate sensitivity indicates an inadequate model or an incorrect uncertainty specification. Terminal measurements alone do not identify internal stresses.
-
-## A shunt state and a transferable resonator law
-\label{sec:resonator-identification}
-
-A motional series branch $(R_m,L_m,C_m)$ in parallel with $C_0$ obeys, at complex frequency $s$,
-\begin{equation}
- Y(s)=sC_0+\frac{sC_m}{L_mC_ms^2+R_mC_ms+1}.
- \label{eq:resonator}
-\end{equation}
-This follows from Kirchhoff's current law with common voltage $v$, motional current $i_m$, charge $q_m$, and state laws $\dot q_m=i_m$, $L_m\dot i_m=v-R_mi_m-q_m/C_m$, $i=C_0\dot v+i_m$. It is the conventional motional-plus-shunt description discussed by [Bible (2002)][bible]. A voltage-driven experiment prescribes the shunt voltage; a finite source impedance restores that capacitor as an independent state of the connected system.
-
-The input-current channel observes total $i$, not motional $i_m$, and the voltage channel observes the common voltage at the two parallel terminals. Identifying the motional branch therefore needs its own current observation or subtraction of the independently calibrated shunt current. With that attachment fixed, choosing admittance exposes the local change exactly:
-\begin{equation}
- Y_b-Y_a=s\Delta C_0,\qquad
- Z_b-Z_a=-s\Delta C_0 Z_aZ_b.
- \label{eq:shunt-identification}
-\end{equation}
-The second identity follows from $Z=1/Y$ where both ratios are defined. Reciprocation creates no independent data: transport the complex gain/phase uncertainty and common calibration errors through it. Near a zero, use the undivided voltage/current relation or the other defined ratio.
-
-At $\omega_s=1/\sqrt{L_mC_m}$ the motional admittance is $1/R_m$, hence a changed shunt capacitance predicts $\Delta\operatorname{Im}Y=\omega_s\Delta C_0$. Configuration IV uses illustrative low-frequency values $R_m=1\ \Omega$, $L_m=1\ \mathrm H$, $C_m=1\ \mathrm F$, with $C_0=1$ or $2\ \mathrm F$. At $\omega_s=1\ \mathrm{rad/s}$, the two impedances are $(1-\ii)/2$ and $(1-2\ii)/5\ \Omega$. A series-only reading gives $1\ \Omega$ in both cases. These are exact component controls, not quartz parameter values.
-
-For peak voltage $V$ at resonance over one period $T=2\pi/\omega_s$, separately integrating $vi$, $-R_mi_m^2$ and the shunt product $vC_0\dot v$ gives
-\begin{equation}
- W_{\rm source}=\frac{TV^2}{2R_m},\qquad
- W_{R_m}=-\frac{TV^2}{2R_m},\qquad
- \int_0^T vC_0\dot v\,\dd t=0.
- \label{eq:rf-work}
-\end{equation}
-Each component returns to its initial periodic state, but its instantaneous store varies. At $V=1\ \mathrm V$ in configuration IV the source and loss works are $\pi$ and $-\pi\ \mathrm J$. The imaginary admittance, rather than the equal period work, distinguishes the shunts.
-
-The open acquisition requires calibrated multi-device complex impedance and independent shunt variation, with synchronized internal/terminal traces where an internal claim is made. Twelve resonators and three fixture/component variants define an illustrative finite scope, not a statistically derived sample size. Shunt subtraction identifies $Y-sC_0$ for each device. Transferability requires a separately specified law predicting its $L_m,R_m,C_m$ from independently controlled device properties, calibrated on one set and evaluated on other declared devices and frequencies. No such law follows from the shunt control alone. Fixture compensation and RF current/voltage definitions follow [Keysight Technologies (2026)][keysight]; temperature, aging and nonlinear behavior require their own domain.
-
-One device at fixed $\rho$ identifies only the combined coefficient at each $k$. Independent devices or controlled components are required to infer exponent dependence. The practical unresolved question is whether calibrated multi-device impedance measurements support a transferable coefficient law. A low-power VNA measurement of several resonators with independently varied shunt capacitance supplies an accessible complex observable and a controllable second coordinate. Fixture calibration and compensation are essential, as described by [Keysight (2026)][keysight]. The predicted alternatives are a common rational state model versus coefficients that change with fixture or amplitude. Such a measurement does not establish nonlinear, temperature or aging behavior, and no acquisition is asserted here.
-
-### Moving a shunt changes the synthesized system
-\label{sec:shunt-location}
-
-Use the same bare coil $Z_w=R+sL$, $R,L>0$, another linear series block $Z_e$ and capacitor $C_p>0$ in two connections. Hold the external drive and voltage/current measurement terminals fixed. A capacitor across the coil alone has local admittance $Z_w^{-1}+sC_p$; add $Z_e$ in series after taking its reciprocal. A capacitor across both blocks instead adds $sC_p$ to $(Z_e+Z_w)^{-1}$. Thus
-\begin{equation}
- Z_{\rm local}=Z_e+\frac{Z_w}{1+sC_pZ_w},\qquad
- Z_{\rm whole}=\frac{Z_e+Z_w}{1+sC_p(Z_e+Z_w)}.
- \label{eq:shunt-location}
-\end{equation}
-This is a physical attachment change, independent of whether the final response is expressed as impedance or admittance. Voltage and current amplitudes and relative phase give its complex observable. Use an ordinary low-frequency RLC realization whose responses and fixture lie inside the calibrated band; any RF device needs its own bandwidth and loading assessment.
-
-At $s=\ii\omega$ with finite, defined responses, exact components and absolute complex-response error bounds $\epsilon_{\rm local},\epsilon_{\rm whole}$, the prediction disks are disjoint if
-\begin{equation}
- |Z_{\rm local}-Z_{\rm whole}|>
-       \epsilon_{\rm local}+\epsilon_{\rm whole}.
- \label{eq:shunt-location-separation}
-\end{equation}
-This is the triangle-inequality separation condition, not a claim that the two placements separate at every frequency. Component and fixture uncertainty enlarge the prediction sets; shared calibration errors require the joint comparison of Section \ref{sec:coefficient-identification}. If they overlap, another frequency, an independent component change or a local voltage/current channel can supply information. Conditions used to estimate the law remain separate from those used to test its prediction. Period work is still the separately integrated physical product; it does not choose a placement or a coefficient.
-
-## Hidden prepared energy under finite coupling
-\label{sec:hidden-coupling}
-
-Place a series RC branch behind an ideal transformer with secondary-to-primary voltage ratio $\nu>0$, and add a terminal conductance $G_{0}>0$. Orient primary branch current into the transformer and secondary current $j$ toward the RC load, so that $v_s=\nu v_p$ and $i_{p,\mathrm{branch}}=\nu j$. For capacitor voltage $x$, the initialized realization is
-\begin{equation}
- j=\frac{\nu v_p-x}{R},\qquad C\dot x=j,\qquad
- i_p=G_0v_p+\nu j,\qquad R,C>0.
- \label{eq:hidden-rc-state}
-\end{equation}
-Eliminating $x$ with zero initial state gives the admittance
-\begin{equation}
- Y(s)=G_{0}+\frac{\nu^2sC}{1+sRC},\qquad
- h=\frac{\nu^2}{R},\qquad \delta_{h}=\frac h{G_{0}+h}.
- \label{eq:hidden-rc}
-\end{equation}
-For $x(0)=V_0$, the terminal current additionally contains $-\nu V_0e^{-t/(RC)}/R$. The poles and initialized response therefore follow from the same orientation. With primary-to-secondary ratio $n=1/\nu$, reflecting a fixed secondary admittance divides it by $n^2$.
-
-As $\nu\to0$, both the driven branch contribution and its terminal initial-state signal vanish. The endpoint of \eqref{eq:hidden-rc-state} is a decoupled terminal with a closed internal RC discharge loop, not an ordinary finite-turns transformer. An open series RC branch would not have the same discharge. Enclose the capacitor and exclude the two heat reservoirs: the inward powers are $v_pi_p$, $-G_0v_p^2$, and $-Rj^2$. Integrating them separately gives their sum $\int_0^T xj\,\dd t=C[x(T)^2-x(0)^2]/2$, agreeing with the independently evaluated store $Cx^2/2$. In the decoupled endpoint with $v_p=0$, the sole nonzero transfer and endpoint store are
-\begin{equation}
- W_{R}(0,T)=-\int_{0}^T\frac{V_{0}^2e^{-2t/(RC)}}R\,\dd t
- =-\frac{CV_{0}^2}{2}(1-e^{-2T/(RC)}),\quad
- E(T)=\frac{CV_{0}^2}{2}e^{-2T/(RC)}.
- \label{eq:hidden-discharge}
-\end{equation}
-Exact terminal cancellation therefore does not imply absence of an internal prepared mode. The changing store in \eqref{eq:hidden-discharge} is accounted for by the independently integrated resistor work, even though the terminal work is zero. Its relevance to a higher-order realization is that eliminated internal coordinates can carry the same hidden change.
-
-### Measuring a changing store behind a quiet terminal
-\label{sec:hidden-measurement}
-
-How tightly can terminal uncertainty bound hidden prepared energy when coupling and preparation are only partly known? With $v_p=0$, known finite $\nu>0$ and the state law \eqref{eq:hidden-rc-state},
-\begin{equation}
- |i_p(0)|=\frac{\nu|V_0|}{R},\qquad E(0)=\frac{CV_0^2}{2},\qquad
- |i_p(0)|\leq\epsilon_i\quad\Longrightarrow\quad
- E(0)\leq\frac{CR^2\epsilon_i^2}{2\nu^2}.
- \label{eq:hidden-energy-bound}
-\end{equation}
-Here $\epsilon_i$ bounds the true initial current after calibration and timing uncertainty, not merely the displayed reading. The bound follows by eliminating $|V_0|$. If $C\leq C_{\max}$, $R\leq R_{\max}$ and $\nu\geq\nu_{\min}>0$, the corresponding bound is $C_{\max}R_{\max}^2\epsilon_i^2/(2\nu_{\min}^2)$. Without a positive coupling lower bound or an independent preparation bound, there is no uniform finite ceiling: choosing $|V_0|=R\epsilon_i/\nu$ preserves the terminal limit while the store grows as $\nu^{-2}$. Those arbitrarily large states belong to the ideal parameter family; finite voltage and preparation limits must be supplied for an actual device.
-
-A low-voltage RC branch with an independently calibrated finite coupling permits ordinary capacitor-voltage, resistor-voltage/current and terminal-current measurements. Prepare a specified $V_0$, establish the operation-side state after switching, and observe a finite interval $[0,T]$ with $v_p=0$. For the boundary enclosing the capacitor and ideal coupling, source work is zero and the resistor power is $-v_Rj=-Rj^2$. Integrating it gives \eqref{eq:hidden-discharge}; evaluate $CV_0^2/2$ and $Cx(T)^2/2$ independently from the endpoint voltages. The exact residual is zero for this declared discharge. A measured residual exceeding its independently bounded uncertainty remains open, while a resolved capacitor change with an unresolved terminal signal establishes the narrower hidden-state result. Probe loading supplies an additional port if it is appreciable in the declared model.
-
-The equal-and-opposite polarization preparation in Section \ref{sec:polarization} offers a low-frequency emulator of terminal cancellation with separately accessible stores. Multiple nearly cancelling modes, nonideal transformers, preparation limits, sensor loading and finite observation bandwidth still need bounds. A resolved single-branch account does not close those broader questions.
-
-### A three-state loop with a directly measurable hidden store
-\label{sec:hidden-loop}
-
-A closed loop containing an inductor, a series resistance $R_\Sigma\geq0$ and two series-connected parallel RC sections gives a direct control for that observation question. With identical $R,C>0$, no applied voltage and consistently oriented section voltages,
-\begin{equation}
- L\dot i=-R_\Sigma i-v_1-v_2,\qquad
- C\dot v_j=i-v_j/R,\quad j=1,2.
- \label{eq:hidden-loop-state}
-\end{equation}
-The compatible preparation and exact response are
-\begin{equation}
- (i(0),v_1(0),v_2(0))=(0,V_0,-V_0),\qquad
- i=0,\quad v_1=V_0e^{-t/(RC)},\quad v_2=-V_0e^{-t/(RC)}.
- \label{eq:hidden-loop-motion}
-\end{equation}
-There are three independent physical states. The driven pair $(i,v_1+v_2)$ has two states; $v_1-v_2$ relaxes independently and is absent from the loop-current transfer. A branch-voltage observation generally retains all three initialized modes. Unequal time constants couple the difference back to the terminal observation. Thus a quiet terminal does not remove the third state.
-
-Enclose the inductor and both capacitors, excluding heat reservoirs, on the smooth operating interval $[0,T]$. The separate inward resistor powers are $-R_\Sigma i^2$ and $-v_jj_{R,j}$, where $j_{R,j}=v_j/R$. Direct integration and independent endpoint evaluation give
-\begin{align}
- W_\Sigma&=0,&
- W_{R,j}&=-\int_0^T\frac{v_j^2}{R}\,\dd t
- =-\frac{CV_0^2}{2}(1-e^{-2T/(RC)}),\nonumber\\
- E_0&=CV_0^2,& E_1&=CV_0^2e^{-2T/(RC)},\nonumber\\
- r_E&=E_1-E_0-W_\Sigma-W_{R,1}-W_{R,2}=0.
- \label{eq:hidden-loop-work}
-\end{align}
-The two nonzero works and decreasing stores are invisible to a terminal-only account. This exact model resolves their destination; it does not report an unexplained gain. Preparation is a separate interval. Closing the loop at zero inductor current with continuous capacitor voltages has no impulse under these laws; actual switch and probe transfers need their own account.
-
-For the illustrative component choices $R=1\ \mathrm{k}\Omega$, $C=1\ \mathrm{mF}$, $V_0=1\ \mathrm V$, and $T=1\ \mathrm s$, the initial store is $1/1000\ \mathrm J$ and each resistor work is $-(1-e^{-2})/2000\ \mathrm J$. Ordinary voltage channels and shunt-current measurements resolve the internal volt and milliampere scales over seconds. The open experimental alternatives are a resolved internal change with unresolved terminal signal, an independently closed resistor account, or a signed residual beyond the declared resolution. Only the last leaves the energy account unresolved.
-
-An assumed calibration budget makes that distinction quantitative. Take capacitance estimates $\widehat C=1/1000\ \mathrm F$ with bounds $\epsilon_C=1/100000\ \mathrm F$, voltage error $\epsilon_v=1/1000\ \mathrm V$, resistor-current error $\epsilon_j=1/10^6\ \mathrm A$, and observed bounds $|\widehat v_j|\leq11/10\ \mathrm V$, $|\widehat j_{R,j}|\leq11/10000\ \mathrm A$ throughout the one-second interval. The channel and endpoint formulas in Section \ref{sec:instrument-bounds} give
-\begin{equation}
- \epsilon_{\mathrm{cap}+R}
- =\frac{1652401}{50000000000}\ \mathrm J
- <\frac1{25000}\ \mathrm J,\qquad
- \epsilon_r\leq\epsilon_{\mathrm{cap}+R}+\epsilon_{\mathrm{rest}}.
- \label{eq:hidden-loop-resolution}
-\end{equation}
-This is the sum of four capacitor endpoint bounds and two resistor-work bounds, not an achieved apparatus specification. The independently determined $\epsilon_{\mathrm{rest}}$ must cover inductor endpoints, series-resistance work, timing, acquisition integration, probe loading and any event account. Terminal quietness does not set it to zero. Compare the predicted capacitor decrease $(1-e^{-2})/1000\ \mathrm J$ with its endpoint error, and compare the measured full residual with its separate total error. Deliberately unequal relaxation times provide the contrasting observation derived in \eqref{eq:polarization-separation}.
-
-## Polarization preparations invisible at the terminal
-\label{sec:polarization}
-
-A coil feeding a polarization emulator has states $i,v_1,\ldots,v_N$ and equations
-\begin{equation}
- L\dot i+R_\Sigma i+V_{\rm oc}+\sum_jv_j=0,
- \qquad C_j\dot v_j=i-v_j/R_j.
- \label{eq:polarization}
-\end{equation}
-Positive $i$ enters the emulator. With a diode this law ends at the first downward current zero; each polarization branch then relaxes with $i=0$. For distinct active time constants $\tau_j=R_jC_j$, eliminating the branches gives generic order $N+1$ for $i$, while equal time constants combine at that observation. The storage boundary includes the coil and branch capacitors. Its external powers are $-V_{\rm oc}i$, $-R_\Sigma i^2$ and the separately retained $-v_j^2/R_j$; the DC source and all heat reservoirs are outside.
-
-Each local branch law $C_j\dot v_j+v_j/R_j=i$ identifies a parallel RC block; the loop adds its voltage to those of the other series-connected blocks. Independently calibrated $R_j,C_j$ and branch-voltage observations specify the local information before composition. The recurrence in [*Third- and Higher-Order ODEs*][main] then predicts the complete current and forcing operators without refitting unaffected branches. A terminal fit alone need not assign a pole to an individual branch, and compatible prepared states remain necessary even after the terminal transfer is reduced.
-
-For two equal branches define $z_+=(v_1+v_2)/2$ and $z_-=(v_1-v_2)/2$. Direct addition and subtraction give
-\begin{equation}
- C\dot z_+=i-z_+/R,\qquad C\dot z_-=-z_-/R,
- \qquad E_C=Cz_+^2+Cz_-^2.
- \label{eq:hidden-battery}
-\end{equation}
-The terminal loop sees $2z_+$ and is independent of $z_-$. Two states with identical $i,z_+$ and arbitrary different $z_-$ therefore have identical terminal current for as long as the same graph applies. This is an exact unobservable direction, rather than a small nonzero sensitivity.
-
-Configuration V has $C=1\ \mathrm{mF}$, $R=1\ \mathrm{k}\Omega$, $v_1(0)=1\ \mathrm V$, $v_2(0)=-1\ \mathrm V$ and terminal current zero. It can be isolated during observation, or compared with another preparation on the same driven terminal trajectory using superposition. On $[0,\log2]\ \mathrm s$, its hidden store falls from $1$ to $1/4\ \mathrm{mJ}$. The two independently integrated resistor works are each
-\begin{equation}
- -\int_0^{\log2}\frac{e^{-2t}}{1000}\,\dd t
- =-\frac38\ \mathrm{mJ}.
- \label{eq:battery-loss}
-\end{equation}
-An unprepared pair gives zero branch voltages and zero hidden heat under the same zero terminal current.
-
-These states have a finite preparation. With accessible branch current sources, prescribe $v_j=\pm(t+1)\ \mathrm V$ on $[-1,0]\ \mathrm s$ while the terminal connection is open. The required source current is $i_{pj}=C\dot v_j+v_j/R$. Its work $\int v_ji_{pj}\dd t=5/6\ \mathrm{mJ}$ per branch and the resistor work $-1/3\ \mathrm{mJ}$ leave $1/2\ \mathrm{mJ}$ in each capacitor. The source efforts and flows, including the negative-voltage branch, have their specified signs.
-
-After a deliberate split into time constants $\tau_1\ne\tau_2$, the same isolated opposite preparation yields terminal voltage $a(e^{-t/\tau_1}-e^{-t/\tau_2})$. At $a=1\ \mathrm V$, $\tau_1=1\ \mathrm s$, $\tau_2=2\ \mathrm s$ and $t=\log2\ \mathrm s$, this is $1/2-1/\sqrt2\ \mathrm V$, versus zero for equal constants. Branch probes distinguish exact hidden freedom from a transient lying below terminal resolution. No finite noise bound can certify arbitrary order when time constants and amplitudes can approach coincident or vanishing values without a separation restriction.
-
-A bounded positive statement follows directly: the split and equal-time predictions at a declared $t$ have disjoint voltage intervals of half-width $\epsilon_V$ if
-\begin{equation}
- |a(e^{-t/\tau_1}-e^{-t/\tau_2})|>2\epsilon_V.
- \label{eq:polarization-separation}
-\end{equation}
-For the stated example, $\epsilon_V<(1/\sqrt2-1/2)/2\ \mathrm V$ suffices when parameters and preparation are exact. Their uncertainties widen the prediction intervals. Recovery of an unknown order requires, in addition, a maximum candidate order, a lower bound on visible amplitudes, separated active time constants and a specified observation/noise domain; the two-alternative result asserts none of these globally.
-
-Recovering order from noisy data with arbitrary branch preparations remains a practical open question. A low-voltage battery emulator made from a DC source and independently accessible RC branches allows ordinary shunt-current and capacitor-voltage measurements without uncertain electrochemistry. Prepare equal and opposite voltages on equal-time-constant branches: the terminal transient is unchanged while branch probes reveal relaxation. Split their time constants controllably and compare the uncertainty-scaled sensitivity with the covariance-weighted observation sensitivity. This distinguishes exact hidden freedom from inadequate resolution. It does not validate an actual battery's temperature- and age-dependent spectrum.
-
-## Terminal reaction and internal absorber stress
-\label{sec:absorber-identification}
-
-Take primary mass $M$, absorber mass $m$, fixed-base spring/damper $k_0,c_0$ and coupling $k_2,c_2$. With fixed base and primary force $F(t)$,
-\begin{align}
- M\ddot x_1+c_0\dot x_1+k_0x_1+c_2(\dot x_1-\dot x_2)+k_2(x_1-x_2)&=F,\nonumber\\
- m\ddot x_2+c_2(\dot x_2-\dot x_1)+k_2(x_2-x_1)&=0.
- \label{eq:absorber}
-\end{align}
-The terminal reaction is $R_b=k_0x_1+c_0\dot x_1$ and the coupling force is $F_2=k_2(x_1-x_2)+c_2(\dot x_1-\dot x_2)$. At $c_2=0$ and $\omega^2=k_2/m$, a prepared exact periodic solution is
-\begin{equation}
- F=F_0\cos\omega t,\qquad x_1=0,
- \qquad x_2=-\frac{F_0}{k_2}\cos\omega t,
- \qquad R_b=0,\quad F_2=F_0\cos\omega t.
- \label{eq:antiresonance}
-\end{equation}
-Substitution proves the result without inferring force from the zero reaction. In a calibrated known model with known drive, the force can of course be inferred from that additional information; the unresolved inference is from the reaction alone and uncertain internal realization.
-
-Configuration VI compares $(m,k_2)=(1/10\ \mathrm{kg},100\ \mathrm{N/m})$ and $(1/5\ \mathrm{kg},200\ \mathrm{N/m})$, with the same $\omega=10\sqrt{10}\ \mathrm{rad/s}$, $F_0=1\ \mathrm N$, $M=1\ \mathrm{kg}$, $k_0=100\ \mathrm{N/m}$ and $c_0=1\ \mathrm{N\,s/m}$. Coupling cross sections of $1$ and $2\ \mathrm{mm^2}$ with the same modulus and length give these stiffness ratios. The two zero terminal reactions coexist with extension amplitudes $1/100$ and $1/200\ \mathrm m$, and stress amplitudes $1$ and $1/2\ \mathrm{MPa}$.
-
-The boundary contains both masses and both springs. Its source power $F\dot x_1$ and support-damper power $-c_0\dot x_1^2$ vanish separately on this solution; $c_2=0$. Nevertheless its independently evaluated coupling-plus-absorber store is $F_0^2/(2k_2)$, respectively $1/200$ and $1/400\ \mathrm J$, at both ends of every period. The initial state is prepared, not assumed to arise from rest with these zero works. Internal strain and motion separate the configurations; a bounded structural-negative result needs no reopening. Practical stress conversion, material calibration, additional modes and loading remain physical questions.
-
 # Measurements that discriminate the retained alternatives
 \label{sec:measurements}
 
@@ -1582,7 +1659,7 @@ Let true effort and flow be $e,f$ and measurements be $e+\delta e,f+\delta f$, w
  =:\epsilon_W.
  \label{eq:work-uncertainty}
 \end{equation}
-Known amplitude envelopes can replace the unknown $|e|,|f|$ on the right. On a smooth interval with $|\dot f|\leq M_f$, a relative clock error $\epsilon_t$ adds at most $M_f\epsilon_t$ to the flow-error bound. At a jump, use separate event-side bounds and a bounded-power integral over the uncertain event-time window; a smooth derivative bound cannot cross an unspecified discontinuity. Any hardware integration error is an additional bound, whereas the closed-form predictions have exactly zero numerical integration residual.
+Known amplitude envelopes can replace the unknown $|e|,|f|$ on the right. On a smooth interval with $|\dot f|\leq M_f$, a relative clock error $\epsilon_t$ adds at most $M_f\epsilon_t$ to the flow-error bound. At a jump, use separate event-side bounds and a bounded-power integral over the uncertain event-time window; a smooth derivative bound cannot cross an unspecified discontinuity. Hardware integration error requires its own bound.
 
 For a capacitor, suppose $C\leq C_{\max}$, $|v|\leq V_{\max}$, and absolute component and voltage errors are at most $\epsilon_C,\epsilon_v$. Direct expansion of $Cv^2/2$ gives the endpoint bound
 \begin{equation}
@@ -1705,7 +1782,7 @@ The resonator task remains an acquisition across physical devices, calibrated fi
 
 [*Third- and Higher-Order ODEs*][main] supplies the broader distinction between coefficient constructions, state elimination and physical realization. The present results develop its open questions by attaching explicit preparations, event paths, recipient channels and calibrated observations. The complete finite port correspondence in \eqref{eq:analogy}, the distinct contact release laws and the two-channel work partition each identify information absent from a scalar trajectory.
 
-[Wettstein, Grauberger and Matthiesen (2021)][wettstein] relate hammer-mechanism behavior to a changing sequence of contacts and embodiment relations. That modeling context motivates retaining contact and support coordinates through engagement. The exact release destination and repeated constitutive law here require their own measurements. [Bible (2002)][bible] describes the conventional crystal motional branch and shunt capacitance used in \eqref{eq:resonator}; that component description does not establish a transferable coefficient law across arbitrary devices. [Keysight Technologies (2026)][keysight] explains impedance methods and fixture compensation. Those measurement distinctions support the calibrated complex-port comparison, while uncertainty and internal-state identification remain specific to the apparatus and model class.
+[Wettstein, Grauberger and Matthiesen (2021)][wettstein] relate hammer-mechanism behavior to a changing sequence of contacts and embodiment relations. That modeling context motivates retaining contact and support coordinates through engagement. The exact release destination and repeated constitutive law here require their own measurements. [Bible (2002)][bible] describes the conventional crystal motional branch and shunt capacitance used in \eqref{eq:resonator}; that component description does not establish a transferable coefficient law across arbitrary devices. [Keysight Technologies (n.d.)][keysight] explains impedance methods and fixture compensation. Those measurement distinctions support the calibrated complex-port comparison, while uncertainty and internal-state identification remain specific to the apparatus and model class.
 
 [Kalman (1963)][kalman] supplies the general realization and observability distinction; the present contact inverse and prepared polarization controls specify what additional channels identify in particular models. [Willems (1972)][willems] provides the storage/supply framework for interconnected systems; the separately integrated event paths here identify which physical ports that framework needs. [Schwager and Pöschel (2007)][schwager] distinguish repulsive-contact termination from a continued linear-dashpot collision. The retained material state and receiver comparisons in Section \ref{sec:contact} address the additional destination question. These established principles provide context for the explicit constructions, rather than an assignment of any unmeasured work.
 
@@ -2131,7 +2208,7 @@ The measurement comparisons in Section \ref{sec:measurements} use independent wo
 ## Which residual survives the independent account?
 \label{sec:residual-outcomes}
 
-A positive or negative energy residual is reported for the declared boundary and interval before any additional transfer is assigned. For each case retain the initial and final constitutive stores, every separately integrated signed work, event-side states, and the checks on polarity, timing, dimensions and constitutive assumptions. The exact contact deficit \eqref{eq:contact-deficit} and coupling residual \eqref{eq:coupling-residual} are nonzero examples with zero numerical integration error. An independently demonstrated transfer or store correction changes the account by its own signed contribution; report the remaining residual as well.
+A positive or negative energy residual is reported for the declared boundary and interval before any additional transfer is assigned. For each case retain the initial and final constitutive stores, every separately integrated signed work, event-side states, and the checks on polarity, timing, dimensions and constitutive assumptions. The exact contact deficit \eqref{eq:contact-deficit} and coupling residual \eqref{eq:coupling-residual} are nonzero examples under the stated exact model. An independently demonstrated transfer or store correction changes the account by its own signed contribution; report the remaining residual as well.
 
 For measurement estimates $\widehat E_j,\widehat W_\ell$, suppose calibration and the declared observation model establish $|\widehat E_j-E_j|\leq\epsilon_{E_j}$ and $|\widehat W_\ell-W_\ell|\leq\epsilon_{W_\ell}$. Then
 \begin{align}
@@ -2196,7 +2273,372 @@ Optimizing over a calibrated correlated set can tighten this enclosure; omitting
 
 For the hidden-loop control, \eqref{eq:capacitor-error} bounds each capacitor endpoint by $1432301/200000000000\ \mathrm J$. Equation \eqref{eq:channel-work-bound} bounds each one-second resistor work by $2201/1000000000\ \mathrm J$. Four endpoints and two works give \eqref{eq:hidden-loop-resolution} exactly. The example demonstrates a falsifiable resolution requirement, not observed accuracy.
 
-Recorded-waveform integration adds its own independently bounded acquisition and quadrature error to each work. Exact analytic integrations in this article have zero numerical integration error; that does not eliminate physical calibration or omitted-model uncertainty. A residual bound is complete only for its declared boundary, all named ports, both endpoint states, event sides and observation model. Report an unknown contribution as unknown rather than choosing its size to contain the residual.
+Recorded-waveform integration adds its own independently bounded acquisition and quadrature error to each work. Exact analytic integration does not eliminate physical calibration or omitted-model uncertainty. A residual bound is complete only for its declared boundary, all named ports, both endpoint states, event sides and observation model. Report an unknown contribution as unknown rather than choosing its size to contain the residual.
+
+# Charge observations, finite reconnection and reset order
+\label{sec:charge-reconnection}
+
+An exact two-cell control distinguishes charge magnitude from stored energy. With $C_1=1\ \mathrm F$, $C_2=19\ \mathrm F$, $L=20/19\ \mathrm H$, currents positive from cell 1 to cell 2, $\dot q_1=-i$, $\dot q_2=i$, $L\dot i=q_1/C_1-q_2/C_2$. Starting at $(q_1,q_2,i)=(10,0,0)$ in SI units gives
+$$
+ q_1=\tfrac12+\tfrac{19}2\cos t,\quad q_2=\tfrac{19}2(1-\cos t),\quad i=\tfrac{19}2\sin t.
+$$
+On $[0,\pi]\ \mathrm s$, the absolute charge sum rises from $10$ to $28\ \mathrm C$. Independently evaluated initial component stores are $(50,0,0)\ \mathrm J$ and final stores $(81/2,19/2,0)\ \mathrm J$. The separate powers $-(q_1/C_1)i$, $(q_2/C_2)i$, $(q_1/C_1-q_2/C_2)i$ integrate to $-19/2,19/2,0\ \mathrm J$. There is no external port or switching impulse. For a single isolated LC pair the analogous half-cycle reverses capacitor charge with zero net capacitor and inductor work over that full half-cycle, while the first quarter-cycle transfers $Cv_0^2/2$ between their stores. Detachment at nonzero current requires another event law.
+
+Isolated parallel resistive exchange instead gives $Q=q_1+q_2$ constant, $\delta=v_1-v_2=\delta_0e^{-t/(RC_*)}$, $C_*=C_1C_2/(C_1+C_2)$, and
+$$
+ q_1=\frac{C_1(Q+C_2\delta)}{C_1+C_2},\quad
+ q_2=\frac{C_2(Q-C_1\delta)}{C_1+C_2},\quad
+ E_C=\frac{Q^2}{2(C_1+C_2)}+\frac{C_*\delta^2}{2}.
+$$
+The absolute sum is constant for equal signs and has derivative $-2|\delta|/R$ for opposite signs, with nonpositive one-sided derivatives at zeros. The resistor exports $-C_*\delta_0^2(1-e^{-2T/(RC_*)})/2$. If a receiver and switch resistor are in series, each receives its own fraction $R_j/(R_L+R_s)$ of this released store. With $C_1=1$, $C_2=2$, $R_L=R_s=1$, $\delta_0=1$, $T=1$ in SI units, each heat is $(1-e^{-3/2})/6\ \mathrm J$.
+
+For two equal series cells and a receiver $R$, $s=v_1+v_2$ obeys $\dot s=-2s/(RC)$, while $\delta=v_1-v_2$ is constant. Unit $R,C$ and preparations $(1,1)$ and $(3,-1)\ \mathrm V$ give the same terminal voltage and current $2e^{-2t}$ in their SI units, but initial stores $1,5\ \mathrm J$. On $[0,1/4]\ \mathrm s$ each receiver work into the cell boundary is $-1+e^{-1}\ \mathrm J$ and final stores are $e^{-1},4+e^{-1}\ \mathrm J$. Thus this topology has an exact hidden preparation; terminal ambiguity is not a claim that reconnecting it leaves observations unchanged.
+
+## Noncommuting states and commuting work partitions
+
+For three grounded $1\ \mathrm F$ cells, let a $1\ \Omega$ edge act on cells 1--2 (A) or 2--3 (B). Each acts for $\log2/2\ \mathrm s$. Its state law is $\dot q=-aa^Tq$, with $a=(1,-1,0)^T$ or $(0,1,-1)^T$, and maps
+$$
+ M_A=\begin{pmatrix}3/4&1/4&0\\1/4&3/4&0\\0&0&1\end{pmatrix},\qquad
+ M_B=\begin{pmatrix}1&0&0\\0&3/4&1/4\\0&1/4&3/4\end{pmatrix}.
+$$
+Starting from $(1,0,-1)\ \mathrm C$, A then B ends at $(3/4,-1/16,-11/16)\ \mathrm C$; B then A ends at $(11/16,1/16,-3/4)\ \mathrm C$. The maps do not commute. Independently integrating $(a^Tq)^2/(1\ \Omega)$ gives first-channel heat $3/16\ \mathrm J$ and second-channel heat $75/256\ \mathrm J$ in either order, while the channel identities exchange. Initial and final stores are $1$ and $133/256\ \mathrm J$; total heat is $123/256\ \mathrm J$. States are continuous at connection changes, without impulses.
+
+This differs from the scalar two-cell reset. Starting at $(1,-1)\ \mathrm V$, either of two identical channels acts as $\dot v=-v/(1\ \mathrm s)$ for $\log2\ \mathrm s$; each channel shunts both cells with its stated unit resistors. Both orders end at $(1/4,-1/4)\ \mathrm V$. First and second channel heats are $3/4$ and $3/16\ \mathrm J$, with final store $1/16\ \mathrm J$. Scalar endpoint maps commute while separate channel works depend on order. Neither example proves a universal instantaneous partition.
+
+## A finite shunt with complete sign coverage
+\label{sec:finite-shunt-certificate}
+
+Retain the first LC graph on $[0,2]\ \mathrm s$ and connect a $1\ \Omega$ shunt across cell 1 only on $[\pi/2,\pi/2+1/10]\ \mathrm s$. Let $g=1\ \mathrm S$ there and zero elsewhere. The laws are $\dot q_1=-i-gq_1/C_1$, $\dot q_2=i$, $L\dot i=q_1/C_1-q_2/C_2$. The invariant $q_1+q_2$ applies only when $g=0$; during the edge its derivative is $-q_1/(1\ \mathrm s)$. The candidate $q_1-q_2$ is not invariant. Physical cell orientations never change.
+
+The reactive store obeys $\dot E=-g(q_1/C_1)^2$. Integrate that shunt export separately on each interval and evaluate all three store endpoints. If heat is retained, add its positive integral as a caloric store and remove the exported port. Reactive states remain continuous and modeled impulses zero. For the energized preparation $E\leq50\ \mathrm J$, weighted Cauchy--Schwarz gives $A_q^2\leq2(C_1+C_2)E_C\leq2000\ \mathrm{C^2}$. The separately admitted zero preparation stays zero.
+
+The sign certificate covers every time. Before the edge, $q_1,q_2>0$ apart from the initial tangency $q_2(0)=0$, and $A_q=10\ \mathrm C$. The store bound gives $|q_1|\leq10$, $|q_2|<44$, $|i|<10$ in SI units, hence $|\dot i|<117/10\ \mathrm{A/s}$. Throughout the edge $i>833/100\ \mathrm A$ and $q_1>-3/2\ \mathrm C$. Until the first zero, $-21/2\ \mathrm{A}\leq\dot q_1<-833/100\ \mathrm A$ because $0\leq q_1\leq1/2\ \mathrm C$. The unique zero therefore lies strictly between $\pi/2+1/21$ and $\pi/2+1/16\ \mathrm s$. It cannot recross: at a zero $\dot q_1=-i<0$. Before it $\dot A_q=-q_1/(1\ \mathrm s)<0$; after it $\dot A_q=2i+q_1/(1\ \mathrm s)>379/25\ \mathrm A$. After opening, $i>22/5\ \mathrm A$ up to $2\ \mathrm s$, so $q_1<0$, $q_2>0$ and $\dot A_q=2i>0$. At edge entry the one-sided magnitude derivatives are $0$ and $-1/2\ \mathrm A$; at exit both are positive. The charge zero is a cusp minimum, not a tangency. This proves the sign count and the stated loose magnitude bound for this graph and these two preparations; it establishes no universal multiplication factor or hardware bound.
+
+## Finite preparation and a loaded binary probe
+\label{sec:finite-bank-probe}
+
+A distinct finite graph resolves a bounded binary preparation question conditionally on its observation separation. Let node order be $(A,T,X_1,Y_1,X_2,Y_2)$ relative to a secondary return. Unit cells join $X_1-Y_1$ and $X_2-Y_2$; each node has $1/50\ \mathrm F$ parasitic. Three winding currents have
+$$
+ L=\begin{pmatrix}1&1/4&1/4\\1/4&1/4&1/8\\1/4&1/8&1/4\end{pmatrix}\mathrm H,
+ \quad R=\operatorname{diag}(1/4,1/20,1/20)\ \Omega.
+$$
+The first winding is driven through its physical primary return with zero operating voltage; secondary incidence columns are $e_A-e_T,e_T$, and the primary column is zero. The source resistor is $1/5\ \Omega$, each copper resistor $1/20\ \Omega$. A unit receiver joins $X_1-Y_2$. Six finite connections join $A-X_1,T-X_1,X_1-X_2,Y_1-Y_2,Y_1-X_2,X_1-Y_1$. The first five vary between $1/10000$ and $20\ \mathrm S$; the last is the cell probe, between $1/1000000$ and $1/10\ \mathrm S$. Each contributes its incidence outer product to $G(t)$.
+
+Use the electrical equations $L\dot i=B^Tv-Ri$, $C\dot v=-Bi-G(t)v-K^Ti_c(Kv)$, where $C=(1/50\ \mathrm F)I+(1\ \mathrm F)(a_1a_1^T+a_2a_2^T)$ and $a_j$ are cell incidences. Clamps on $A,T$ and both cells have threshold $4\ \mathrm V$ and slope $5\ \mathrm S$. The series command is $(0,0,0,0,1,0)$ through $1/4\ \mathrm s$, followed by $(0,0,1,1,0,1)$. Interpolate the conductance commands with $3r^2-2r^3$ across each $1/100\ \mathrm s$ edge; the first series connection rises from all-off on $[0,1/100]$. At $t=1\ \mathrm s$ commands turn off and $1/5\ \mathrm S$ node bleeders act through $t=2\ \mathrm s$. Each of six independent driver supplies feeds a $1/10000\ \mathrm F$ gate through $20\ \Omega$; these driver states and their powers are retained. The prescribed conductance law is not inferred from the separate gate voltage. That actuation relation remains a physical implementation question.
+
+Prepare the node vectors $v^{(0)}=(0,0,2,1,1,0)$ and $v^{(1)}=(0,0,2,-1,-1,0)\ \mathrm V$, with zero winding currents and gates. Their cell stores are $1,5\ \mathrm J$ and each parasitic store is $3/50\ \mathrm J$. On $[-1,0]\ \mathrm s$, disconnect winding/selectors and use six independent unit-resistance chargers from zero voltage. With dimensional units understood, the constant source vector is $u_p=(I-e^{-C^{-1}})^{-1}v^{(j)}$ and $v(t)=(I-e^{-(t+1)C^{-1}})u_p$. Integrate each $u_{p,k}(u_{p,k}-v_k)$ and each negative resistor heat separately. Heat obeys $\dot H=P_{\rm heat}-H/(2\ \mathrm s)$, so its exact endpoint is the exponentially weighted heat integral; retain it at connection. The two thermal preparations need not agree.
+
+The probe draws its actual conductance current and has a declared readout filter $\tau_f\dot y=a_1^Tv-y$, $\tau_f=1/50\ \mathrm s$, $y(0)=0$. This filter is an observation law; only the specified resistor is a physical load in this graph. Its electronics supply and realization are not established. In the inactive-clamp domain the complete observation has the time-ordered ten-coordinate map $y(t)=e_{10}^T\Phi(t,0)(i_0,v_0,0)^T$, including finite edges. The ideal series null is not transferred to this graph: finite off paths leak the hidden difference. A continuous pre-switch bound is
+$$
+ |\delta v_L(t)|\leq t\sqrt{c_L^TC^{-1}c_L}
+ \sqrt{(G_{\rm off}d)^TC^{-1}(G_{\rm off}d)},\quad
+ d=v^{(1)}-v^{(0)},\quad c_L=e_{X_1}-e_{Y_2}.
+$$
+It follows from passive incremental contraction and the Duhamel forcing of the formerly constant null direction. The preparation and topology, not a sampled terminal match, determine this bound.
+
+At $t=7/20\ \mathrm s$, define the exact predicted gap $\Delta_y=|e_{10}^T\Phi(t,0)(0,d,0)^T|$. A midpoint classifier identifies which of the two known cell energies was prepared whenever $\Delta_y>1/10\ \mathrm V$ and each complete observation error is at most $1/20\ \mathrm V$. It then meets a $1/100\ \mathrm J$ binary target. This is an exact conditional criterion; a floating evaluation of $\Phi$ is not a certified continuous error enclosure. For cell/readout magnitude below $4\ \mathrm V$, gain error $1/100000$, offset and sample errors each $1/1000\ \mathrm V$, timing error $10^{-8}\ \mathrm s$ and filter-time error $10^{-7}\ \mathrm s$ contribute at most $4/100000+2/1000+400(10^{-8}+10^{-7})\ \mathrm V$; any map-evaluation/model allowance must also fit the budget. Arbitrary unknown states, sign recovery and hardware calibration are separate questions.
+
+For both paths, integrate receiver, probe, every selector, clamp, copper, bleeder, gate supply, gate resistor and bath power on the same intervals, plus the six preparation sources. The reactive boundary exports resistor heat; the retained-thermal boundary includes it internally and exports receiver/probe/bath work. The probe's loading changes receiver work and endpoints and cannot be removed after evaluating its signal. The difference in receiver work is exactly $-\int_0^2[(c_L^Tv^{(1)}(t))^2-(c_L^Tv^{(0)}(t))^2]/(1\ \Omega)\,dt$, without a sign inferred from initial energy. Finite bleeder operation retains actual final stores. Neither the binary criterion nor paired finite works establishes exact reset or complete-service ranking.
+
+# Four accessible ports and a finite compliant correspondence
+\label{sec:four-terminal}
+
+A loaded auxiliary shaft or terminal changes the attachment equations. Four accessible shafts do not supply four independent speeds. For positive teeth $Z_s,Z_p,Z_r$, with $Z_r=Z_s+2Z_p$, bilateral pitch constraints give
+\begin{equation}
+ \omega=\mathsf B\binom{u}{d},\qquad
+ \mathsf B=\begin{pmatrix}1&1\\1&0\\1&-Z_s/Z_r\\1&-Z_s/Z_p\end{pmatrix},
+ \quad u=\omega_c,\quad d=\omega_s-\omega_c.
+ \label{eq:four-shaft-constraint}
+\end{equation}
+The shaft order is sun, carrier, ring, planet output. The output must attach to the rotating planet body, not its carrier-fixed bearing pin. The sun/carrier minor is nonzero. Absolute speed zeros are $u+d=0$, $u=0$, $Z_ru-Z_sd=0$, $Z_pu-Z_sd=0$; all six relative-speed zeros reduce to $d=0$. These statements include stationary and reversed shafts.
+
+For a massless correctly phased leadout, steady axial free bodies give
+$$
+ \tau_r=(Z_r/Z_s)\tau_s-(Z_r/Z_p)\tau_o,\qquad
+ \tau_c=-(1+Z_r/Z_s)\tau_s+(Z_r/Z_p-1)\tau_o,
+ \qquad \mathsf B^T\tau=0.
+$$
+This follows from the sun and ring tangential forces, planet spin and carrier pin reaction, before any power sum. In dynamics the right side becomes $\mathsf B^T\mathsf M\mathsf B(\dot u,\dot d)^T$. For unit effective inertias and teeth $(24,18,60)$, $u=1+t$, $d=5/2+60t/11$ gives $\alpha=\tau=(71/11,1,-13/11,-69/11)$ in consistent SI units. Their torque sum is zero while all shafts accelerate. Each one-second work is $\tau_j\omega_j(0)+\tau_j\alpha_j/2$; independent kinetic endpoints give their sum. A zero total torque is not a zero-acceleration test.
+
+## Physical returns and the loaded ideal law
+
+Set $(V_j-V_O)=\alpha_v\omega_j$, $I_j=\tau_j/\alpha_v$ with $\alpha_v$ in $\mathrm{V\,s/rad}$. The reference $O$ is a physical external return. For $h_s=-Z_p/Z_s$, $h_r=Z_p/Z_r$, two ideal pairs give
+\begin{align}
+ V_S-V_C&=h_s(V_P-V_C),&V_R-V_C&=h_r(V_P-V_C),\\
+ j_s&=-h_sI_S,&j_r&=-h_rI_R,\\
+ I_P&=j_s+j_r,&I_C&=-(I_S+I_R+I_P).
+ \label{eq:four-terminal-law}
+\end{align}
+Each winding's other endpoint is $C$; each external complete port returns to $O$. Only the unloaded case has $j_s+j_r=0$. Translating all voltages including $V_O$ changes coordinates; moving a physical return from $O$ to $C$ changes the experiment.
+
+A common-flux ideal realization has raw taps $(S,C,R,P)=(Z_r(Z_s+Z_p),Z_sZ_r,Z_s(Z_r-Z_p),0)$. At the reference teeth they reduce to $(35,20,14,0)$, with section lengths $(15,6,14)$ from $S$ toward $P$. The actual section currents are $I_S$, $I_S+I_C$, $I_S+I_C+I_R=-I_P$. Thus its independent constraints are $35I_S+20I_C+14I_R=0$ and KCL, with voltages relative to $P$ proportional to the taps. Substituting KCL proves \eqref{eq:four-terminal-law}, including the zero-voltage case without dividing by a rate. Each constraint matrix has rank two. Multiplying all turns by the same positive integer preserves this ideal terminal relation but changes finite magnetic and geometric parameters. It does not identify the internal states of one core with those of two pairs.
+
+With $O=0$, $\alpha_v=1\ \mathrm{V\,s/rad}$, constant voltages $(7/2,1,0,-7/3)\ \mathrm V$ and $I_S=2\ \mathrm A$, the exact controls are
+
+| $I_P$ ($\mathrm A$) | $(I_S,I_C,I_R,I_P)$ ($\mathrm A$) | Separate one-second works ($\mathrm J$) |
+|---|---|---|
+| $0$ | $(2,-7,5,0)$ | $(7,-7,0,0)$ |
+| $1$ | $(2,-14/3,5/3,1)$ | $(7,-14/3,0,-7/3)$ |
+| $3$ | $(2,0,-5,3)$ | $(7,0,0,-7)$ |
+
+: Loaded and unloaded ideal ports, all powers positive into the assembly.
+
+For the middle row $j_s=3/2$, $j_r=-1/2\ \mathrm A$. Four unit terminal capacitances independently give $673/72\ \mathrm J$ at each endpoint; ideal windings have no storage coordinate. These are initialized steady constraint controls, not finite-core DC preparation claims. The corresponding mechanical controls have unit effective inertias, with carrier orbital mass counted once and planet/output spin combined once.
+
+The other exact steady controls, with $\tau_s=2$, $\tau_o=1\ \mathrm{N\,m}$, all have torques $(2,-14/3,5/3,1)$. Their speeds are $(1,0,-2/5,-4/3)$ for carrier held; $(0,1,7/5,7/3)$ for sun held; $(7/4,1,7/10,0)$ for output held; $(1,1,1,1)$ for co-rotation; and $(-2,1,11/5,5)$ for counterrotation, in $\mathrm{rad/s}$. Multiplying each torque and speed gives its separate one-second work. A ring-held planet-drive control has $\tau_o=-1$, torques $(2,-28/3,25/3,-1)$ and works $(7,-28/3,0,7/3)\ \mathrm J$. Zero applied torques give zero work even with motion. At this geometry $\tau_r=0$ when $\tau_o=3\tau_s/4$ and $\tau_c=0$ when $\tau_o=3\tau_s/2$; these are sign boundaries, not singularities. A throughput ratio is undefined when all port powers vanish.
+
+## Seven physical states with finite loading
+
+Clamp $R$ to $O=0$, retain $v=(V_S,V_C,V_P)$ with $C=I\ \mathrm F$, and four winding currents. Define
+\begin{align}
+ B_f&=\begin{pmatrix}1&0&0&0\\-1&-1&-1&-1\\0&1&0&1\end{pmatrix},\\
+ L&=\operatorname{diag}\left[
+ \begin{pmatrix}9/16&-3/8\\-3/8&1\end{pmatrix},
+ \begin{pmatrix}9/100&3/20\\3/20&1\end{pmatrix}\right]\mathrm H,
+ \quad R_w=\operatorname{diag}(9/160,1/10,9/1000,1/10)\ \Omega,\\
+ C\dot v&=(U,0,0)^T-Gv-B_fi,\qquad
+ L\dot i=B_f^Tv-R_wi,\quad G=\operatorname{diag}(1,1/2,G_P).
+ \label{eq:four-terminal-finite}
+\end{align}
+The source enters through $1\ \Omega$, the carrier receiver is $1/2\ \mathrm S$ and the planet receiver is $G_P$. Both inductance blocks are positive definite with coupling magnitude $1/2$. Begin from zero states and use $(U,G_P)=(1,1/4)$ on $[0,1]$, $(1,1/2)$ on $[1,2]$, $(1,1)$ on $[2,3]$, and $(0,1)$ on $[3,5]$ in SI units. All current paths remain connected; states are continuous and impulses zero, while powers have distinct event-side values.
+
+For each constant interval augment $y=(v,i,1)$, write $\dot y=Ay$, and propagate $y_1=e^{A\Delta t}y_0$. Each separately declared quadratic port $P_k=y^TQ_ky$ has exact work $\int_0^{\Delta t}y_0^Te^{A^Tt}Q_ke^{At}y_0dt$, valid also when $A$ is singular. The external source power is $U(U-V_S)/(1\ \Omega)$; source heat, four copper losses and two receivers give $-(U-V_S)^2/(1\ \Omega)$, $-R_{wj}i_j^2$, $-V_C^2/(2\ \Omega)$ and $-G_PV_P^2$. The fixed ring clamp has zero power. Independently evaluate $E=v^TCv/2+i^TLi/2$ at every endpoint. Finite relaxation retains its actual final state; asymptotic decay does not imply exact reset at $t=5$.
+
+A compliant mechanical realization follows from $v=\alpha_v\omega$, $z=Li/\alpha_v$, $J=\alpha_v^2C$, $K=\alpha_v^2L^{-1}$:
+\begin{equation}
+ J\dot\omega=\alpha_v(U,0,0)^T-\alpha_v^2G\omega-B_fKz,
+ \qquad \dot z=B_f^T\omega-\frac{R_wKz}{\alpha_v^2}.
+ \label{eq:four-terminal-mechanical}
+\end{equation}
+At unit scale each pair's elastic energy is $(z_1/h+z_2)^2/6+(z_1/h-z_2)^2/2$, $h=-3/4$ or $3/10$; its Hessian is the corresponding $L^{-1}$. The source is an external speed $\Omega_d=U/\alpha_v$ through viscous coefficient $\alpha_v^2/(1\ \Omega)$. Its motor-side power and coupling heat are separately integrated. At unit scale a $1\ \mathrm{kg}$ planet at radius $21/500\ \mathrm m$ contributes its orbital inertia to the unit carrier coefficient; the bare carrier is $1-(21/500)^2$, and planet/output spin is split into two halves of their unit coefficient. No inertia is counted again in a local constitutive law. This is a compliant system, not an exact realization of a rigid spatial gear.
+
+If copper and source heat remain inside an insulated enlarged boundary, add $\dot H=(U-V_S)^2/(1\ \Omega)+\sum R_{wj}i_j^2$ and remove those exported-heat entries. Intermediate cooling and temperature-dependent coefficients need additional laws. Finite-core flux limits, magnetic nonlinearities, energized tap changing, spatial reactions and hardware correspondence remain unverified.
+
+## Phasing and support work are local qualifications
+
+For equal joint angles $0\leq\beta<\pi/2$, a correctly phased massless two-joint leadout gives $\theta_o=\theta_p$. More generally define the continuous lift $H_\beta(x)=\operatorname{atan2}(\sin x,\cos\beta\cos x)$ with $H_\beta(x+\pi)=H_\beta(x)+\pi$, $x=\theta_p-\phi$, and
+$$
+ \theta_o=\phi+H_{\beta_2}(H_{\beta_1}(x)+\gamma+\pi/2)-\pi/2.
+$$
+For correct phase $\tan F=(\cos\beta_2/\cos\beta_1)\tan x$; unequal angles require the corresponding changed support geometry. At equal angles with quadrature misphasing, $\chi=F'=c^2/(c^4\cos^2x+\sin^2x)$, $c=\cos\beta$, so $c^2\leq\chi\leq c^{-2}$ and $\omega_o=\omega_c+\chi(\omega_p-\omega_c)$. Counts include the endpoint ripple $[F(x_1)-x_1-F(x_0)+x_0]/(2\pi)$. A grounded phase command $\gamma=-\phi$ gives a carrier-relative secular count plus a two-phase endpoint ripple. One input period alone need not restore both phases. Its actuator power is $M(\partial\theta_o/\partial\gamma)\dot\gamma$, with its own physical supply.
+
+For unit load, $\omega_c=1$, $x=t$, $\cos\beta_1=4/5$, $\cos\beta_2=3/5$, the massless linkage's planet, support and receiver powers are $2\chi$, $1-\chi$, $-(1+\chi)$ in watts. On $[0,\pi/4]\ \mathrm s$ their separate works are $2\arctan(3/4)$, $\pi/4-\arctan(3/4)$ and $-\pi/4-\arctan(3/4)\ \mathrm J$; on $[0,\pi]\ \mathrm s$ they are $2\pi,0,-2\pi\ \mathrm J$. The model has zero endpoint stores and no impulses. An added output inertia contributes support work $\omega_cI_o(\omega_p-\omega_c)[\chi-\chi^2/2]_{t_0}^{t_1}$, which vanishes only under the stated periodic endpoint conditions. Finite joint inertia, clearances, bearings and cross forces are not supplied by this speed map.
+
+For multiple planets, axial free bodies leave force-sharing freedom. With equal bilateral tangential stiffness, zero tooth error and a common total mesh deflection, $F_{si}=\tau_s/(qr_s)+(\tau_{oi}-\bar\tau)/(2r_p)$, $F_{ri}=F_{si}-\tau_{oi}/r_p$, $R_{ti}=-F_{si}-F_{ri}$. At $q=3$, $\tau_s=2$ and the reference radii $(3/125,9/500,3/50)\ \mathrm m$, loads $(3,0,0)\ \mathrm{N\,m}$ give $F_s=(250/3,0,0)\ \mathrm N$; equal unit loads give $F_s=(250/9,250/9,250/9)\ \mathrm N$, each with $F_r=-F_s$. Both have $\tau_c=0,\tau_r=-5$ but distinct internal forces. Backlash, unilateral contact and a multi-output combiner require further models.
+
+A slow comparison can hold the ring and compare unloaded and unit-loaded output under the constant commands in the table. Predicted carrier and ring reaction changes are $+7/3$ and $-10/3\ \mathrm{N\,m}$; receiver receipt is $7/3\ \mathrm J$ in one second. Independent speed/torque controls, synchronized channels and errors below the declared comparison gap are required. Illustrative targets are $1/20\ \mathrm{N\,m}$ per torque channel and $1/10\ \mathrm J$ for the work difference. A complete residual audit additionally retains all supplies, event timing, spin/orbit endpoints and losses. The electrical analogue needs finite pulses or AC within calibrated flux limits. Neither is a completed measurement.
+
+# Clocked branches, finite preparation and service comparisons
+\label{sec:clocked-branches}
+
+The following smaller circuit supplies a separate exact construction from the shared-output model. Its primary return $O$ and secondary return $B$ are isolated. A tapped secondary has upper/lower winding paths $A-T,T-B$, and node order $(A,T,X_p,Q_p,X_m,Q_m)$. Four selectors connect $A-X_p,T-X_p,T-X_m,B-X_m$. Unit receiver resistors join $X_p-Q_p,X_m-Q_m$; $1/10\ \mathrm F$ cells join $Q_p-B,Q_m-A$. Every node has $1/50\ \mathrm F$ to $B$. The source resistor is $1/5\ \Omega$ and each copper resistor $1/20\ \Omega$.
+
+For $0<f<1$, $0\leq\kappa<1$, polarity $\sigma=\pm1$, set $N=(1,\sigma(1-f),\sigma f)^T$ and $L=(1\ \mathrm H)[(1-\kappa)\operatorname{diag}(N_j^2)+\kappa NN^T]$. The baseline $f=\kappa=1/2$, $\sigma=1$ is the three-winding matrix in Section \ref{sec:finite-bank-probe}. With $B$'s primary column zero and secondary columns $e_A-e_T,e_T$,
+\begin{equation}
+ L\dot i=B^Tv+e_1U-\operatorname{diag}(1/4,1/20,1/20)i,
+ \quad C\dot v=-Bi-G(t)v-K^Ti_c(Kv),
+ \label{eq:clocked-network}
+\end{equation}
+where $C=(1/50)I+(1/10)e_{Q_p}e_{Q_p}^T+(1/10)(e_{Q_m}-e_A)(e_{Q_m}-e_A)^T$ in farads. Each resistor contributes its conductance-weighted incidence outer product to $G$. Clamps on $A,T$ and both cells have threshold $2\ \mathrm V$ and slope $5\ \mathrm S$. The selector conductances range from $1/10000$ to $20\ \mathrm S$. Their prescribed command passes successively through selectors 1,2,4,3 over the four quarters of a one-second sinusoid $U=\sin(2\pi t)\ \mathrm V$.
+
+Use $s(r)=r^2(3-2r)$ over a declared edge width. Simultaneous change interpolates old to new; dead time opens the old path during the first half and closes the new during the second, while overlap reverses that order. Widths $1/50,1/100,1/200\ \mathrm s$ define distinct finite histories, not a proved common zero-width limit. Initial currents $(1/10,1/5,-1/10)\ \mathrm A$, $Q_p=Q_m=3\ \mathrm V$ and other states zero give an energized/clamped comparison. Zero-state startup is a different preparation. All winding sections persist; finite selectors change no inductance matrix and impose no state jump. Gate circuits each retain $1/10000\ \mathrm F$ driven through $20\ \Omega$, with their own command-current powers. As in the bank construction, gate voltage and prescribed selector conductance are separate declared laws; physical actuation cost remains unassigned.
+
+For two driven periods followed by one second with source/gates off and $1/5\ \mathrm S$ node bleeders, integrate source, two receivers, each selector, clamp, copper, source resistor, gate supply, gate resistor and bath on every quarter, edge and reset interval. Retained heat satisfies $\dot H=P_{\rm internal\ heat}-H/(2\ \mathrm s)$. Evaluate magnetic, both cell, parasitic, gate and thermal endpoints independently, retaining all nonzero final stores. A finite resolved transition does not also receive an ideal impulse. Positive leakage/parasitics guarantee regular equations; deleting them can impose new compatibility constraints. Arcs and calibrated semiconductor laws are outside this model.
+
+The parallel/series bank variant uses nodes $(A,T,X_1,Y_1,X_2,Y_2)$, cells $X_1-Y_1,X_2-Y_2$ with capacitances $1/10$ and either $1/10$ or $3/20\ \mathrm F$, and a unit receiver $Y_2-B$. Finite links are $A-X_1,T-X_1,X_1-X_2,Y_1-Y_2,Y_1-X_2$. Even quarters enable charge and both parallel links; odd quarters enable injection and the series link. Retain the same winding, parasitic, clamp, driver and heat laws, with a fifth driver. The initialized unequal preparation $(1,1/2)\ \mathrm V$ does not assign its own preparation work. This graph differs from the loaded binary-probe graph in Section \ref{sec:finite-bank-probe}.
+
+## What the fixed clock proves
+
+With inactive clamps and fixed material coefficients the nine electrical coordinates obey $\dot x=A(t)x+b(t)$. Compose plateau exponentials and edge fundamental matrices to get $x(1)=Mx(0)+d$. Existence requires $d\in\operatorname{range}(I-M)$, uniqueness requires invertibility of $I-M$, and attraction requires $\rho(M)<1$. The controls $(M,d)=(I,0)$, $(I,d\ne0)$ and $(2I,d)$ give respectively neutral families, no fixed point and an unstable fixed point. A successful initialized trace alone distinguishes none of these possibilities.
+
+For this positive, grounded graph, homogeneous difference storage satisfies $\dot D=-\delta i^TR\delta i-\delta v^TG(t)\delta v<0$. A common positive metric and uniform positive loss over the compact period give strict contraction, hence a unique attracting clocked linear state. Gate RC coordinates have their own contracting maps. If the electrical loss is periodic, heat has map $H(1)=e^{-1/2}H(0)+h$ with $h$ its independently integrated, exponentially weighted heating, and fixed value $h/(1-e^{-1/2})$. This theorem requires inactive clamps and temperature-independent coefficients throughout the orbit; no returned endpoint proves a calibrated continuous flux limit.
+
+A threshold controller switching at $Q_p=1/100\ \mathrm V$ upward and $1/200\ \mathrm V$ downward instead has saltation $I+(f^+-f^-)n^T/(n^Tf^-)$ at a transverse continuous-state event. Grazing, tied guards and changed event count require another analysis; fixed-clock contraction does not prove full hybrid attraction. A separate soft-saturation law is $\lambda=D_\ell i+\kappa I_s\tanh(N^Ti/I_s)N$, $I_s=1/2\ \mathrm A$, with positive leakage $D_\ell$ and energy
+$$
+ E_m=\tfrac12i^TD_\ell i+\kappa[I_sq\tanh(q/I_s)-I_s^2\log\cosh(q/I_s)],\quad q=N^Ti,
+$$
+with the inductance unit understood in $\kappa$. Differentiation gives $\dot E_m=i^T\dot\lambda$. Alternatively $R_w=(1/20\ \Omega)(1+H/(100\ \mathrm J))$ adds thermal feedback with capacity $1\ \mathrm{J/K}$. Neither extension supplies remanence or validates a material law, and their amplitude-$4\ \mathrm V$ comparison requires separately solved histories.
+
+## Service, observation and a finite mechanical counterpart
+
+For a supply-cost comparison freeze zero initial states, source and three-second intervals above, and define service as receiver heat integrated over $[0,3]\ \mathrm s$. An ordinary comparison transformer retains both secondary sections, parasitics at $A,T$, one full-secondary resistor and finite reset bleeders. Select a receiver resistance by an independently declared service-matching condition before comparing costs. For example, order 25 geometric trial resistances from $1$ to $10000\ \Omega$ and select the first descending bracket's service-match root, if it exists. This is a conditional comparison, not a proved root or work ordering. Integrate gross source draw $\int\max(Ui_1,0)dt$, gross return $-\int\min(Ui_1,0)dt$ and every gate supply separately. Their net difference cannot be promoted to an equal-reset efficiency when actual final stores differ. No numerical sign is imported as an exact theorem.
+
+Including a generator makes capacitor return an internal transfer. A separate exact ideal conversion control has $e=k_e\omega\sin\phi$, $\tau_e=k_ei\sin\phi$, $k_e=1/(2\pi)$ in the corresponding SI units, $\omega=2\pi\ \mathrm{s^{-1}}$, and $i=\pm\sin(2\pi t)+\cos(2\pi t)/2\ \mathrm A$ on $[0,2]\ \mathrm s$. For rotor $J=1/100\ \mathrm{kg\,m^2}$, drag $b=1/1000\ \mathrm{N\,m\,s}$ and unit field current with unit field resistance/inductance, electrical delivered work is $\pm1\ \mathrm J$, shaft input $\pm1+\pi^2/125\ \mathrm J$, field input $2\ \mathrm J$, drag and field heat exports $-\pi^2/125,-2\ \mathrm J$. Each endpoint independently has rotor store $\pi^2/50\ \mathrm J$ and field store $1/2\ \mathrm J$. This initialized ideal converter supplies no physical field/armature coenergy law for a generator.
+
+Disconnected unit field preparation on $[0,1]\ \mathrm s$ gives $i=1-e^{-t}$, supply work $e^{-1}\ \mathrm J$, field store $(1-e^{-1})^2/2\ \mathrm J$ and Joule heat $\int_0^1(1-e^{-t})^2dt\ \mathrm J$. A prescribed rotor ramp $\omega=2\pi t$ gives endpoint $\pi^2/50\ \mathrm J$, drag heat $\pi^2/750\ \mathrm J$ and their sum as shaft work. Source-off field reset retains $i_0^2e^{-2T}/2$ and releases heat $i_0^2(1-e^{-2T})/2$ in consistent SI units. Real generator trajectories, actuator costs, reset and material states require their own model and observations.
+
+For the fixed first charging topology, observe primary current and $V_A,V_T,V_{Q_p},V_{Q_m}-V_A$. The nine-state observability matrix has rank nine for the declared rational baseline; this is ideal-trace reconstruction, not a bandwidth or uncertainty bound. Heat preparations separated by $1\ \mathrm J$ remain electrically indistinguishable and differ by $e^{-T/2}\ \mathrm J$ if coefficients are temperature independent. A unit capacitor at $1000\ \mathrm V$ with voltage error $1/1000\ \mathrm V$ has exact endpoint error $2000001/2000000\ \mathrm J$. Small net work cannot suppress this independent endpoint uncertainty. A same-sign power pulse of height $A$ and duration $\varepsilon$ carries $A\varepsilon$ work without an internal zero; root counting alone is insufficient.
+
+At unit mobility scale the mechanical map is $v=\omega$, $z=Li$, $J=C$ and
+$$
+ K=L^{-1}=\begin{pmatrix}3/2&-1&-1\\-1&6&-2\\-1&-2&6\end{pmatrix}.
+$$
+Six ground rotors plus two differential flywheels realize $C$; positive modal springs realize $K$. The independent equations are $J\dot\omega=-BKz-G\omega-\tau_{\rm clamp}$ and $\dot z=B^T\omega-RKz+b_{\rm anchor}$. The primary anchor moves at $U$ in the declared scale; dashpot, gate-rotor and thermal accounts follow their actual ports. General scaling is $v=\alpha_v\omega$, $z=Li/\alpha_v$, $J=\alpha_v^2C$, $K=\alpha_v^2L^{-1}$, with corresponding scaled damping and drives. This state/store map proves the linear model correspondence, including prepared states and finite events. The original rigid train has two independent rates and cannot have a state/port bijection to six arbitrary node rates without extra bodies, compliance or actuators. Physical bearings, adjustment work, bandwidth and magnetic calibration remain unresolved.
+
+## A finite clutch retains states through release
+
+A coaxial ball/carrier control has $I_b=2/5$, $I_c=3/5\ \mathrm{kg\,m^2}$ without orbital translation. With carrier held at unit speed and unit viscous clutch, $\omega_b=1-e^{-5t/2}$. On $[0,1]\ \mathrm s$, independent drive work, ball endpoint store and heat are $2(1-e^{-5/2})/5$, $(1-e^{-5/2})^2/5$ and $(1-e^{-5})/5\ \mathrm J$. An undriven carrier instead has $\omega_c=3/5+2e^{-25t/6}/5$, $\omega_b=3/5-3e^{-25t/6}/5$, initial kinetic store $3/10\ \mathrm J$ and heat $3(1-e^{-25/3})/25\ \mathrm J$. These are distinct preparations and boundaries.
+
+A finite extension retains $(\omega_c,\omega_b,q,H,v_g)$ with $T_c=Kq+D(\omega_c-\omega_b)$, $\dot q=\omega_c-\omega_b$, $T_d=2(\Omega_d-\omega_c)$, $I_c\dot\omega_c=T_d-T_c$ and $I_b\dot\omega_b=T_c-\omega_b/10$ in SI units. Gate capacitance is $1/100\ \mathrm F$ with a $10\ \Omega$ supply resistor. Independently stored quantities are the two spins, $Kq^2/2$, $H$ and $v_g^2/200$. External powers are $T_d\Omega_d$, $\dot Kq^2/2$, gate supply, receiver $-\omega_b^2/10$ and bath $-H/2$; drive, clutch and gate losses heat $H$ internally. The stiffness actuator is a separate physical assumption, not a free clock.
+
+Starting at zero, use half-cosine ramps on four one-second intervals: prepare $\Omega_d:0\to1$, $K:0\to1/5$, $D=1/10$, gate command one; lock at $(1,1/5,2)$ with command one; release $K:1/5\to0$, $D:2\to0$ at $\Omega_d=1$, command zero; then reduce $\Omega_d:1\to0$ at $K=0,D=1/2$, command zero. Damping jumps at $1,3\ \mathrm s$ change finite power, not velocities or stores. Retain actual nonzero four-second endpoints. These time-varying constitutive states delimit any scalar reduction; calibrated clutch, actuator, thermal and release laws remain open.
+
+# Coupled thermal states and finite actuator order
+\label{sec:coupled-thermal-control}
+
+An additional thermal coordinate can change coefficients and predictions without being an energy anomaly. A declared three-state electrical, mechanical and thermal model is
+\begin{equation}
+ \begin{aligned}
+ L\dot i&=U-R(\theta)i-kv,&m\dot v&=F+s k i-bv,\\
+ C_T\dot\theta&=f[R(\theta)i^2+bv^2]-h\theta,
+ &R(\theta)&=\tfrac25(1+\alpha\theta)\ \Omega.
+ \end{aligned}
+ \label{eq:coupled-thermal-control}
+\end{equation}
+Here $L=13/10\ \mathrm H$, $m=4/5\ \mathrm{kg}$, $C_T=2\ \mathrm{J/K}$, $b=3/10\ \mathrm{N\,s/m}$, $U=[\sin(23t/10)+3/10]\ \mathrm V$, $F=\cos(11t/10)/5\ \mathrm N$ on $[0,2]\ \mathrm s$. Time is in seconds; $k$ has units $\mathrm{N/A}$, $\alpha$ has units $\mathrm{K^{-1}}$, $0\leq f\leq1$ is the retained heat fraction, $h\geq0$ is a thermal conductance, and $s$ specifies backaction. Supply their values, finite initial states and the interval on which $R(\theta)>0$ independently for each prediction. Disabled coordinates and their drives are exactly zero. This nonlinear state count does not imply a constant third-order scalar equation.
+
+The combined store is $Li^2/2+mv^2/2+C_T\theta$, with sensible heat relative to fixed ambient. Substitution identifies five external powers: $Ui$, $Fv$, controller $(s-1)kiv$, unretained heat $-(1-f)(Ri^2+bv^2)$ and bath $-h\theta$. Reciprocal transfer for $s=1$ and retained heating cancel internally. Define each work by its own integral before comparing independently evaluated endpoints. Reversing $k$ at one second retains continuous physical states and requires both event intervals. Wrong-sign backaction is supplied by the controller port; it is not automatically inadmissible. A formal identity neither validates that controller nor resolves quadrature disagreement. The relevant unresolved numerical question is whether independently reconstructed works satisfy unchanged accuracy bounds for the specified trajectory, including each side of a coefficient switch. No numerical result or zero-error certificate is asserted here.
+
+Comparing final current with the no-thermal-feedback, no-reciprocal-transfer and uncoupled cases is a state-interaction diagnostic, not a work residual. Likewise $e^{-t}$ and $(1-a)e^{-t}+a e^{-2t}$ start at the same observed value but differ by $a(e^{-2t}-e^{-t})<0$ for $a,t>0$. Equal present output alone supplies neither hidden preparation nor future response. Mapping first-order relaxation across domains does not identify thermal, kinetic and magnetic stores with one another.
+
+Finite actuator order supplies another exact control. For two unit masses with initial velocities $(u,v)$, actuator A changes the first velocity at rate $av/d$ for duration $d=1/4\ \mathrm s$ while the second is fixed; actuator B changes the second at rate $bu/d$ while the first is fixed. Thus $A(u,v)=(u+av,v)$ and $B(u,v)=(u,v+bu)$. The individual signed works are $auv+a^2v^2/2$ and $buv+b^2u^2/2$ in the corresponding SI normalization, evaluated at each actuator's actual starting state. In the order AB the final state is $(u+av,v+b(u+av))$; BA instead gives $(u+a(v+bu),v+bu)$. Their separately integrated polynomial powers equal their respective kinetic changes. They are finite paths without impulses, distinct from the resistive reset maps in Section \ref{sec:charge-reconnection}. Initial-state preparation, a loaded complete-port extension and an instantaneous limit require additional physical laws.
+
+# A finite shared-core construction and three distinct questions
+\label{sec:shared-core}
+
+The following construction separates finite service, return of the full state and identification of prepared energy. It is a declared circuit with positive leakage and explicit probes, not an identified apparatus. Its state laws provide a reproducible example of how additional branches change the coefficient problem. A physical implementation would require independently measured material, selector and source laws.
+
+## The connected graph, preparation and signed accounts
+
+Use six isolated channels $j=1,\ldots,6$. Their source returns $O_j$, secondary returns $B_j$, gate returns $D_{jk}$ and receiver return $B_o$ are distinct physical conductors. No chassis or interwinding capacitance connects these returns in this model. Each source $U_j=1\ \mathrm V$ feeds a primary node $V_j$ through $1\ \Omega$. The input primary runs from $V_j$ to $O_j$; upper and lower secondary windings run from $A_j$ to $T_j$ and $T_j$ to $B_j$. Four selectors join $(A_j,X_{pj})$, $(T_j,X_{pj})$, $(T_j,X_{mj})$ and $(B_j,X_{mj})$. Output input windings run from $X_{pj}$ to $Q_{pj}$ and $X_{mj}$ to $Q_{mj}$. A $1\ \mathrm F$ positive cell joins $Q_{pj}$ to $B_j$; another $1\ \mathrm F$ cell joins $Q_{mj}$ to $A_j$, with that polarity retained throughout.
+
+Each of the six nodes $(A,T,X_p,Q_p,X_m,Q_m)$ has a $1\ \mathrm F$ parasitic and $1/10\ \mathrm S$ bleeder to its own $B_j$. Each $V_j$ has $1\ \mathrm F$ to $O_j$. A series $10\ \Omega$ resistor and $1\ \mathrm F$ probe capacitor loads every $V_j$; its capacitor voltage is $Z_j$. The receiver node $V_o$ has a $1\ \Omega$ receiver, $1\ \mathrm F$ parasitic and the same resistor/capacitor probe to $B_o$. Clamps across $A_j-B_j$, $T_j-B_j$, each cell and $V_o-B_o$ obey $i_c(v)=\operatorname{sgn}(v)\max(|v|-5\ \mathrm V,0)/(1\ \Omega)$.
+
+All winding resistances are $1\ \Omega$. For each of the six input cores,
+\begin{equation}
+ L_j=(1\ \mathrm H)\left(I+\frac{nn^T}{4}\right),\quad n=(1,1/2,1/2)^T.
+ \qquad L_o=(1\ \mathrm H)\left(I+\frac{ss^T}{4}\right),\quad s=\mathbf1_{13}.
+ \label{eq:shared-inductance}
+\end{equation}
+The second matrix describes one output core containing all twelve input windings and one receiver winding from $V_o$ to $B_o$. There is no electrical connection between the twelve windings merely because they share this core. Positive leakage and a positive common reluctance realize the declared inductance matrices; manufactured geometry, remanence and saturation ratings are additional information. The tap fraction $1/2$ is not a coupling coefficient.
+
+Let $i$ contain the 31 physical winding currents and $v$ the 50 node/probe voltages. After eliminating the local references, let $B$ have winding incidence columns directed from positive to negative terminal. In particular the receiver-winding current enters the winding at $V_o$, so its contribution to the receiver node equation is $-i_o$. Let $a_e$ be the incidence of every resistor or cell. The capacitance matrix is $(1\ \mathrm F)I$ plus the twelve cell incidence outer products weighted by $1\ \mathrm F$. With $K$ selecting clamp voltages, the complete electrical equations are
+\begin{equation}
+ L\dot i=B^Tv-R_wi,\qquad
+ C\dot v=-Bi-G(z)v+d(U)-K^Ti_c(Kv).
+ \label{eq:shared-network}
+\end{equation}
+Here $G$ includes each bleeder, source resistor, receiver, probe resistor and selector $g_{jk}a_{jk}a_{jk}^T$; $d$ contains $U_j/(1\ \Omega)$ at each $V_j$. The actual source current is $I_j=(U_j-V_j)/(1\ \Omega)$, which includes parasitic and probe current.
+
+Each gate has $C_g=1/1000\ \mathrm F$, $R_g=1\ \Omega$, $C_g\dot z_{jk}=(c_{jk}-z_{jk})/R_g$ and $g_{jk}=1/10\ \mathrm S+(9/10\ \mathrm S)z_{jk}/(1\ \mathrm V)$. Gates initially equal $(1,0,0,0)\ \mathrm V$ in each channel. At $t_e=1/800\ \mathrm s$, commands change to $(0,1,0,0)\ \mathrm V$ until $T=1/200\ \mathrm s$. After the command, $z_1=e^{-1000(t-t_e)}\ \mathrm V$, $z_2=(1-e^{-1000(t-t_e)})\ \mathrm V$, and $z_3=z_4=0$. All selectors retain at least $1/10\ \mathrm S$: this finite edge is not an ideal opening. The command changes driver current without a state jump or impulse.
+
+For an enlarged boundary retain heat $H$, with $\dot H=P_{\rm loss}-H/(2\ \mathrm s)$, where $P_{\rm loss}$ contains every winding, source, selector, bleeder, clamp, probe and gate-resistor loss. Receiver heat is outside. There are 81 electrical, 24 gate and one thermal coordinate. This is not a constant scalar equation of order 106. The invertible $L,C$, explicit bounded gates and Lipschitz clamps give a unique global electrical solution for every finite preparation; heat follows its scalar linear law. Temperature does not alter coefficients here.
+
+Evaluate the endpoint store independently as
+\begin{equation}
+ E=\frac12i^TLi+\sum_{\text{physical capacitors }e}\frac12C_e(a_e^Tv)^2
+       +\frac12C_g\sum_{jk}z_{jk}^2+H.
+ \label{eq:shared-store}
+\end{equation}
+On each side of $t_e$, integrate the six $U_jI_j$, 24 $c_{jk}(c_{jk}-z_{jk})/R_g$, receiver power $-V_o^2/(1\ \Omega)$ and bath power $-H/(2\ \mathrm s)$ separately. Each winding transfer $(b_w^Tv)i_w$ and its opposite node transfer is also defined before internal cancellation. An electrical-only boundary instead exports the individual heats and excludes $H$; these alternatives must not be combined. Probe loading and probe stores occur in both accounts.
+
+## A finite service certificate
+
+Initially every channel has input currents $(-1,1/5,1/10)\ \mathrm A$, output input currents $(1,1)\ \mathrm A$, secondary voltages $(1,1/2,4/5,7/10,1/5,1/10)\ \mathrm V$ and $V_j=2\ \mathrm V$. Take $V_o=1\ \mathrm V$, $i_o=-1\ \mathrm A$, and zero probe voltages and heat. The gates have the preparation above. Independently perturb plant currents and voltages by at most $1/1000$ in their $1\ \mathrm A$, $1\ \mathrm V$ scales, holding probes, gates and heat fixed. Preparation work and reset are not supplied by this endpoint specification.
+
+In the unclamped region the scaled vector obeys $\dot x=A(t)x+b$ with $\|A\|_\infty\leq61/10\ \mathrm{s^{-1}}$, $\|b\|_\infty\leq1\ \mathrm{s^{-1}}$. The looser bounds $K_0=32\ \mathrm{s^{-1}}$, $\beta=2\ \mathrm{s^{-1}}$ give, using $e^{K_0T}\leq(1-K_0T)^{-1}$,
+\begin{equation}
+ \|x(t)-x_{\rm nominal}(0)\|_\infty
+ \leq\rho+\frac{[K_0(2+\rho)+\beta]T}{1-K_0T}
+ =\frac{331}{840},\qquad \rho=\frac1{1000}.
+ \label{eq:shared-feasibility}
+\end{equation}
+Every relevant terminal difference stays below $1171/420\ \mathrm V<3\ \mathrm V<5\ \mathrm V$, which closes the unclamped continuation argument. Every source returns at least $509/840\ \mathrm A$; every output input winding carries at least that current; $V_o\geq509/840\ \mathrm V$. Consequently the separately integrated receiver receipt satisfies
+\begin{equation}
+ W_L=\int_0^{1/200}\frac{V_o^2}{1\ \Omega}\,dt
+ \geq\frac{259081}{141120000}\ \mathrm J>\frac1{1000}\ \mathrm J.
+ \label{eq:shared-service}
+\end{equation}
+This is a continuous-time finite-history result. Winding currents stay below $2\ \mathrm A$, component voltages below $3\ \mathrm V$, linkages below $19907/3360\ \mathrm{Wb}$ and common-core flux below $15223/3360\ \mathrm{Wb}$ in the stated model. These are chosen model limits, not material ratings.
+
+Using the tighter matrix majorant gives a state radius $134/1939$ and, by applying each capacitor incidence row to $C^{-1}$ times the node equation, an all-times capacitor-current bound $187351/96950\ \mathrm A<2\ \mathrm A$. The other resistor, gate, source and receiver currents also stay below $2\ \mathrm A$. In particular $A-X_p\geq599/9695\ \mathrm V$ gives a current at least $599/96950\ \mathrm A$ in the changing full-winding selector. The certificate covers its finite commutation interval rather than only its endpoints.
+
+The nominal initial store is $392079/8000\ \mathrm J$. Positive receiver work and source return therefore coexist with prepared stores and gate-supply input. They do not establish a complete-service efficiency. Removing output mutual inductances while preserving self-inductances changes the nominal initial store to $284079/8000\ \mathrm J$; that control is a different coupled system, not a service-matched set of separate transformers. Zero electrical/source data give zero receiver work despite gate activity. Longer windows, staggered commands, other preparations, nonlinear materials and physical commutators remain outside this certificate.
+
+## Complete electrical observations with overlapping error sets
+
+Keep this graph and interval. Each source probe obeys $10\ \mathrm s\,\dot Z_j=V_j-Z_j$; report $(U_j-Z_j)/(1\ \Omega)$ as the source-current channel. It is a filtered current with a known sensor preparation, not the instantaneous source current. Report $Z_o$ and $Z_o/(1\ \Omega)$ at the receiver and all source-voltage and gate-supply records. Only the six reported source-current channels have error, an arbitrary function bounded pointwise by $1/10\ \mathrm A$. Gains, timing, coefficients and initial sensor values are exact for this mathematical experiment. No calorimetry is observed.
+
+Compare the nominal preparation with one that raises $Q_{p1}$ by $1/10\ \mathrm V$ and lowers $Q_{p2}$ by the same amount. The changed $1\ \mathrm F$ cells and parasitics give independently
+\begin{equation}
+ E_0=\frac{392079}{8000}\ \mathrm J,\qquad
+ E_1=\frac{392239}{8000}\ \mathrm J,\qquad E_1-E_0=\frac1{50}\ \mathrm J.
+ \label{eq:shared-energy-gap}
+\end{equation}
+Both include the $3/1000\ \mathrm J$ gate store and zero initial heat. The continuation bound with radius $1/10$ keeps both paths below clamp threshold. Their homogeneous difference satisfies
+\begin{equation}
+ D=\tfrac12\delta i^TL\delta i+\tfrac12\delta v^TC\delta v,\qquad
+ \dot D=-\delta i^TR_w\delta i-\delta v^TG(t)\delta v\leq0,
+ \quad D(0)=\frac1{50}\ \mathrm J.
+ \label{eq:shared-difference}
+\end{equation}
+Thus every source-node voltage difference is at most $1/5\ \mathrm V$. The actual passive probe has nonnegative unit-gain impulse response and zero initial difference, so each reported current difference is at most $1/5\ \mathrm A$. Swapping channels 1 and 2 commutes with every synchronous coefficient matrix, including the finite edge. The preparation difference is antisymmetric, whereas receiver and receiver-probe outputs are symmetric. Their histories are therefore exactly equal; so are gate histories.
+
+The midpoint of the two source-current histories is within the allowed $1/10\ \mathrm A$ error of each. With the common receiver and gate records it is one admissible complete observation for both preparations. The energy consistency interval can therefore have width $1/50\ \mathrm J$. On this specified two-preparation problem the optimal worst-case absolute error is exactly $1/100\ \mathrm J$, attained by its midpoint and forced by the triangle inequality. It exceeds a target $1/250\ \mathrm J$.
+
+This proves a finite-error identification obstruction, not equality of every exact source trace. The time-ordered map of \eqref{eq:shared-network}, with identity state transport at the command event, includes all probe dynamics. A fixed-mode rank calculation or static voltage-sum example would not prove this history result. Smaller error, additional cell/flux or heat observations, a longer window and unknown parameters define different experiments; their discrimination remains to be established.
+
+## Insulated machines and a full-state return obstruction
+
+For a separate machine model retain the fixture and replace each ideal source by an armature current $a_j$ delivered through its existing $R_s=1\ \Omega$. The six generators share angle $\phi$ and speed $\omega$, with fixed offsets $\delta_j=(j-1)\pi/3$ and $\chi_j=\phi+\delta_j$. Set $L_a=L_f=1\ \mathrm H$, $M_g=1/10\ \mathrm H$, $R_a=R_f=1\ \Omega$, and $V_f=1\ \mathrm V$. Their positive joint magnetic stores and equations are
+\begin{align}
+ E_{gj}&=\tfrac12L_aa_j^2+\tfrac12L_ff_j^2+M_g\cos\chi_j\,a_jf_j,\\
+ \begin{pmatrix}L_a&M_g\cos\chi_j\\M_g\cos\chi_j&L_f\end{pmatrix}
+ \binom{\dot a_j}{\dot f_j}
+ &=\binom{M_g\omega\sin\chi_j f_j-(R_a+R_s)a_j-V_j}
+ {V_f-R_ff_j+M_g\omega\sin\chi_j a_j}.
+ \label{eq:shared-generator}
+\end{align}
+The outgoing armature sign means $V_{gj}=V_j+R_sa_j$ and electrical input into the generator is $-V_{gj}a_j$. The source-node law replaces the ideal-source term by $a_j$. With $J=1\ \mathrm{kg\,m^2}$, $b=1/10\ \mathrm{N\,m\,s}$, $\tau_{\rm pm}=8\ \mathrm{N\,m}$,
+$$
+ \dot\phi=\omega,\qquad J\dot\omega=\tau_{\rm pm}-b\omega-\sum_jM_g\sin\chi_j a_jf_j.
+$$
+Differentiating $E_{gj}$ gives $-V_{gj}a_j+V_ff_j-R_aa_j^2-R_ff_j^2+M_g\omega\sin\chi_j a_jf_j$. Generator/fixture and rotor/generator transfers cancel only after their separate integrals.
+
+The independent timing motor has angle $\theta$, speed $\Omega$, unit inertia, unit inductance and resistance, torque/back-EMF constant one in the corresponding SI units, and bearing coefficient $b_t=1/10\ \mathrm{N\,m\,s}$. Four followers have $x_k=h\cos(\theta-k\pi/2)$, $h=1/100\ \mathrm m$, stiffnesses $(1,2,3,4)\ \mathrm{N/m}$ and damping $d_k=1\ \mathrm{N\,s/m}$. Retain each spring store and write
+\begin{align}
+ L_t\dot i_t&=u-R_ti_t-k_t\Omega,\quad \dot\theta=\Omega,\\
+ J_t\dot\Omega&=k_ti_t-b_t\Omega-\sum_kK_kx_kx'_k-\sum_kd_k(x'_k)^2\Omega.
+ \label{eq:shared-timing}
+\end{align}
+Cam commands $c_k=(1+\cos(\theta-k\pi/2))\ \mathrm V/2$ drive the same finite RC gates. No cam-dependent capacitance is postulated. Two sensing branches, each $1\ \Omega$, $1/100\ \mathrm F$, are driven by $\sin(\phi-\theta)\ \mathrm V$ and $(\omega-\Omega)(1\ \mathrm{V\,s})$. Their capacitor voltages $q_\phi,q_\omega$ set $U_{\rm cmd}=8\ \mathrm V+q_\phi+q_\omega$; the actual motor supply obeys $C_u\dot u=(U_{\rm cmd}-u)/R_u-i_t$, with the same resistance and capacitance. Sensor and controller supply effort/current products are separate external powers. Ideal transducer laws do not establish unmeasured hardware cost.
+
+The complete insulated assembly has 126 state coordinates and $\dot H=\sum P_{\rm internal\ loss}$, with no bath export. Include fixture, generator, rotor, motor, follower, controller, probe, gate and thermal stores. External ports are the prime mover, six field supplies, 24 cam-command supplies, controller and two sensor supplies, and receiver export. Internal source return is not an extra external input. Positive inductance eigenvalues (at least $9/10\ \mathrm H$ in each generator) and locally Lipschitz laws establish unique solutions within the declared finite operating region; no global hardware or saturation claim follows.
+
+Freeze a next-return section $\theta=0\pmod{2\pi}$, $\Omega>0$, one timing revolution, $T\in[1/2,2]\ \mathrm s$, and admitted speeds $\Omega\in[\pi,4\pi]\ \mathrm{s^{-1}}$. A full cycle must return every non-angle physical state and relative phase, including heat. Independently of all electrical works, its caloric law gives
+\begin{equation}
+ \Delta H\geq b_t\int_0^T\Omega^2dt
+ \geq\frac{b_t}{T}\left(\int_0^T\Omega dt\right)^2
+ =\frac{4\pi^2b_t}{T}\geq\frac{\pi^2}{5}\ \mathrm J>0.
+ \label{eq:insulated-obstruction}
+\end{equation}
+The full return map has no fixed point and hence no attracting full-state cycle in this domain. Identical nonthermal trajectories with different initial heat retain that difference while both drift upward. This bounded conclusion is resolved; electrical or shaft periodicity with heat drift, or a replacement cooling law $\dot H=P_{\rm loss}-H/\tau$, changes the question.
+
+Where a section return is differentiable, its derivative is $D\mathcal P=[I-fn^T/(n^Tf)]DF_T$ restricted to tangent coordinates, with the heat-integral row retained. It includes event-time variation. Continuous clamp crossings have identity saltation but changed variational Jacobians; grazing and nontransverse returns need separate treatment. There is no cycle here at which stability multipliers could certify attraction. An admitted $10\ \mathrm A$ winding/field bound implies input, output and generator linkage bounds $15$, $85/2$ and $11\ \mathrm{Wb}$ and shared flux bound $65/2\ \mathrm{Wb}$, as model bounds only.
+
+A finite account can instead start with the fixture preparation, $a_j=0$, $f_j=1\ \mathrm A$, $\phi=\theta=0$, $\omega=\Omega=2\pi\ \mathrm{s^{-1}}$, $i_t=8\ \mathrm A$, $u=8\ \mathrm V$ and zero sensor states, and integrate each named port on $[0,1/200]\ \mathrm s$. Its endpoints are obtained from the component stores, not from a work remainder. This defines an exact finite comparison without claiming a cycle or assigning rigorous uncertainty to a numerical trajectory. Physical limits, calibration and complete preparation/reset service remain separate questions.
+
+## Controls that change the graph
+
+For an ideal isolated winding of signed full ratio $\sigma n$, the positive branch sees $\alpha U$ with $\alpha=\sigma n$ or $f\sigma n$; the oppositely oriented branch sees $-\sigma nU$ or $-(1-f)\sigma nU$. The two tap fractions coincide only at $f=1/2$. For a series $R,C$ branch with initial $v_0$, put $d=\alpha U-v_0$, $h=e^{-T/(RC)}$. Direct integration gives $v_C(T)=\alpha U-dh$, source work $C\alpha Ud(1-h)$, exported heat $Cd^2(1-h^2)/2$, and capacitor work equal to both their difference and $C[v_C(T)^2-v_0^2]/2$. Source return requires $\alpha U(\alpha U-v_C)<0$; tap selection alone does not ensure it. At equality all work vanishes; at zero source voltage a prepared cell still heats the resistor. Unit $R,C,U$, both polarities, fractions $1,1/4,3/4$, preparations $0,2,\alpha U$ and $T=1\ \mathrm s$ are exact substitutions, without impulses.
+
+For a common core with positive reluctance $\mathcal R$, no leakage or copper, $v_j=N_j\dot\Phi$, $v_o=N_o\dot\Phi$, $\sum N_ji_j-N_oi_o=\mathcal R\Phi$. Each input work minus output work gives $\mathcal R[\Phi(T)^2-\Phi(0)^2]/2$. The control $\Phi=t$, $N=(1,2)$, $N_o=\mathcal R=1$, $i_1=1+t$, $i_2=0$, $i_o=1$ in consistent SI units on $[0,1]\ \mathrm s$ gives input $3/2\ \mathrm J$, output $1\ \mathrm J$ and endpoint increase $1/2\ \mathrm J$. Incompatible imposed $v_j/N_j$ have no solution in this ideal graph. Finite leakage instead gives $L=\operatorname{diag}(\ell_j)+NN^T/\mathcal R$ and $\ell\dot d+Rd=v_1-v_2$ for the equal-branch current difference. With unit $\ell,R$, opposite voltages $\pm1/2\ \mathrm V$ and zero initial currents, $i=(d/2,-d/2)$, $d=1-e^{-t}$, and common flux is zero. Each source work is $(T-1+e^{-T})/4\ \mathrm J$; copper heat is $[T-2(1-e^{-T})+(1-e^{-2T})/2]/2\ \mathrm J$; final leakage store is $(1-e^{-T})^2/4\ \mathrm J$.
+
+Distinct ideal transformers in additive series give $v_L=\sum r_jU_j$, $i_{pj}=r_ji_L$. Unit ratios, sources $(1,2)\ \mathrm V$, a $1\ \Omega$ receiver and a one-second interval give separate source works $3,6\ \mathrm J$ and receiver work $9\ \mathrm J$, with zero ideal component stores. Opening the receiver leaves $3\ \mathrm V$ and zero work. Parallel ideal secondaries instead require equal voltages; their current sharing needs additional laws. These controls do not replace the shared-core equations.
+
+Two specified unit cells at $1\ \mathrm V$ store $1\ \mathrm J$ whether represented by a compatible parallel $1\ \mathrm V$, $2\ \mathrm F$ terminal or additive series $2\ \mathrm V$, $1/2\ \mathrm F$ terminal. Reconnection still needs finite paths. For isolated resistive equalization with $C_1=1\ \mathrm F$, $C_2=2\ \mathrm F$, $R=1\ \Omega$ and $(v_1,v_2)=(1,0)\ \mathrm V$, the solution is $(1/3+2e^{-3t/2}/3,1/3-e^{-3t/2}/3)\ \mathrm V$. Heat on $[0,1]\ \mathrm s$ is $(1-e^{-3})/3\ \mathrm J$ and stores are $1/2$, $1/6+e^{-3}/3\ \mathrm J$. A single-path zero-resistance limit does not fix a multi-path reset.
+
+For six equal cells $v_j=a+d_j$, $\sum d_j=0$, the terminal sum is $6a$ but $E=3Ca^2+C\sum d_j^2/2$. Unit-cell preparations $(1,1,1,1,1,1)$ and $(2,0,1,1,1,1)\ \mathrm V$ have the same sum and stores $3,4\ \mathrm J$. This static control does not replace the switched-history proof above. Conversely a fixed-clock linear passive graph with uniform positive dissipation has $D(t)\leq e^{-\gamma t}D(0)$ and a unique attracting periodically forced state. Adding channels within those hypotheses does not defeat that theorem; adding a shaft or timing controller changes its assumptions.
 
 # Exact checks and scope of the calculations
 
@@ -2219,7 +2661,7 @@ Recorded-waveform integration adds its own independently bounded acquisition and
 | Reference change | Integrate driver source/resistor and prove the duration bound | Other driver laws and joint component limits |
 | Measurement bounds | Expand effort--flow and endpoint products without linearization | Actual calibration, timing and constitutive uncertainties |
 
-: The exact constructions have zero numerical integration residual. Named omitted mechanisms remain unevaluated model residuals.
+: Verification separates exact model identities, unevaluated work functionals and named physical omissions.
 
 Every figure is either a schematic or the exact closed form given in the text. All tabulated works and endpoints follow by algebra and integration of those forms. No decimal residual, finite-precision failure or coordinate magnitude has been used as physical evidence. The bounded structural and prescribed-cell conclusions remain bounded; resolving an inherited local question does not replace its practical measurement extension.
 
@@ -2232,7 +2674,7 @@ Every figure is either a schematic or the exact closed form given in the text. A
 1. Nilre, H., and Herlin, B. C. (2026). [*Third- and Higher-Order ODEs: Coefficient synthesis, identification, and physical realization*][main]. Companion manuscript on GitHub.
 2. Wettstein, A., Grauberger, P., and Matthiesen, S. (2021). [Modeling dynamic mechanical system behavior using sequence modeling of embodiment function relations: case study on a hammer mechanism][wettstein]. *SN Applied Sciences* **3**, article 128. DOI: 10.1007/s42452-021-04149-8.
 3. Bible, S. (2002). [Crystal Oscillator Basics and Crystal Selection for rfPIC and PICmicro Devices][bible]. Microchip Technology, Application Note AN826, DS00826A, pp. 1--14.
-4. Keysight Technologies (2026). [*Impedance Measurement Handbook: A Guide to Measurement Technology and Techniques*][keysight]. Application note 5950-3000, 6th edition, published February 28, 2026.
+4. Keysight Technologies (n.d.). [*Impedance Measurement Handbook: A Guide to Measurement Technology and Techniques*][keysight]. Application note 5950-3000.
 5. Kalman, R. E. (1963). [Mathematical Description of Linear Dynamical Systems][kalman]. *Journal of the Society for Industrial and Applied Mathematics, Series A: Control* **1**(2), 152--192. DOI: 10.1137/0301010.
 6. Willems, J. C. (1972). [Dissipative Dynamical Systems Part I: General Theory][willems]. *Archive for Rational Mechanics and Analysis* **45**, 321--351. DOI: 10.1007/BF00276493.
 7. Schwager, T., and Pöschel, T. (2007). [Coefficient of restitution and linear--dashpot model revisited][schwager]. *Granular Matter* **9**, 465--469. DOI: 10.1007/s10035-007-0065-z.
