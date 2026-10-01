@@ -4,6 +4,8 @@ Physical questions and signed work behind higher-order coefficients
 
 This companion develops the twelve physical questions marked in [*Third- and Higher-Order ODEs*](https://github.com/hobnilre/physics-ode-3rd-deg). That article constructs higher-order coefficient laws; this one develops their physical comparisons, hidden-state observations and signed energy accounts. The rotary impact driver is the principal example, linking contact and joint identification to the energy left at release.
 
+The six main sections follow that comparison from its physical questions and signed-work conventions through contact/joint identification, release, measurement conclusions and the remaining scope. Six appendices in the same PDF retain the complete supporting systems, finite implementations and uncertainty calculations. The guide after the conclusion and the configuration lookup in the measurement appendix provide direct access to the detailed cases.
+
 ## What this article adds, and why it matters
 
 The coefficients describe a declared physical system. Which internal states do its measurements identify, and where does energy go when contact releases, a return wire changes or a controller acts? Exact constructions give distinct predictions and the observations that separate them. Encoders, torque sensors, voltage probes and current shunts make the leading comparisons accessible on slow, low-voltage laboratory models.
@@ -30,7 +32,7 @@ Exact separation budgets and component-rating bounds distinguish finite physical
 
 All worked values follow from exact declared models. The article reports no hardware acquisition or numerical simulations. Identical terminal predictions can establish an identification limit; internal observations supply the discrimination. The bounded absorber result remains resolved, with its wider physical questions kept distinct.
 
-The article now carries the slow torsional comparison from calibration to independently changed contact/joint settings and release. A configuration index provides direct navigation. Additional appendices specify finite bank reconnection, loaded four-terminal correspondence and a shared-core circuit. Their conclusions are separate: finite receiver service, no full-state cycle in an insulated timing-drive model, and an exact limit on finite-error energy identification. None supplies hardware validation.
+The main text carries the slow torsional comparison from calibration to independently changed contact/joint settings and release. The appendices develop terminal identification, physical correspondence and connection paths, transformer attachments, controlled transducers and supplied references, finite implementations and events, and calibrated measurement bounds. Finite bank reconnection, loaded four-terminal correspondence and the shared-core circuit retain their complete treatments. Their conclusions remain separate: finite receiver service, no full-state cycle in an insulated timing-drive model, and an exact limit on finite-error energy identification. None supplies hardware validation.
 
 ## Article and build
 
